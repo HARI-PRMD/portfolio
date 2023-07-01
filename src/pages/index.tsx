@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SEO from "~/components/SEO";
+import AllProjects from "~/components/projects/AllProjects";
 import Layout from "~/layouts/Layout";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       <Layout>
         <section className="fr h-screen w-full space-x-8 p-32">
           <div className="fc h-full w-3/5 justify-center">
-            <div className="space-y-8">
+            <div className="space-y-12">
               <h1>Hari Pramod</h1>
               <p className="p-main">
                 Lorem ipsum dolor sit amet, adipiscing elit. Phasellus vitae
@@ -17,7 +18,7 @@ export default function Home() {
                 felis vel libero venenatis, vel pellentesque leo hendrerit.
                 Donec auctor semper sem, eget auctor massa auctor eget.
               </p>
-              <button className="p-main w-fit border px-16 py-4">
+              <button className="p-main w-fit border-2 px-16 py-4">
                 See Resume
               </button>
             </div>
@@ -30,8 +31,13 @@ export default function Home() {
             alt="portrait"
           />
         </section>
-        <section className="h-screen w-full px-32">
-          <h1>My Projects</h1>
+        <section className="h-screen w-full space-y-8 px-32 pb-32 pt-16">
+          <h2>My Projects</h2>
+          <div className="absolute z-30 h-16 w-4/5 bg-gradient-to-b from-black to-transparent" />
+          <div className="h-full w-4/5">
+            <AllProjects />
+          </div>
+          <div className="absolute h-16 w-4/5 -translate-y-24 bg-gradient-to-t from-black via-black/80 to-transparent" />
         </section>
       </Layout>
     </>
