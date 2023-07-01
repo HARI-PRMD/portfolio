@@ -26,6 +26,7 @@ const AllProjects = () => {
 
     containerRef.current?.addEventListener("scroll", handleScroll);
     return () => {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
       containerRef.current?.removeEventListener("scroll", handleScroll);
     };
   }, []);
@@ -181,7 +182,7 @@ const AllProjects = () => {
           websiteLink="http://localhost:3000/"
           codeLink="http://localhost:3000/"
         />
-        {/* <div className="py-96"></div> */}
+        <div className="pb-8"></div>
       </div>
     </div>
   );
