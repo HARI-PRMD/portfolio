@@ -33,11 +33,11 @@ export default function Home() {
         </section>
         <section className="h-screen w-full space-y-8 px-32 pb-32 pt-16">
           <h2>My Projects</h2>
-          <div className="absolute z-30 h-16 w-4/5 bg-gradient-to-b from-black to-transparent" />
-          <div className="h-full w-4/5">
+
+          <div className="h-full">
             <AllProjects />
           </div>
-          <div className="absolute h-16 w-4/5 -translate-y-24 bg-gradient-to-t from-black via-black/80 to-transparent" />
+          <div className="absolute h-16 w-5/6 -translate-y-24 bg-gradient-to-t from-black via-black/80 to-transparent" />
         </section>
       </Layout>
     </>
