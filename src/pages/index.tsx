@@ -8,7 +8,7 @@ export default function Home() {
       <Layout>
         <div>
           <h1>Hari Pramod</h1>
-          <p className="max-w-lg">
+          <p className="p-main max-w-lg">
             Lorem ipsum dolor sit amet, adipiscing elit. Phasellus vitae porta
             urna. Sed faucibus felis id rhoncus finibus. Ut efficitur felis vel
             libero venenatis, vel pellentesque leo hendrerit. Donec auctor
