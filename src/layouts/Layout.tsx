@@ -7,7 +7,7 @@ type Props = {
 
 const Layout: React.FC<Props> = ({ children }) => {
   return (
-    <main className="flex min-h-screen w-full flex-col justify-between">
+    <main className="flex min-h-screen w-full flex-col justify-between bg-black text-white">
       <div>
         <Header />
         {children}
