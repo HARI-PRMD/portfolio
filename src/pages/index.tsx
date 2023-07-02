@@ -9,7 +9,7 @@ export default function Home() {
     <>
       <SEO title="Portfolio" description="Landing Page" />
       <Layout>
-        <section className="fr min-h-screen w-full space-x-8 p-32">
+        <section id="main" className="fr min-h-screen w-full space-x-8 p-32">
           <div className="fc h-full w-3/5 justify-center">
             <div className="space-y-12">
               <h1>Hari Pramod</h1>
@@ -25,21 +25,27 @@ export default function Home() {
             </div>
           </div>
           <Image
-            src="/static/portrait.png"
-            width={2000}
-            height={2000}
-            className="w-2/5 object-cover"
+            src="https://media.discordapp.net/attachments/1092987636035092662/1125071586228187166/image0.jpg"
+            width={919}
+            height={1225}
+            className="h-full w-2/5 object-cover brightness-110 contrast-125 grayscale"
             alt="portrait"
           />
         </section>
-        <section className="h-screen w-full space-y-8 px-32 pb-32 pt-16">
+        <section
+          id="projects"
+          className="h-screen w-full space-y-8 px-32 pb-32 pt-16"
+        >
           <h2>My Projects</h2>
           <div className="h-full">
             <AllProjects />
           </div>
           <div className="absolute h-16 w-5/6 -translate-y-24 bg-gradient-to-t from-black via-black/80 to-transparent" />
         </section>
-        <section className="h-fit w-full space-y-8 px-32 pb-32 pt-16">
+        <section
+          id="volunteering"
+          className="h-fit w-full space-y-8 px-32 pb-32 pt-16"
+        >
           <h2>Volunteering</h2>
           <div className="h-full">
             <AllVolunteering />

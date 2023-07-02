@@ -1,13 +1,7 @@
 import Image from "next/image";
+import { type volunteeringDataType } from "~/types/types";
 
-type Props = {
-  image: string;
-  society: string;
-  title: string;
-  startTime: string;
-  endTime: string;
-  description: string;
-};
+type Props = volunteeringDataType;
 
 const VolunteerCard: React.FC<Props> = ({
   image,
@@ -24,13 +18,13 @@ const VolunteerCard: React.FC<Props> = ({
         alt="society"
         width={500}
         height={500}
-        className="mt-8 h-24 w-24"
+        className="mt-8 h-24 w-24 object-scale-down"
       />
       <div className="fc">
         <h3>{title}</h3>
         <p className="pt-1">{society}</p>
         <p className="subtitle pt-1">{startTime + " - " + endTime}</p>
-        <p className="pt-6">{description}</p>
+        {description && <p className="pt-6">{description}</p>}
       </div>
     </div>
   );
