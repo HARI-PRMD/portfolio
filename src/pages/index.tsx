@@ -14,10 +14,9 @@ export default function Home() {
             <div className="space-y-12">
               <h1>Hari Pramod</h1>
               <p className="p-main">
-                Lorem ipsum dolor sit amet, adipiscing elit. Phasellus vitae
-                porta urna. Sed faucibus felis id rhoncus finibus. Ut efficitur
-                felis vel libero venenatis, vel pellentesque leo hendrerit.
-                Donec auctor semper sem, eget auctor massa auctor eget.
+                I am a software engineering student excited about the
+                opportunity to apply my skills and knowledge to real-world
+                software product design and development.
               </p>
               <button className="p-main w-fit border-2 px-16 py-4">
                 See Resume
