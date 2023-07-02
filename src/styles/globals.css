@@ -21,6 +21,10 @@
         @apply font-body text-2xl;
     }
     
+    .subtitle {
+        @apply font-body text-base
+    }
+
     .p-main {
         @apply font-body text-4xl;
     }

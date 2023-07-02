@@ -1,6 +1,7 @@
 import Image from "next/image";
 import SEO from "~/components/SEO";
 import AllProjects from "~/components/projects/AllProjects";
+import AllVolunteering from "~/components/volunteering/AllVolunteering";
 import Layout from "~/layouts/Layout";
 
 export default function Home() {
@@ -33,11 +34,16 @@ export default function Home() {
         </section>
         <section className="h-screen w-full space-y-8 px-32 pb-32 pt-16">
           <h2>My Projects</h2>
-
           <div className="h-full">
             <AllProjects />
           </div>
           <div className="absolute h-16 w-5/6 -translate-y-24 bg-gradient-to-t from-black via-black/80 to-transparent" />
+        </section>
+        <section className="h-fit w-full space-y-8 px-32 pb-32 pt-16">
+          <h2>Volunteering</h2>
+          <div className="h-full">
+            <AllVolunteering />
+          </div>
         </section>
       </Layout>
     </>
