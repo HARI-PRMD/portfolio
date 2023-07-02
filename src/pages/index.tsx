@@ -8,7 +8,7 @@ export default function Home() {
     <>
       <SEO title="Portfolio" description="Landing Page" />
       <Layout>
-        <section className="fr h-screen w-full space-x-8 p-32">
+        <section className="fr min-h-screen w-full space-x-8 p-32">
           <div className="fc h-full w-3/5 justify-center">
             <div className="space-y-12">
               <h1>Hari Pramod</h1>

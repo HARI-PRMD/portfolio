@@ -74,7 +74,7 @@ const AllProjects = () => {
       <div className="h-full w-2 translate-x-24 bg-gradient-to-b from-transparent via-white to-transparent"></div>
       <div className="absolute z-30 h-16 w-5/6 bg-gradient-to-b from-black to-transparent" />
       <div
-        className="ref={containerRef} h-full space-y-8 overflow-auto pl-40 pt-8"
+        className="h-full space-y-8 overflow-auto pl-40 pr-8 pt-8"
         ref={containerRef}
       >
         <div ref={ref2023}></div>
