@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import ProjectCard from "./ProjectCard";
 import { projectsData } from "~/utils/data";
 
-const AllProjects = () => {
+const AllProjects: React.FC = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const ref2023 = useRef<HTMLDivElement>(null);
   const ref2022 = useRef<HTMLDivElement>(null);
@@ -44,8 +44,8 @@ const AllProjects = () => {
     }
   };
   return (
-    <div className="fr z-0 h-full">
-      <div className="fc space-y-8 py-16 pl-16">
+    <div className="fc md:fr z-0 h-full w-full">
+      <div className="fr md:fc space-x-16 py-16 pl-16 md:space-x-0 md:space-y-8">
         <button
           className={`p-main ${
             activeYear === 0 ? "text-white" : "text-white/40"
@@ -63,10 +63,10 @@ const AllProjects = () => {
           2022
         </button>
       </div>
-      <div className="h-full w-2 translate-x-24 bg-gradient-to-b from-transparent via-white to-transparent"></div>
-      <div className="absolute z-30 h-16 w-5/6 bg-gradient-to-b from-black to-transparent" />
+      <div className="h-2 w-full bg-gradient-to-r from-transparent via-white to-transparent md:h-full md:w-2 md:translate-x-24 md:bg-gradient-to-b"></div>
+      <div className="z-30 h-16 w-full bg-gradient-to-b from-black to-transparent md:absolute md:w-5/6" />
       <div
-        className="h-full space-y-8 overflow-auto pl-40 pr-8 pt-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white scrollbar-thumb-rounded-xl"
+        className="h-full space-y-8 overflow-auto pl-8 pr-8 pt-8 scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white scrollbar-thumb-rounded-xl md:pl-40"
         ref={containerRef}
       >
         <div ref={ref2023}></div>
