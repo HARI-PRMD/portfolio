@@ -11,7 +11,8 @@ type Props = {
 const SEO: React.FC<Props> = ({ title, description, image, url = baseUrl }) => {
   const formattedTitle = `HP | ${title}`;
 
-  const LOGO_PATH = `${baseUrl}/static/favicon.ico`;
+  const IMAGE =
+    "https://media.discordapp.net/attachments/1092987636035092662/1125346156852035634/metaimage.png";
   const favicon = `${baseUrl}/static/favicon.ico`;
 
   return (
@@ -25,7 +26,7 @@ const SEO: React.FC<Props> = ({ title, description, image, url = baseUrl }) => {
       <meta property="og:url" content={url} />
       <meta property="og:title" content={formattedTitle} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image || LOGO_PATH} />
+      <meta property="og:image" content={image || IMAGE} />
     </Head>
   );
 };
