@@ -27,13 +27,14 @@ export default function Home() {
             </div>
           </div>
           <div className="fc h-full justify-end md:w-2/5 md:items-center md:justify-center">
-            <Image
+            <div className="hero-pattern h-64 w-full object-cover md:h-4/5" />
+            {/* <Image
               src="https://media.discordapp.net/attachments/1092987636035092662/1125071586228187166/image0.jpg"
               width={919}
               height={1225}
               className="h-64 max-h-fit w-full object-cover brightness-110 contrast-125 grayscale md:h-4/5"
               alt="portrait"
-            />
+            /> */}
           </div>
         </section>
         <section
@@ -48,7 +49,7 @@ export default function Home() {
         </section>
         <section
           id="volunteering"
-          className="h-fit w-full space-y-8 px-4 pt-16 md:px-32 md:pb-32"
+          className="h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-32"
         >
           <h2 className="h3 md:h2">Volunteering</h2>
           <div className="h-full">

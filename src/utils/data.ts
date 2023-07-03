@@ -72,14 +72,14 @@ export const volunteeringData: volunteeringDataType[] = [
 export const projectsData: AllProjects = {
   2023: [
     {
-      title: "Note Sharing Forum",
+      title: "MegaLAN Atlantis Quests",
       description:
-        "Lead development of a mock note sharing forum website built by a group of 5 as part of CSESoc's Training Program",
-      month: "March",
-      codeLink: "https://github.com/csesoc/trainee-3-23t1",
-      websiteLink: "https://trainee-3-23t1-deploy.vercel.app/",
+        "An end to end Stamp Rally Management System for an event hosted by 12 societies and 500+ attendees.",
+      month: "May",
+      codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
+      websiteLink: "https://megalan-atlantis-quests.vercel.app/",
       image:
-        "https://media.discordapp.net/attachments/1092987636035092662/1125069729741148220/Screenshot_2023-07-03_at_12.25.17_am.png",
+        "https://media.discordapp.net/attachments/1092987636035092662/1124960255722401842/Screenshot_2023-07-02_at_5.09.42_pm.png",
     },
     {
       title: "EZ Invoice",
@@ -93,14 +93,14 @@ export const projectsData: AllProjects = {
         "https://media.discordapp.net/attachments/1092987636035092662/1125062082858078268/Screenshot_2023-07-02_at_11.54.52_pm.png",
     },
     {
-      title: "MegaLAN Atlantis Quests",
+      title: "Note Sharing Forum",
       description:
-        "An end to end Stamp Rally Management System for an event hosted by 12 societies and 500+ attendees.",
-      month: "May",
-      codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
-      websiteLink: "https://megalan-atlantis-quests.vercel.app/",
+        "Lead development of a mock note sharing forum website built by a group of 5 as part of CSESoc's Training Program",
+      month: "March",
+      codeLink: "https://github.com/csesoc/trainee-3-23t1",
+      websiteLink: "https://trainee-3-23t1-deploy.vercel.app/",
       image:
-        "https://media.discordapp.net/attachments/1092987636035092662/1124960255722401842/Screenshot_2023-07-02_at_5.09.42_pm.png",
+        "https://media.discordapp.net/attachments/1092987636035092662/1125069729741148220/Screenshot_2023-07-03_at_12.25.17_am.png",
     },
   ],
   2022: [

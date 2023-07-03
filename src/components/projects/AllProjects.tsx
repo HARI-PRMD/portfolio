@@ -45,9 +45,9 @@ const AllProjects: React.FC = () => {
   };
   return (
     <div className="fc md:fr z-0 h-full w-full">
-      <div className="fr md:fc space-x-16 py-16 pl-16 md:space-x-0 md:space-y-8">
+      <div className="fr md:fc space-x-16 py-8 pl-16 md:space-x-0 md:space-y-8 md:py-16">
         <button
-          className={`p-main ${
+          className={`p md:p-main ${
             activeYear === 0 ? "text-white" : "text-white/40"
           }`}
           onClick={() => scrollToYear(0)}
@@ -55,7 +55,7 @@ const AllProjects: React.FC = () => {
           2023
         </button>
         <button
-          className={`p-main ${
+          className={`p md:p-main ${
             activeYear === 1 ? "text-white" : "text-white/40"
           }`}
           onClick={() => scrollToYear(1)}
