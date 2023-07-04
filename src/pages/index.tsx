@@ -20,7 +20,7 @@ export default function Home() {
                 opportunity to apply my skills and knowledge to real-world
                 software product design and development.
               </p>
-              <button className="subtitle md:p-main w-full border-2 px-4 py-2 md:w-fit md:px-16 md:py-4">
+              <button className="subtitle md:p-main w-full border-2 px-4 py-2 transition-colors duration-300 hover:bg-white hover:text-black md:w-fit md:px-16 md:py-4">
                 See Resume
               </button>
             </div>

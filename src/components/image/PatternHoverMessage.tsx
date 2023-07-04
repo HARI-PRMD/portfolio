@@ -9,13 +9,15 @@ const PatternHoverMessage: React.FC<Props> = ({ message, onClick }) => {
   };
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center overflow-hidden">
       <div
-        className="hero-pattern relative aspect-video h-fit w-full cursor-pointer bg-cover"
+        className="hero-pattern relative aspect-video h-fit w-full cursor-pointer bg-cover transition-all duration-500 ease-in-out hover:scale-110"
         onClick={handleClick}
       >
-        <div className="fc absolute h-full w-full items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 hover:opacity-100">
-          <p className="p-4">{message}</p>
+        <div className="fc absolute h-full w-full items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100">
+          <p className="subtitle rounded-full bg-white px-6 py-4 text-black">
+            {message}
+          </p>
         </div>
       </div>
     </div>
