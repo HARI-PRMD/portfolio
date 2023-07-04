@@ -15,6 +15,9 @@ export default {
         "white-solid": "8px 8px 0px #FFFFFF",
         "black-solid": "8px 8px 0px #000000",
       },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")({ nocompatible: true })],

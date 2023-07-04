@@ -1,4 +1,8 @@
-import { type AllProjects, type volunteeringDataType } from "~/types/types";
+import {
+  type ProjectCardDataType,
+  type AllProjects,
+  type volunteeringDataType,
+} from "~/types/types";
 
 export const volunteeringData: volunteeringDataType[] = [
   {
@@ -125,3 +129,75 @@ export const projectsData: AllProjects = {
     },
   ],
 };
+
+// Arc Website Scraper -
+// Built with: Python
+// Selenium
+
+export const projectsDataV2: ProjectCardDataType[] = [
+  {
+    title: "MegaLAN Atlantis Quests",
+    description:
+      "An end to end Stamp Rally Management System for an event hosted by 12 societies and 500+ attendees.",
+    month: "May",
+    year: 2023,
+    codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
+    websiteLink: "https://megalan-atlantis-quests.vercel.app/",
+    image:
+      "https://media.discordapp.net/attachments/1092987636035092662/1124960255722401842/Screenshot_2023-07-02_at_5.09.42_pm.png",
+  },
+  {
+    title: "EZ Invoice",
+    description:
+      "Developed e-invoice management website with sales and customer tracking as well as invoice generation, validation and rendering in a team as part of the SENG2021 Requirements and Design Workshop Course.",
+    month: "April",
+    year: 2023,
+    codeLink: "https://github.com/HARI-PRMD/SENG2021-application",
+    websiteLink:
+      "https://se2021-23t1-einvoicing-frontend-f14a-di-git-342b0e-merryrosalie.vercel.app/",
+    image:
+      "https://media.discordapp.net/attachments/1092987636035092662/1125062082858078268/Screenshot_2023-07-02_at_11.54.52_pm.png",
+  },
+  {
+    title: "Note Sharing Forum",
+    description:
+      "Lead development of a mock note sharing forum website built by a group of 5 as part of CSESoc's Training Program",
+    month: "March",
+    year: 2023,
+    codeLink: "https://github.com/csesoc/trainee-3-23t1",
+    websiteLink: "https://trainee-3-23t1-deploy.vercel.app/",
+    image:
+      "https://media.discordapp.net/attachments/1092987636035092662/1125069729741148220/Screenshot_2023-07-03_at_12.25.17_am.png",
+  },
+
+  {
+    title: "UNSW Arc Web Scraper",
+    description:
+      "A python web scraper to retrieve club data from UNSW Arc's website, Developed by Me.",
+    month: "February",
+    year: 2023,
+    codeLink: "https://github.com/HARI-PRMD/unsw-arc-scraper",
+  },
+
+  {
+    title: "UniClubs",
+    description:
+      "A Clubs and Events Discovery Website Designed and Developed by Me",
+    month: "December",
+    year: 2022,
+    codeLink: "https://github.com/HARI-PRMD/uni-clubs-frontend",
+    websiteLink: "https://uniclubs.vercel.app/",
+    image:
+      "https://media.discordapp.net/attachments/1092987636035092662/1125060553233158245/Screenshot_2023-07-02_at_11.48.49_pm.png",
+  },
+  {
+    title: "Loft",
+    description:
+      "A Pomodoro Timer, Productivity Website Developed in a team as part of CSESoc's Training Program",
+    month: "October",
+    year: 2022,
+    codeLink: "https://github.com/csesoc/trainee-3-22t3",
+    image:
+      "https://media.discordapp.net/attachments/1092987636035092662/1125060877054390302/monospace_font_pic.png",
+  },
+];

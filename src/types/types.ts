@@ -2,6 +2,7 @@ export type ProjectCardDataType = {
   title: string;
   description: string;
   month: string;
+  year?: number;
   websiteLink?: string;
   codeLink?: string;
   image?: string;

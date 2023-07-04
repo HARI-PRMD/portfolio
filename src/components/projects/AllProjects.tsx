@@ -76,6 +76,7 @@ const AllProjects: React.FC = () => {
             title={p.title}
             description={p.description}
             month={p.month}
+            year={2023}
             websiteLink={p.websiteLink}
             codeLink={p.codeLink}
             image={p.image}
@@ -88,6 +89,7 @@ const AllProjects: React.FC = () => {
             title={p.title}
             description={p.description}
             month={p.month}
+            year={2022}
             websiteLink={p.websiteLink}
             codeLink={p.codeLink}
             image={p.image}
