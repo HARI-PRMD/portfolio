@@ -1,7 +1,7 @@
 import { type ProjectCardDataType } from "~/types/types";
 import ImageHoverMessage from "../image/ImageHoverMessage";
 import PatternHoverMessage from "../image/PatternHoverMessage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProjectModal from "./ProjectModal";
 
 type Props = ProjectCardDataType;
@@ -20,6 +20,11 @@ const ProjectCardV2: React.FC<Props> = ({
   const handleClick = () => {
     setShowModal(!showModal);
   };
+
+  useEffect(() => {
+    if (!showModal) document.body.style.overflow = "unset";
+    if (showModal) document.body.style.overflow = "hidden";
+  }, [showModal]);
 
   return (
     <>

@@ -31,14 +31,13 @@ const ProjectModal: React.FC<Props> = ({
       >
         <div className="fr sticky top-0 w-full justify-between border-b border-r bg-black px-8 py-4">
           <h3 className="p md:h3 font-heading">{title}</h3>
-
           <XMarkIcon
             onClick={onClose}
             className="h-12 w-12 cursor-pointer text-white"
           />
         </div>
         <div className="w-full space-y-8 p-4 md:p-24">
-          {image && (
+          {image ? (
             <Image
               src={image}
               width={2151}
@@ -46,6 +45,8 @@ const ProjectModal: React.FC<Props> = ({
               alt="megalan"
               className="h-fit w-full object-cover"
             />
+          ) : (
+            <div className="hero-pattern h-48 w-full object-cover"></div>
           )}
           <p className="subtitle">
             {year ? month + " " + year.toString() : month}
