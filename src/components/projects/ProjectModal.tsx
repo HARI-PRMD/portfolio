@@ -33,21 +33,23 @@ const ProjectModal: React.FC<Props> = ({
           <h3 className="p md:h3 font-heading">{title}</h3>
           <XMarkIcon
             onClick={onClose}
-            className="h-12 w-12 cursor-pointer text-white"
+            className="h-8 w-8 cursor-pointer text-white md:h-12 md:w-12"
           />
         </div>
         <div className="w-full space-y-8 p-4 md:p-24">
-          {image ? (
-            <Image
-              src={image}
-              width={2151}
-              height={1227}
-              alt="megalan"
-              className="h-fit w-full object-cover"
-            />
-          ) : (
-            <div className="hero-pattern h-48 w-full object-cover"></div>
-          )}
+          <div className="fc w-full items-center justify-center">
+            {image ? (
+              <Image
+                src={image}
+                width={2151}
+                height={1227}
+                alt="megalan"
+                className="h-fit w-full max-w-lg object-cover"
+              />
+            ) : (
+              <div className="hero-pattern h-48 max-w-lg object-cover"></div>
+            )}
+          </div>
           <p className="subtitle">
             {year ? month + " " + year.toString() : month}
           </p>
