@@ -136,6 +136,16 @@ export const projectsData: AllProjects = {
 
 export const projectsDataV2: ProjectCardDataType[] = [
   {
+    title: "Discord Verification Bot",
+    description:
+      "I developed a custom verification bot using Typescript and discord.js for the UNSW Rhythm Game Society. The bot verifies new members by monitoring Google Form submissions, extracting email and Discord tag data. It then sends a verification code via email and prompts users to enter the code for verification on the Discord community server. Upon success the user if given the verified role.",
+    month: "June",
+    year: 2023,
+    codeLink: "https://github.com/unswrgs/rgs-bot",
+    image:
+      "https://media.discordapp.net/attachments/1119108267927404565/1131415578809217054/Screenshot_2023-07-20_at_12.41.26_pm.png",
+  },
+  {
     title: "MegaLAN Atlantis Quests",
     description:
       "An end to end Stamp Rally Management System for an event hosted by 12 societies and 500+ attendees.",
