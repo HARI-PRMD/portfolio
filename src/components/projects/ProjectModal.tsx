@@ -7,6 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { type ProjectCardDataType } from "~/types/types";
 import { type MouseEventHandler } from "react";
+import MarkdownParser from "../MarkdownParser";
 
 type Props = ProjectCardDataType & { onClose: MouseEventHandler };
 const ProjectModal: React.FC<Props> = ({
@@ -53,7 +54,7 @@ const ProjectModal: React.FC<Props> = ({
           <p className="subtitle">
             {year ? month + " " + year.toString() : month}
           </p>
-          <p>{description}</p>
+          <MarkdownParser markdownString={description} />
           <div className="fc md:fr w-full space-y-4 md:space-x-8 md:space-y-0">
             {websiteLink && (
               <Link href={websiteLink}>
