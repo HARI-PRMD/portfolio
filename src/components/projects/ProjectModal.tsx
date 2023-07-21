@@ -26,7 +26,7 @@ const ProjectModal: React.FC<Props> = ({
       onClick={(e) => onClose(e)}
     >
       <div
-        className="fc container h-full overflow-y-auto border bg-black scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white scrollbar-thumb-rounded-xl md:h-5/6"
+        className="fc scroller container h-full overflow-y-auto border bg-black md:h-5/6"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="fr sticky top-0 w-full justify-between border-b border-r bg-black px-8 py-4">

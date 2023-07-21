@@ -31,7 +31,7 @@ export default function Home() {
         </section>
         <section
           id="projects"
-          className="min-h-screen w-full space-y-8 px-4 pt-16 md:px-32 md:pb-32"
+          className="min-h-fit w-full space-y-8 px-4 pt-16 md:px-32 md:pb-32"
         >
           <h2 className="h3 md:h2 pb-8">My Projects</h2>
           <div className="h-full w-full">

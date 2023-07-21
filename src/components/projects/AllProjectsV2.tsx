@@ -3,7 +3,7 @@ import ProjectCardV2 from "./ProjectCardV2";
 
 const AllProjectsV2: React.FC = () => {
   return (
-    <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+    <div className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-8 overflow-x-auto px-16 md:snap-none md:grid-flow-row md:grid-cols-3 md:px-0">
       {projectsDataV2?.map((p, i) => (
         <ProjectCardV2
           key={i}
