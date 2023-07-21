@@ -41,7 +41,7 @@ const ProjectCardV2: React.FC<Props> = ({
         />
       )}
       <div className="fr h-fit w-full min-w-[16rem] snap-center grayscale transition-colors duration-300 hover:grayscale-0 md:min-w-full md:space-x-8">
-        <div className="w-full space-y-2">
+        <div className="w-full">
           {image ? (
             <ImageHoverMessage
               url={image}
@@ -54,8 +54,8 @@ const ProjectCardV2: React.FC<Props> = ({
               onClick={() => handleClick()}
             />
           )}
-          <p>{title}</p>
-          <p className="subtitle">
+          <p className="pt-2">{title}</p>
+          <p className="subtitle pb-8">
             {year ? month + " " + year.toString() : month}
           </p>
         </div>

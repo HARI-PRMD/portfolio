@@ -22,8 +22,8 @@ const VolunteerCard: React.FC<Props> = ({
           className="mt-8 h-12 w-12 object-scale-down md:h-24 md:w-24"
         />
         <div className="fc">
-          <p className="md:h3 font-heading">{title}</p>
-          <p className="subtitle md:p pt-1">{society}</p>
+          <h3>{title}</h3>
+          <p className="pt-1">{society}</p>
           <p className="subtitle pt-1">{startTime + " - " + endTime}</p>
           {description && <p className="hidden pt-6 md:block">{description}</p>}
         </div>
