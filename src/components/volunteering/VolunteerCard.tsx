@@ -12,23 +12,25 @@ const VolunteerCard: React.FC<Props> = ({
   description,
 }) => {
   return (
-    <div className="h-fit w-full p-8 grayscale transition-all duration-300 hover:grayscale-0">
-      <div className="fr items-center space-x-12">
+    <div className="fc h-full w-full min-w-[16rem] snap-x snap-center items-center justify-center border border-white/20 bg-white/5 p-8 grayscale transition-all duration-300 hover:grayscale-0 md:h-fit">
+      <div className="fc md:fr items-center md:space-x-8">
         <Image
           src={image}
           alt="society"
           width={500}
           height={500}
-          className="mt-8 h-12 w-12 object-scale-down md:h-24 md:w-24"
+          className="mb-8 h-24 w-24 object-scale-down md:mb-0"
         />
-        <div className="fc">
-          <h3>{title}</h3>
-          <p className="pt-1">{society}</p>
-          <p className="subtitle pt-1">{startTime + " - " + endTime}</p>
-          {description && <p className="hidden pt-6 md:block">{description}</p>}
+        <div className="fc w-full">
+          <p className="p-fixed">{title}</p>
+          <p className="subtitle pt-2">{society}</p>
+          <p className="subtitle opacity-60">{startTime + " - " + endTime}</p>
+          {description && (
+            <p className="subtitle hidden pt-2 md:block">{description}</p>
+          )}
         </div>
       </div>
-      {description && <p className="subtitle pt-6 md:hidden">{description}</p>}
+      {description && <p className="subtitle pt-2 md:hidden">{description}</p>}
     </div>
   );
 };

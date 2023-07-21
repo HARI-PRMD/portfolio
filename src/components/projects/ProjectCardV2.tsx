@@ -54,8 +54,8 @@ const ProjectCardV2: React.FC<Props> = ({
               onClick={() => handleClick()}
             />
           )}
-          <p className="pt-2">{title}</p>
-          <p className="subtitle pb-8">
+          <p className="p-fixed pt-2">{title}</p>
+          <p className="subtitle py-2 opacity-60">
             {year ? month + " " + year.toString() : month}
           </p>
         </div>

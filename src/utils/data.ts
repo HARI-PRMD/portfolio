@@ -67,7 +67,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Music Subcommittee",
     society: "UNSW lo-fi society",
     description:
-      "Produced a track for the Lo-fi; Society Mixtape and provided help where I could with distribution of the songs.",
+      "Produced a song for the Lo-fi; Society Mixtape and provided help where I could with distribution of the songs.",
     startTime: "Apr 2022",
     endTime: "Jan 2023",
   },
