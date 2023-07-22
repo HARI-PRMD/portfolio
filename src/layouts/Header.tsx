@@ -35,7 +35,7 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div className="fc fixed z-50 h-fit w-full bg-black/80 px-4 py-2 backdrop-blur-sm md:px-16 md:py-4">
+    <div className="fc fixed z-50 h-fit w-full bg-black/90 px-4 py-2 backdrop-blur md:px-16 md:py-4">
       <div className="fr justify-between">
         <h2
           className="h2 cursor-pointer md:pl-8"
@@ -43,14 +43,23 @@ const Header: React.FC = () => {
         >
           HP
         </h2>
-        <div className="md:fr hidden w-full max-w-4xl justify-evenly pt-4">
+        <div className="md:fr hidden w-full max-w-4xl justify-evenly pt-4 uppercase">
           <p
             onClick={() => handleHeadingClick("projects")}
             className={`group cursor-pointer transition duration-300 hover:opacity-100 ${
               activeSection === "projects" ? "opacity-100" : "opacity-60"
             }`}
           >
-            PROJECTS
+            projects
+            <span className="mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100"></span>
+          </p>
+          <p
+            onClick={() => handleHeadingClick("technologies")}
+            className={`group cursor-pointer transition duration-300 hover:opacity-100 ${
+              activeSection === "technologies" ? "opacity-100" : "opacity-60"
+            }`}
+          >
+            Technologies
             <span className="mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100"></span>
           </p>
           <p
@@ -59,21 +68,12 @@ const Header: React.FC = () => {
               activeSection === "volunteering" ? "opacity-100" : "opacity-60"
             }`}
           >
-            VOLUNTEERING
-            <span className="mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100"></span>
-          </p>
-          <p
-            onClick={() => handleHeadingClick("contact")}
-            className={`group cursor-pointer transition duration-300 hover:opacity-100 ${
-              activeSection === "contact" ? "opacity-100" : "opacity-60"
-            }`}
-          >
-            CONTACT
+            Volunteering
             <span className="mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100"></span>
           </p>
         </div>
-        <button className="p hidden h-fit bg-white px-8 py-4 text-black md:block">
-          RESUME
+        <button className="p hidden h-fit bg-white px-8 py-4 uppercase text-black md:block">
+          resume
         </button>
         <button className="md:hidden" onClick={() => setShowList(!showList)}>
           <Bars3Icon
@@ -92,12 +92,27 @@ const Header: React.FC = () => {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-[-20px]"
       >
-        <div className="fc w-full space-y-8 pt-8 md:hidden">
-          <p onClick={() => handleHeadingClick("projects")}>PROJECTS</p>
-          <p onClick={() => handleHeadingClick("volunteering")}>VOLUNTEERING</p>
-          <p>CONTACT</p>
-          <button className="p h-fit w-full bg-white px-8 py-4 text-black">
-            RESUME
+        <div className="fc w-full space-y-8 pb-2 pt-8 uppercase md:hidden">
+          <p
+            onClick={() => handleHeadingClick("projects")}
+            className="cursor-pointer"
+          >
+            projects
+          </p>
+          <p
+            onClick={() => handleHeadingClick("technologies")}
+            className="cursor-pointer"
+          >
+            technologies
+          </p>
+          <p
+            onClick={() => handleHeadingClick("volunteering")}
+            className="cursor-pointer"
+          >
+            volunteering
+          </p>
+          <button className="p h-fit w-full cursor-pointer bg-white px-8 py-4 text-black">
+            resume
           </button>
         </div>
       </Transition>

@@ -1,5 +1,6 @@
 import SEO from "~/components/SEO";
 import AllProjectsV2 from "~/components/projects/AllProjectsV2";
+import AllTechnologies from "~/components/technologies/AllTechnologies";
 import AllVolunteering from "~/components/volunteering/AllVolunteering";
 import Layout from "~/layouts/Layout";
 
@@ -41,6 +42,20 @@ export default function Home() {
           </div>
           <div className="h-full w-full">
             <AllProjectsV2 />
+          </div>
+        </section>
+        <section
+          id="technologies"
+          className="min-h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-16"
+        >
+          <div>
+            <h2>Technologies</h2>
+            <p className="pt-2 opacity-60 md:pt-4">
+              Languages, Frameworks and tools I have worked with.
+            </p>
+          </div>
+          <div className="h-full w-full">
+            <AllTechnologies />
           </div>
         </section>
         <section

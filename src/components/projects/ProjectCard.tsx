@@ -18,7 +18,7 @@ const ProjectCard: React.FC<Props> = ({
   image,
 }) => {
   return (
-    <div className="fr h-fit w-full grayscale transition-all duration-300 hover:grayscale-0 md:space-x-8">
+    <div className="fr h-fit w-full grayscale transition-all duration-300 hover:grayscale-0 active:grayscale-0 md:space-x-8">
       <p className="hidden w-1/6 md:block">{month}</p>
       <div className="w-full space-y-4 md:w-5/6 md:space-y-8">
         <h3>{title}</h3>

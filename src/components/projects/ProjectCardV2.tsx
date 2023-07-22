@@ -40,7 +40,7 @@ const ProjectCardV2: React.FC<Props> = ({
           onClose={() => setShowModal(false)}
         />
       )}
-      <div className="fr h-fit w-full min-w-[16rem] snap-center grayscale transition-colors duration-300 hover:grayscale-0 md:min-w-full md:space-x-8">
+      <div className="fr h-fit w-full min-w-[16rem] snap-center grayscale transition-colors duration-300 hover:grayscale-0 active:grayscale-0 md:min-w-full md:space-x-8">
         <div className="w-full">
           {image ? (
             <ImageHoverMessage

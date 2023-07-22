@@ -130,9 +130,86 @@ export const projectsData: AllProjects = {
   ],
 };
 
-// Arc Website Scraper -
-// Built with: Python
-// Selenium
+export const technologiesLangFrameworksData: { name: string; url: string }[] = [
+  {
+    name: "Javascript",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132174482665132032/800px-JavaScript-logo.png",
+  },
+  {
+    name: "Typescript",
+    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132173840529764392/2048px-Typescript_logo_2020.png",
+  },
+  {
+    name: "Python",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132176773669462046/Python-logo-notext.svg-2.png",
+  },
+  {
+    name: "HTML",
+    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132184679794085939/image-8.png",
+  },
+  {
+    name: "CSS",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132183041603813447/css-icon-2048x2028-2rmmfask.png",
+  },
+  {
+    name: "TailwindCSS",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132184262762835998/Tailwind_CSS_logo.svg-2.png",
+  },
+  {
+    name: "React",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132174819899752510/2300px-React-icon.png",
+  },
+  {
+    name: "Next.js",
+    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132175597242683502/image-4.png",
+  },
+  {
+    name: "Express.js",
+    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132184947684278272/image-5-2.png",
+  },
+  {
+    name: "tRPC",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132177024220401745/trpc-logo-741E01B855-seeklogo.png",
+  },
+  {
+    name: "NextAuth.js",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132195448187260959/logo-sm.png",
+  },
+  {
+    name: "Prisma",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132178248353189999/image-6.png",
+  },
+];
+export const technologiesToolsData: { name: string; url: string }[] = [
+  {
+    name: "Github",
+    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132181654551658587/image-7.png",
+  },
+  {
+    name: "npm",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132182773625540698/2560px-Npm-logo.png",
+  },
+  {
+    name: "Vercel",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132185309099073646/image-9.png",
+  },
+  {
+    name: "Supabase",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132185399767339088/supabase-logo-DCC676FFE2-seeklogo.png",
+  },
+  {
+    name: "Figma",
+    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132181881358647346/668cccb3f734f342e07c0185e6d9a975.png",
+  },
+  {
+    name: "Confluence",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132182167900934154/confluence-logo-D9B07137C2-seeklogo.png",
+  },
+  {
+    name: "Jira",
+    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132182620244029450/Jira-Emblem-2.png",
+  },
+];
 
 export const projectsDataV2: ProjectCardDataType[] = [
   {
