@@ -144,9 +144,14 @@ export const technologiesLangFrameworksData: { name: string; url: string }[] = [
     url: "https://media.discordapp.net/attachments/1092987636035092662/1132176773669462046/Python-logo-notext.svg-2.png",
   },
   {
+    name: "Regex",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132226116061511720/image-12-2.png",
+  },
+  {
     name: "HTML",
     url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132184679794085939/image-8.png",
   },
+
   {
     name: "CSS",
     url: "https://media.discordapp.net/attachments/1092987636035092662/1132183041603813447/css-icon-2048x2028-2rmmfask.png",
@@ -170,6 +175,10 @@ export const technologiesLangFrameworksData: { name: string; url: string }[] = [
   {
     name: "tRPC",
     url: "https://media.discordapp.net/attachments/1092987636035092662/1132177024220401745/trpc-logo-741E01B855-seeklogo.png",
+  },
+  {
+    name: "Zod",
+    url: "https://media.discordapp.net/attachments/1092987636035092662/1132225561029255298/sDh8bAT3pW8AAAAASUVORK5CYII.png",
   },
   {
     name: "NextAuth.js",
