@@ -57,7 +57,7 @@ const ProjectModal: React.FC<Props> = ({
           <MarkdownParser markdownString={description} />
           <div className="fc md:fr w-full space-y-4 md:space-x-8 md:space-y-0">
             {websiteLink && (
-              <Link href={websiteLink}>
+              <Link href={websiteLink} target="_blank">
                 <div className="fr w-full items-center justify-center space-x-4 border border-white/20 bg-white/5 px-8 py-2 transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit">
                   <p>Website</p>
                   <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
@@ -65,7 +65,7 @@ const ProjectModal: React.FC<Props> = ({
               </Link>
             )}
             {codeLink && (
-              <Link href={codeLink}>
+              <Link href={codeLink} target="_blank">
                 <div className="fr w-full items-center justify-center space-x-4 border border-white/20 bg-white/5 px-8 py-2 transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit">
                   <p>Code</p>
                   <CodeBracketIcon className="h-6 w-6 text-white" />
