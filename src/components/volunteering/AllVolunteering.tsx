@@ -1,8 +1,11 @@
 import { volunteeringData } from "~/utils/data";
 import VolunteerCard from "./VolunteerCard";
 import { type volunteeringDataType } from "~/types/types";
+import { useState } from "react";
 
 const AllVolunteering = () => {
+  const [snappedIndex, setSnappedIndex] = useState<number>(0);
+  // to display in two separate columns
   const data1: volunteeringDataType[] = [];
   const data2: volunteeringDataType[] = [];
 
@@ -38,7 +41,16 @@ const AllVolunteering = () => {
           />
         ))}
       </div>
-      <div className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-8 overflow-x-auto px-16 pb-4 md:hidden">
+      <div
+        className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-8 overflow-x-auto px-16 pb-4 md:hidden"
+        onScroll={(e) => {
+          const element = e.target as HTMLElement;
+          const scrollLeft = element.scrollLeft;
+          const cardWidth = element.scrollWidth / volunteeringData.length;
+          const snappedIndex = Math.round(scrollLeft / cardWidth);
+          setSnappedIndex(snappedIndex);
+        }}
+      >
         {volunteeringData.map((v, i) => (
           <VolunteerCard
             key={i}
@@ -48,6 +60,7 @@ const AllVolunteering = () => {
             description={v.description}
             image={v.image}
             society={v.society}
+            isInView={snappedIndex === i}
           />
         ))}
       </div>

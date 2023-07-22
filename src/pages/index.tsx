@@ -1,4 +1,5 @@
 import SEO from "~/components/SEO";
+import ScrollRightSubtitle from "~/components/accessibility/ScrollRightSubtitle";
 import AllProjectsV2 from "~/components/projects/AllProjectsV2";
 import AllTechnologies from "~/components/technologies/AllTechnologies";
 import AllVolunteering from "~/components/volunteering/AllVolunteering";
@@ -39,6 +40,7 @@ export default function Home() {
             <p className="pt-2 opacity-60 md:pt-4">
               Projects I have lead or created myself.
             </p>
+            <ScrollRightSubtitle />
           </div>
           <div className="h-full w-full">
             <AllProjectsV2 />

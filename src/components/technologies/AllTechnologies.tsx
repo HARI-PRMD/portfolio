@@ -3,6 +3,7 @@ import {
   technologiesLangFrameworksData,
   technologiesToolsData,
 } from "~/utils/data";
+import ScrollRightSubtitle from "../accessibility/ScrollRightSubtitle";
 
 const AllTechnologies = () => {
   technologiesLangFrameworksData;
@@ -11,7 +12,8 @@ const AllTechnologies = () => {
   return (
     <div>
       <p className="p-main">Languages and Frameworks</p>
-      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto pt-8">
+      <ScrollRightSubtitle />
+      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto pb-4 pt-8">
         {technologiesLangFrameworksData.map((item, i) => (
           <div
             key={i}
@@ -31,8 +33,8 @@ const AllTechnologies = () => {
         ))}
       </div>
 
-      <p className="p-main pt-8">Tools</p>
-      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto pt-8">
+      <p className="p-main pt-4">Tools</p>
+      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto pb-4 pt-8">
         {technologiesToolsData.map((item, i) => (
           <div
             key={i}

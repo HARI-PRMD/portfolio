@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import ProjectModal from "./ProjectModal";
 import { Transition } from "@headlessui/react";
 
-type Props = ProjectCardDataType;
+type Props = ProjectCardDataType & { isInView?: boolean };
 
 const ProjectCardV2: React.FC<Props> = ({
   title,
@@ -15,6 +15,7 @@ const ProjectCardV2: React.FC<Props> = ({
   websiteLink,
   codeLink,
   image,
+  isInView,
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -29,7 +30,6 @@ const ProjectCardV2: React.FC<Props> = ({
 
   return (
     <>
-      {/* {showModal && ( */}
       <Transition
         show={showModal}
         enter="transition transform duration-300 ease-in-out"
@@ -51,8 +51,11 @@ const ProjectCardV2: React.FC<Props> = ({
           onClose={() => setShowModal(false)}
         />
       </Transition>
-      {/* )} */}
-      <div className="fr h-fit w-full min-w-[16rem] snap-center grayscale transition-colors duration-300 hover:grayscale-0 active:grayscale-0 md:min-w-full md:space-x-8">
+      <div
+        className={`${
+          isInView ? "grayscale-0" : "grayscale"
+        } fr h-fit w-full min-w-[16rem] snap-center transition-all duration-500 ease-out active:grayscale-0 md:min-w-full md:space-x-8 md:grayscale md:duration-300 md:hover:grayscale-0`}
+      >
         <div className="w-full">
           {image ? (
             <ImageHoverMessage

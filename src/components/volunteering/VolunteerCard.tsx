@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { type volunteeringDataType } from "~/types/types";
 
-type Props = volunteeringDataType;
+type Props = volunteeringDataType & { isInView?: boolean };
 
 const VolunteerCard: React.FC<Props> = ({
   image,
@@ -10,9 +10,14 @@ const VolunteerCard: React.FC<Props> = ({
   startTime,
   endTime,
   description,
+  isInView,
 }) => {
   return (
-    <div className="fc h-full w-full min-w-[16rem] snap-x snap-center items-center justify-center border border-white/20 bg-white/5 p-8 grayscale transition-all duration-300 hover:grayscale-0 active:grayscale-0 md:h-fit md:items-start md:justify-start">
+    <div
+      className={`${
+        isInView ? "grayscale-0" : "grayscale"
+      } fc h-full w-full min-w-[16rem] snap-x snap-center items-center justify-center border border-white/20 bg-white/5 p-8 grayscale transition-all duration-500 ease-out md:h-fit md:items-start md:justify-start md:duration-300 md:hover:grayscale-0 md:active:grayscale-0`}
+    >
       <div className="fc md:fr items-center md:space-x-8">
         <Image
           src={image}
