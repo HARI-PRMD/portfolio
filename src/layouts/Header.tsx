@@ -86,11 +86,11 @@ const Header: React.FC = () => {
       <Transition
         show={showList}
         enter="transition duration-300 ease-in-out transform"
-        enterFrom="opacity-0 translate-y-[-20px]"
+        enterFrom="opacity-0 translate-y-[-64px]"
         enterTo="opacity-100 translate-y-0"
-        leave="transition duration-200 ease-in transform"
+        leave="transition duration-300 ease-in transform"
         leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-[-20px]"
+        leaveTo="opacity-0 translate-y-[-64px]"
       >
         <div className="fc w-full space-y-8 pb-2 pt-8 uppercase md:hidden">
           <p

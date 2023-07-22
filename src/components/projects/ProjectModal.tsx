@@ -23,11 +23,11 @@ const ProjectModal: React.FC<Props> = ({
   return (
     <div
       id="background"
-      className="fr fixed left-0 top-0 z-50 h-screen w-screen items-center justify-center bg-black/50 backdrop-blur-sm"
+      className="fr fixed left-0 top-0 z-50 h-full w-screen items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
       onClick={(e) => onClose(e)}
     >
       <div
-        className="fc scroller container h-full overflow-y-auto border border-white/20 bg-black md:h-5/6"
+        className="fc scroller container h-fit overflow-y-auto border border-white/20 bg-black md:h-5/6"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="fr sticky top-0 w-full justify-between border-white/20 bg-black/90 px-8 py-4 backdrop-blur">
@@ -37,7 +37,7 @@ const ProjectModal: React.FC<Props> = ({
             className="h-8 w-8 cursor-pointer text-white md:h-12 md:w-12"
           />
         </div>
-        <div className="w-full space-y-4 p-4 md:p-24">
+        <div className="w-full space-y-4 p-4 md:px-24 md:py-8">
           <div className="fc w-full items-center justify-center">
             {image ? (
               <Image
@@ -45,12 +45,12 @@ const ProjectModal: React.FC<Props> = ({
                 width={2151}
                 height={1227}
                 alt="megalan"
-                className="h-fit w-full object-cover md:w-4/5"
+                className="h-fit w-full object-cover md:w-3/4"
               />
             ) : (
-              <div className="hero-pattern h-48 w-full object-cover md:w-4/5"></div>
+              <div className="hero-pattern h-48 w-full object-cover md:w-3/4"></div>
             )}
-            <p className="subtitle w-full pt-2 text-left opacity-60 md:w-4/5">
+            <p className="subtitle w-full pt-2 text-left opacity-60 md:w-3/4">
               {year ? month + " " + year.toString() : month}
             </p>
           </div>
