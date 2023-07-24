@@ -18,7 +18,6 @@ const ProjectCardV2: React.FC<Props> = ({
   isInView,
 }) => {
   const [showModal, setShowModal] = useState(false);
-
   const handleClick = () => {
     setShowModal(!showModal);
   };
@@ -53,8 +52,9 @@ const ProjectCardV2: React.FC<Props> = ({
       </Transition>
       <div
         className={`${
-          isInView ? "grayscale-0" : "grayscale"
-        } fr h-fit w-full min-w-[16rem] snap-center transition-all duration-500 ease-out active:grayscale-0 md:min-w-full md:space-x-8 md:grayscale md:duration-300 md:hover:grayscale-0`}
+          isInView ? "grayscale-0" : "scale-90 grayscale"
+        } fr h-fit w-full min-w-[16rem] transform snap-center transition-all duration-500 ease-out active:grayscale-0 md:min-w-full md:space-x-8 md:grayscale md:duration-300 md:hover:grayscale-0`}
+        data-aos="fade-up"
       >
         <div className="w-full">
           {image ? (

@@ -13,6 +13,7 @@ export default function Home() {
         <section
           id="main"
           className="md:fr flex h-screen w-full flex-col-reverse p-8 md:space-x-8 md:px-32 md:py-16"
+          data-aos="fade-in"
         >
           <div className="fc bg-rd h-full items-start justify-start pt-8 md:w-3/5 md:justify-center">
             <div className="fc space-y-4 md:space-y-12">

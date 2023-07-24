@@ -14,7 +14,7 @@ const AllVolunteering = () => {
   });
 
   return (
-    <div className="md:fr scroller h-full w-full flex-none overflow-x-auto  md:space-x-8">
+    <div className="md:fr scroller h-full w-full flex-none overflow-x-auto overflow-y-hidden md:space-x-8">
       <div className="fc hidden w-1/2 space-y-8 md:flex">
         {data1.map((v, i) => (
           <VolunteerCard

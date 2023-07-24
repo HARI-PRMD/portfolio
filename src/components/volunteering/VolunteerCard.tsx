@@ -15,8 +15,9 @@ const VolunteerCard: React.FC<Props> = ({
   return (
     <div
       className={`${
-        isInView ? "grayscale-0" : "grayscale"
+        isInView ? "grayscale-0" : "scale-90 grayscale"
       } fc h-full w-full min-w-[16rem] snap-x snap-center items-center justify-center border border-white/20 bg-white/5 p-8 grayscale transition-all duration-500 ease-out md:h-fit md:items-start md:justify-start md:duration-300 md:hover:grayscale-0 md:active:grayscale-0`}
+      data-aos="fade-up"
     >
       <div className="fc md:fr items-center md:space-x-8">
         <Image
