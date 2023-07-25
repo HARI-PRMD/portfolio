@@ -6,7 +6,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { type ProjectCardDataType } from "~/types/types";
-import { useEffect, type MouseEventHandler } from "react";
+import { type MouseEventHandler } from "react";
 import MarkdownParser from "../MarkdownParser";
 
 type Props = ProjectCardDataType & { onClose: MouseEventHandler };

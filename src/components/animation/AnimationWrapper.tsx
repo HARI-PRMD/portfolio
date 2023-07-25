@@ -1,4 +1,3 @@
-import type AOS from "aos";
 import { type AosAnimationType } from "~/types/types";
 
 type Props = {
