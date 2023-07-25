@@ -1,5 +1,5 @@
 import { type AppType } from "next/dist/shared/lib/utils";
-import AOSWrapper from "~/components/AOSWrapper";
+import AOSWrapper from "~/components/animation/AOSWrapper";
 import "~/styles/globals.css";
 
 const MyApp: AppType = ({ Component, pageProps }) => {

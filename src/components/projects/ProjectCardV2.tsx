@@ -4,8 +4,13 @@ import PatternHoverMessage from "../image/PatternHoverMessage";
 import { useEffect, useState } from "react";
 import ProjectModal from "./ProjectModal";
 import { Transition } from "@headlessui/react";
+import AnimationWrapper from "../animation/AnimationWrapper";
 
-type Props = ProjectCardDataType & { isInView?: boolean };
+type Props = ProjectCardDataType & {
+  isInView?: boolean;
+  handleCardHover?: () => void;
+  handleCardHoverLeave?: () => void;
+};
 
 const ProjectCardV2: React.FC<Props> = ({
   title,
@@ -16,6 +21,8 @@ const ProjectCardV2: React.FC<Props> = ({
   codeLink,
   image,
   isInView,
+  handleCardHover,
+  handleCardHoverLeave,
 }) => {
   const [showModal, setShowModal] = useState(false);
   const handleClick = () => {
@@ -25,6 +32,18 @@ const ProjectCardV2: React.FC<Props> = ({
   useEffect(() => {
     if (!showModal) document.body.style.overflow = "unset";
     if (showModal) document.body.style.overflow = "hidden";
+    // Event listener for escape key press
+    const handleEscapeKeyPress = (event: KeyboardEvent) => {
+      if (event.key === "Escape" && showModal) {
+        setShowModal(false);
+      }
+    };
+
+    document.addEventListener("keydown", handleEscapeKeyPress);
+
+    return () => {
+      document.removeEventListener("keydown", handleEscapeKeyPress);
+    };
   }, [showModal]);
 
   return (
@@ -50,31 +69,34 @@ const ProjectCardV2: React.FC<Props> = ({
           onClose={() => setShowModal(false)}
         />
       </Transition>
-      <div
-        className={`${
-          isInView ? "grayscale-0" : "scale-90 grayscale"
-        } fr h-fit w-full min-w-[16rem] transform snap-center transition-all duration-500 ease-out active:grayscale-0 md:min-w-full md:space-x-8 md:grayscale md:duration-300 md:hover:grayscale-0`}
-        data-aos="fade-up"
-      >
-        <div className="w-full">
-          {image ? (
-            <ImageHoverMessage
-              url={image}
-              message="View Details"
-              onClick={() => handleClick()}
-            />
-          ) : (
-            <PatternHoverMessage
-              message="View Details"
-              onClick={() => handleClick()}
-            />
-          )}
-          <p className="p-fixed pt-2">{title}</p>
-          <p className="subtitle py-2 opacity-60">
-            {year ? month + " " + year.toString() : month}
-          </p>
+      <AnimationWrapper animation="fade-up">
+        <div
+          className={`${
+            isInView ? "grayscale-0" : "scale-90 grayscale md:scale-100"
+          } fr h-fit w-full min-w-[16rem] transform snap-center transition-all duration-500 ease-out active:grayscale-0 md:min-w-full md:snap-none md:space-x-8 md:grayscale md:duration-300 md:hover:grayscale-0`}
+          onMouseEnter={handleCardHover}
+          onMouseLeave={handleCardHoverLeave}
+        >
+          <div className="w-full">
+            {image ? (
+              <ImageHoverMessage
+                url={image}
+                message="View Details"
+                onClick={() => handleClick()}
+              />
+            ) : (
+              <PatternHoverMessage
+                message="View Details"
+                onClick={() => handleClick()}
+              />
+            )}
+            <p className="p-fixed pt-2">{title}</p>
+            <p className="subtitle py-2 opacity-60">
+              {year ? month + " " + year.toString() : month}
+            </p>
+          </div>
         </div>
-      </div>
+      </AnimationWrapper>
     </>
   );
 };

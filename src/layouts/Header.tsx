@@ -35,7 +35,10 @@ const Header: React.FC = () => {
   }, []);
 
   return (
-    <div className="fc fixed z-50 h-fit w-full bg-black/90 px-4 py-2 backdrop-blur md:px-16 md:py-4">
+    <div
+      id="header"
+      className="fc fixed z-50 h-fit w-full px-4 py-2 backdrop-blur-sm md:px-16 md:py-4"
+    >
       <div className="fr justify-between">
         <h2
           className="h2 cursor-pointer md:pl-8"

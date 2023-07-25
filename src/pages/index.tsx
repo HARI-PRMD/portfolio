@@ -12,11 +12,13 @@ export default function Home() {
       <Layout>
         <section
           id="main"
-          className="md:fr flex h-screen w-full flex-col-reverse p-8 md:space-x-8 md:px-32 md:py-16"
-          data-aos="fade-in"
+          className="md:fr mt-8 flex h-screen w-full flex-col-reverse p-8 md:space-x-8 md:px-32 md:py-16"
         >
           <div className="fc bg-rd h-full items-start justify-start pt-8 md:w-3/5 md:justify-center">
-            <div className="fc space-y-4 md:space-y-12">
+            <div
+              className="fc space-y-4 md:absolute md:max-w-2xl md:space-y-12 md:bg-black md:p-8"
+              data-aos="fade-up"
+            >
               <h1>Hari Pramod</h1>
               <p className="p-fixed opacity-60">
                 I am a software engineering student excited about the
@@ -28,13 +30,13 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="fc h-full justify-end md:w-2/5 md:items-center md:justify-center">
-            <div className="hero-pattern h-64 w-full object-cover md:h-4/5" />
+          <div className="fc h-full justify-end md:w-4/5 md:items-center md:justify-center">
+            <div className="hero-pattern h-64 w-full bg-fixed object-cover md:h-4/5" />
           </div>
         </section>
         <section
           id="projects"
-          className="min-h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-16"
+          className="min-h-fit w-full space-y-8 px-4 pb-16 pt-64 md:px-32 md:pt-32"
         >
           <div>
             <h2>My Projects</h2>
@@ -43,13 +45,13 @@ export default function Home() {
             </p>
             <ScrollRightSubtitle />
           </div>
-          <div className="h-full w-full">
+          <div className="-z-30 h-full w-full">
             <AllProjectsV2 />
           </div>
         </section>
         <section
           id="technologies"
-          className="min-h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-16"
+          className="min-h-fit w-full space-y-8 px-4 pt-64 md:px-32 md:pb-16 md:pt-32"
         >
           <div>
             <h2>Technologies</h2>
