@@ -41,7 +41,7 @@ const AOSWrapper: React.FC<Props> = ({ children }) => {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, []);
+  }, [prevWindowWidth]);
   return <>{children}</>;
 };
 

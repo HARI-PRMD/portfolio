@@ -36,7 +36,7 @@ export default function Home() {
         </section>
         <section
           id="projects"
-          className="min-h-fit w-full space-y-8 px-4 pb-16 pt-64 md:px-32 md:pt-32"
+          className="min-h-fit w-full space-y-8 px-4 pb-16 pt-32 md:px-32"
         >
           <div>
             <h2>My Projects</h2>
@@ -51,7 +51,7 @@ export default function Home() {
         </section>
         <section
           id="technologies"
-          className="min-h-fit w-full space-y-8 px-4 pt-64 md:px-32 md:pb-16 md:pt-32"
+          className="min-h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-16"
         >
           <div>
             <h2>Technologies</h2>

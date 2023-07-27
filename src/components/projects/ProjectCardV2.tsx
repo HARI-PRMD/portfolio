@@ -74,7 +74,6 @@ const ProjectCardV2: React.FC<Props> = ({
         className={`${
           isInView ? "grayscale-0" : "scale-90 grayscale md:scale-100"
         } fr h-fit w-full min-w-[16rem] snap-center transition-transform duration-500 ease-out active:grayscale-0 md:min-w-full md:snap-none md:space-x-8 md:grayscale md:duration-300 md:hover:grayscale-0`}
-        data-aos="fade-up"
         // onMouseEnter={handleCardHover}
         // onMouseLeave={handleCardHoverLeave}
       >

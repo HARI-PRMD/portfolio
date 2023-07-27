@@ -24,6 +24,7 @@ const Header: React.FC = () => {
       sections.forEach((section) => {
         const { top, bottom } = section.getBoundingClientRect();
         const { id } = section;
+        console.log(top, bottom, id);
         if (top <= 0 && bottom > 0) {
           setActiveSection(id);
         }
