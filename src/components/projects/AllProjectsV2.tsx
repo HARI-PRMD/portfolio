@@ -1,13 +1,12 @@
 import { projectsDataV2 } from "~/utils/data";
 import ProjectCardV2 from "./ProjectCardV2";
-import { useEffect, useState } from "react";
-import { Transition } from "@headlessui/react";
-import Image from "next/image";
+import { useState } from "react";
 
 const AllProjectsV2: React.FC = () => {
   const [cardInViewIndex, setCardInViewIndex] = useState<number>(0);
+  // Background Image on Hover Code, Keeping it here because it may be useful later on
+  /*
   const [showImage, setShowImage] = useState<boolean>(false);
-
   const handleCardHover = (index: number) => {
     setCardInViewIndex(index);
     setShowImage(true);
@@ -15,18 +14,20 @@ const AllProjectsV2: React.FC = () => {
   const handleCardHoverLeave = () => {
     setShowImage(false);
   };
-
   useEffect(() => {
     // checks if projects section is in view and displays background image
     const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-      sections.forEach((section) => {
-        const { top, bottom } = section.getBoundingClientRect();
-        const { id } = section;
-        if (top <= 0 && bottom > 0) {
-          setShowImage(id === "projects" && window.innerWidth < 768);
-        }
-      });
+      // only handle initial automatic image showing on mobile screens
+      if (window.innerWidth < 768) {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => {
+          const { top, bottom } = section.getBoundingClientRect();
+          const { id } = section;
+          if (top <= 0 && bottom > 0) {
+            setShowImage(id === "projects");
+          }
+        });
+      }
     };
 
     document.addEventListener("scroll", handleScroll);
@@ -48,9 +49,10 @@ const AllProjectsV2: React.FC = () => {
       );
     }
   };
+  */
   return (
     <>
-      <Transition
+      {/* <Transition
         show={showImage}
         enter="transition-opacity transform duration-500 ease-in"
         enterFrom="opacity-0"
@@ -61,7 +63,7 @@ const AllProjectsV2: React.FC = () => {
         leaveTo="opacity-0"
       >
         {getBackgroundImage()}
-      </Transition>
+      </Transition> */}
       <div
         className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-8 overflow-x-auto overflow-y-hidden px-24 pb-4 md:snap-none md:grid-flow-row md:grid-cols-3 md:px-0"
         onScroll={(e) => {
@@ -83,8 +85,8 @@ const AllProjectsV2: React.FC = () => {
             codeLink={p.codeLink}
             image={p.image}
             isInView={cardInViewIndex === i}
-            handleCardHover={() => handleCardHover(i)}
-            handleCardHoverLeave={() => handleCardHoverLeave()}
+            //   handleCardHover={() => handleCardHover(i)}
+            //   handleCardHoverLeave={() => handleCardHoverLeave()}
           />
         ))}
       </div>

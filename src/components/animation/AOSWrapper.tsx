@@ -21,6 +21,7 @@ const AOSWrapper: React.FC<Props> = ({ children }) => {
     });
     const handleWindowResize = () => {
       // Check if the window width has crossed the media breakpoint of 768 pixels
+      // and refresh
       if (
         !(
           prevWindowWidth === 0 ||
@@ -40,7 +41,7 @@ const AOSWrapper: React.FC<Props> = ({ children }) => {
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
-  }, [prevWindowWidth]);
+  }, []);
   return <>{children}</>;
 };
 
