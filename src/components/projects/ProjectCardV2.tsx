@@ -72,8 +72,8 @@ const ProjectCardV2: React.FC<Props> = ({
       </Transition>
       <div
         className={`${
-          isInView ? "grayscale-0" : "scale-90 grayscale md:scale-100"
-        } fr h-fit w-full min-w-[16rem] snap-center transition-transform duration-500 ease-out active:grayscale-0 md:min-w-full md:snap-none md:space-x-8 md:grayscale md:duration-300 md:hover:grayscale-0`}
+          isInView ? "scale-100 grayscale-0" : "scale-90 grayscale md:scale-100"
+        } fr h-fit w-64 min-w-[16rem] transform snap-center transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-full md:snap-none md:space-x-8 md:grayscale md:hover:grayscale-0`}
         // onMouseEnter={handleCardHover}
         // onMouseLeave={handleCardHoverLeave}
       >

@@ -5,6 +5,14 @@ import { type Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    screens: {
+        'xs': '320px',     // iPhone SE breakpoint
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+    },
     fontFamily: {
       heading: ["Playfair Display"],
       body: ["Source Sans 3"],
@@ -12,7 +20,7 @@ export default {
     extend: {
       boxShadow: {
         default: "2px 4px 32px rgba(255, 255, 255, 0.4)",
-        "white-solid": "8px 8px 0px #FFFFFF",
+        solid: "8px 8px 0px #FFFFFF",
         "black-solid": "8px 8px 0px #000000",
       },
       backgroundImage: {

@@ -2,6 +2,8 @@ import {
   type ProjectCardDataType,
   type AllProjects,
   type volunteeringDataType,
+  type CourseAchievementCardDataType,
+  type CompetitionCardDataType,
 } from "~/types/types";
 
 export const volunteeringData: volunteeringDataType[] = [
@@ -295,5 +297,40 @@ export const projectsDataV2: ProjectCardDataType[] = [
     codeLink: "https://github.com/csesoc/trainee-3-22t3",
     image:
       "https://media.discordapp.net/attachments/1092987636035092662/1125060877054390302/monospace_font_pic.png",
+  },
+];
+
+export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
+  {
+    course: "Requirements and Design Workshop (SENG2021)",
+    description:
+      "Developed e-invoice management website using the T3 stack and an ExpressJS backend API for invoice validation and rendering in a team.",
+    year: 2023,
+    grade: 81,
+  },
+  {
+    course: "Backend Development (COMP1531)",
+    description:
+      "Developed an ExpressJS Backend written in Typescript for a Microsoft Teams clone in a team of 5.",
+    year: 2022,
+    grade: 85,
+  },
+];
+
+export const CompetitionCardData: CompetitionCardDataType[] = [
+  {
+    title: "Tied 1st place, and Won Raffle in CTF Competition",
+    description:
+      "Tied with 1st place in points achieved and flags captured, in an individuals CTF competition and won prizes in the raffle afterwards.",
+    issuedBy: "UNSW Security Society (SecSoc)",
+    year: 2023,
+  },
+  {
+    title: "Placed Top 10 in Beginner CTF ",
+    description:
+      "Placed 7th among 40+ teams in the Security Society & Computer Science Engineering Society Beginners Capture the Flag Competition.",
+    issuedBy:
+      "UNSW Security Society (SecSoc) & UNSW Computer Science Engineering Society (CSESoc)",
+    year: 2022,
   },
 ];

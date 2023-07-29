@@ -21,6 +21,20 @@ export type volunteeringDataType = {
   description?: string;
 };
 
+export type CourseAchievementCardDataType = {
+  course: string;
+  grade: number;
+  description: string;
+  year: number;
+};
+
+export type CompetitionCardDataType = {
+  issuedBy: string;
+  title: string;
+  description: string;
+  year: number;
+};
+
 export type AosAnimationType =
   | "fade"
   | "fade-up"

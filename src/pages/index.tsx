@@ -4,6 +4,9 @@ import AllProjectsV2 from "~/components/projects/AllProjectsV2";
 import AllTechnologies from "~/components/technologies/AllTechnologies";
 import AllVolunteering from "~/components/volunteering/AllVolunteering";
 import Layout from "~/layouts/Layout";
+import Image from "next/image";
+import AllCourseAchievements from "~/components/Education/AllCourseAchievements";
+import AllCompetitions from "~/components/Education/AllCompetitions";
 
 export default function Home() {
   return (
@@ -32,6 +35,51 @@ export default function Home() {
           </div>
           <div className="fc h-full justify-end md:w-4/5 md:items-center md:justify-center">
             <div className="hero-pattern h-64 w-full bg-fixed object-cover md:h-4/5" />
+          </div>
+        </section>
+        <section
+          id="education"
+          className="min-h-fit w-full space-y-8 px-4 pb-16 pt-32 md:px-32"
+        >
+          <div>
+            <h2>Education</h2>
+            <p className="pt-2 opacity-60 md:pt-4">
+              Where I&apos;ve Studied, and my achievements there.
+            </p>
+          </div>
+          <div className="space-y-16">
+            <div data-aos="fade-up">
+              <div className="fc md:fr group items-center border border-white/20 bg-white/5 p-8 md:space-x-8">
+                <Image
+                  alt="unsw"
+                  src="https://media.discordapp.net/attachments/1092987636035092662/1134773322610130984/university-of-new-south-wales-logo-png-transparent-background1.png"
+                  width={500}
+                  height={500}
+                  className="h-24 w-24 transform object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
+                />
+                <div className="pt-4 md:pt-0">
+                  <p className="p-main">
+                    Bachelors of Engineering (Honours) (Software)
+                  </p>
+                  <p className="opacity-60">University of New South Wales</p>
+                  <p className="subtitle opacity-60">2022 - 2026</p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className="pb-8">
+                <p className="p-main">Course Achievements</p>
+                <ScrollRightSubtitle />
+              </div>
+              <AllCourseAchievements />
+            </div>
+            <div>
+              <div className="pb-8">
+                <p className="p-main">Competitions</p>
+                <ScrollRightSubtitle />
+              </div>
+              <AllCompetitions />
+            </div>
           </div>
         </section>
         <section
