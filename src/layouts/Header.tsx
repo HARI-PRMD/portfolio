@@ -49,7 +49,7 @@ const Header: React.FC = () => {
         </h2>
         <div className="md:fr hidden w-full max-w-4xl justify-evenly pt-4 uppercase">
           <p
-            onClick={() => handleHeadingClick("projects")}
+            onClick={() => handleHeadingClick("education")}
             className={`group cursor-pointer  text-xl transition duration-300 hover:opacity-100 ${
               activeSection === "education" ? "opacity-100" : "opacity-60"
             }`}
