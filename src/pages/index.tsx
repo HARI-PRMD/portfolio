@@ -121,6 +121,7 @@ export default function Home() {
               Clubs and Society positions I have been a part of during my
               degree.
             </p>
+            <ScrollRightSubtitle />
           </div>
           <div className="h-full">
             <AllVolunteering />
