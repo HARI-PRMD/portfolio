@@ -59,7 +59,7 @@ export default function Home() {
                 />
                 <div className="pt-4 md:pt-0">
                   <p className="p-main">
-                    Bachelors of Engineering (Honours) (Software)
+                    Bachelor of Engineering (Honours) (Software)
                   </p>
                   <p className="opacity-60">University of New South Wales</p>
                   <p className="subtitle opacity-60">2022 - 2026</p>
