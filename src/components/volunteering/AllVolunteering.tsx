@@ -42,7 +42,7 @@ const AllVolunteering = () => {
         ))}
       </div>
       <div
-        className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-8 overflow-x-auto px-16 pb-4 md:hidden"
+        className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-2 overflow-x-auto px-16 pb-4 md:hidden"
         onScroll={(e) => {
           const element = e.target as HTMLElement;
           const scrollLeft = element.scrollLeft;

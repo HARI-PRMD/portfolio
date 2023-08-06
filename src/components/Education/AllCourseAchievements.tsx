@@ -6,7 +6,7 @@ const AllCourseAchievements = () => {
   const [snappedIndex, setSnappedIndex] = useState<number>(0);
   return (
     <div
-      className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-8 overflow-x-auto overflow-y-hidden px-16 pb-4 md:grid-flow-row md:grid-cols-2 md:px-0"
+      className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-2 overflow-x-auto overflow-y-hidden px-16 pb-4 md:grid-flow-row md:grid-cols-2 md:gap-8 md:px-0"
       onScroll={(e) => {
         const element = e.target as HTMLElement;
         const scrollLeft = element.scrollLeft;
