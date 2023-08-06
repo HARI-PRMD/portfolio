@@ -13,7 +13,8 @@ const ImageHoverMessage: React.FC<Props> = ({ url, message, onClick }) => {
     <div className="flex items-center justify-center overflow-hidden ">
       <div
         className="relative aspect-video h-fit w-full cursor-pointer bg-cover transition-all duration-500 ease-in-out hover:scale-110"
-        style={{ backgroundImage: `url(${url})` }}
+        // loading lower resolution because this takes a lot of time to load
+        style={{ backgroundImage: `url(${url + "?width=960&height=540"})` }}
         onClick={handleClick}
       >
         <div className="fc absolute h-full w-full items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100">
