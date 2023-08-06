@@ -6,16 +6,16 @@ export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-        'xs': '320px',     // iPhone SE breakpoint
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
+      xs: "320px", // iPhone SE breakpoint
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
     },
     fontFamily: {
-      heading: ["Playfair Display"],
-      body: ["Source Sans 3"],
+      heading: ["var(--font-Playfair-Display)"],
+      body: ["var(--font-Source-Sans-3)"],
     },
     extend: {
       boxShadow: {

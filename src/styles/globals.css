@@ -1,8 +1,3 @@
-/* Header Font: Playfair Display */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-/* Body Font: Source Sans 3 */
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
