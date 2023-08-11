@@ -18,7 +18,7 @@ const ProjectCard: React.FC<Props> = ({
   image,
 }) => {
   return (
-    <div className="fr h-fit w-full grayscale transition-all duration-300 hover:grayscale-0 active:grayscale-0 md:space-x-8">
+    <div className="flex h-fit w-full flex-row grayscale transition-all duration-300 hover:grayscale-0 active:grayscale-0 md:space-x-8">
       <p className="hidden w-1/6 md:block">{month}</p>
       <div className="w-full space-y-4 md:w-5/6 md:space-y-8">
         <h3>{title}</h3>
@@ -33,10 +33,10 @@ const ProjectCard: React.FC<Props> = ({
           />
         )}
         <p>{description}</p>
-        <div className="fc md:fr w-full space-y-4 md:space-x-8 md:space-y-0">
+        <div className="flex w-full flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
           {websiteLink && (
             <Link href={websiteLink}>
-              <div className="fr w-full items-center justify-center space-x-4 border-2 px-8 py-2 md:w-fit">
+              <div className="flex w-full flex-row items-center justify-center space-x-4 border-2 px-8 py-2 md:w-fit">
                 <p>Website</p>
                 <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
               </div>
@@ -44,7 +44,7 @@ const ProjectCard: React.FC<Props> = ({
           )}
           {codeLink && (
             <Link href={codeLink}>
-              <div className="fr w-full items-center justify-center space-x-4 border-2 px-8 py-2 md:w-fit">
+              <div className="flex w-full flex-row items-center justify-center space-x-4 border-2 px-8 py-2 md:w-fit">
                 <p>Code</p>
                 <CodeBracketIcon className="h-6 w-6 text-white" />
               </div>

@@ -19,7 +19,7 @@ const VolunteerCard: React.FC<Props> = ({
       } fc h-full w-64 min-w-[16rem] transform snap-x snap-center items-center justify-center border border-white/20 bg-white/5 p-8 grayscale transition-all duration-300 ease-in-out xs:w-72 md:h-fit md:w-full md:items-start md:justify-start md:hover:grayscale-0 md:active:grayscale-0`}
       data-aos="fade-up"
     >
-      <div className="fc md:fr items-center md:space-x-8">
+      <div className="flex flex-col items-center md:flex-row md:space-x-8">
         <Image
           src={image}
           alt="society"

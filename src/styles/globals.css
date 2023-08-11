@@ -27,10 +27,6 @@
     .p-fixed {
         @apply font-body text-2xl z-10;
     }
-
-    .fr {
-        @apply flex flex-row 
-    }
     
     .fc {
         @apply flex flex-col

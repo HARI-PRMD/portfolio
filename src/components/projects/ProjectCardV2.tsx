@@ -73,7 +73,7 @@ const ProjectCardV2: React.FC<Props> = ({
       <div
         className={`${
           isInView ? "scale-100 grayscale-0" : "scale-90 grayscale md:scale-100"
-        } fr h-fit w-64 min-w-[16rem] transform snap-center transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-full md:snap-none md:space-x-8 md:grayscale md:hover:grayscale-0`}
+        } flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-full md:snap-none md:space-x-8 md:grayscale md:hover:grayscale-0`}
         // onMouseEnter={handleCardHover}
         // onMouseLeave={handleCardHoverLeave}
       >

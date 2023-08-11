@@ -44,8 +44,8 @@ const AllProjects: React.FC = () => {
     }
   };
   return (
-    <div className="fc md:fr z-0 h-full w-full">
-      <div className="fr md:fc space-x-16 py-8 pl-16 md:space-x-0 md:space-y-8 md:py-16">
+    <div className="z-0 flex h-full w-full flex-col md:flex-row">
+      <div className="flex flex-row space-x-16 py-8 pl-16 md:flex-col md:space-x-0 md:space-y-8 md:py-16">
         <button
           className={`p-main ${
             activeYear === 0 ? "text-white" : "text-white/40"

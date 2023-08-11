@@ -40,14 +40,14 @@ const Header: React.FC = () => {
       id="header"
       className="fc fixed z-50 h-fit w-full bg-black/80 px-4 py-2 backdrop-blur-sm md:px-16 md:py-4"
     >
-      <div className="fr justify-between">
+      <div className="flex flex-row justify-between">
         <h2
           className="h2 cursor-pointer md:pl-8"
           onClick={() => handleHeadingClick("main")}
         >
           HP
         </h2>
-        <div className="md:fr hidden w-full max-w-4xl justify-evenly pt-4 uppercase">
+        <div className="hidden w-full max-w-4xl flex-row justify-evenly pt-4 uppercase md:flex">
           <p
             onClick={() => handleHeadingClick("education")}
             className={`group cursor-pointer  text-xl transition duration-300 hover:opacity-100 ${

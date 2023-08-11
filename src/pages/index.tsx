@@ -15,7 +15,7 @@ export default function Home() {
       <Layout>
         <section
           id="main"
-          className="md:fr mt-8 flex h-screen w-full flex-col-reverse p-8 md:space-x-8 md:px-32 md:py-16"
+          className="mt-8 flex h-screen w-full flex-col-reverse p-8 md:flex-row md:space-x-8 md:px-32 md:py-16"
         >
           <div className="fc bg-rd h-full items-start justify-start pt-8 md:w-3/5 md:justify-center">
             <div
@@ -49,7 +49,7 @@ export default function Home() {
           </div>
           <div className="space-y-16">
             <div data-aos="fade-up">
-              <div className="fc md:fr group items-center border border-white/20 bg-white/5 p-8 md:space-x-8">
+              <div className="group flex flex-col items-center border border-white/20 bg-white/5 p-8 md:flex-row md:space-x-8">
                 <Image
                   alt="unsw"
                   src="https://media.discordapp.net/attachments/1092987636035092662/1134773322610130984/university-of-new-south-wales-logo-png-transparent-background1.png"

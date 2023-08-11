@@ -23,14 +23,14 @@ const ProjectModal: React.FC<Props> = ({
   return (
     <div
       id="background"
-      className="fr fixed left-0 top-0 z-50 h-full w-screen items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
+      className="fixed left-0 top-0 z-50 flex h-full w-screen flex-row items-center justify-center bg-black/50 p-4 backdrop-blur-sm"
       onClick={(e) => onClose(e)}
     >
       <div
         className="fc scroller container h-fit overflow-y-auto border border-white/20 bg-black md:h-5/6"
         onClick={(e) => e.stopPropagation()}
       >
-        <div className="fr sticky top-0 w-full justify-between border-white/20 bg-black/90 px-8 py-4 backdrop-blur">
+        <div className="sticky top-0 flex w-full flex-row justify-between border-white/20 bg-black/90 px-8 py-4 backdrop-blur">
           <h3>{title}</h3>
           <XMarkIcon
             onClick={onClose}
@@ -55,10 +55,10 @@ const ProjectModal: React.FC<Props> = ({
             </p>
           </div>
           <MarkdownParser markdownString={description} />
-          <div className="fc md:fr w-full space-y-4 md:space-x-8 md:space-y-0">
+          <div className="flex w-full flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
             {websiteLink && (
               <Link href={websiteLink} target="_blank">
-                <div className="fr w-full items-center justify-center space-x-4 border border-white/20 bg-white/5 px-8 py-2 transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit">
+                <div className="flex w-full flex-row items-center justify-center space-x-4 border border-white/20 bg-white/5 px-8 py-2 transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit">
                   <p>Website</p>
                   <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
                 </div>
@@ -66,7 +66,7 @@ const ProjectModal: React.FC<Props> = ({
             )}
             {codeLink && (
               <Link href={codeLink} target="_blank">
-                <div className="fr w-full items-center justify-center space-x-4 border border-white/20 bg-white/5 px-8 py-2 transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit">
+                <div className="flex w-full flex-row items-center justify-center space-x-4 border border-white/20 bg-white/5 px-8 py-2 transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit">
                   <p>Code</p>
                   <CodeBracketIcon className="h-6 w-6 text-white" />
                 </div>
