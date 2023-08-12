@@ -27,7 +27,10 @@ const ProjectModal: React.FC<Props> = ({
 }) => {
   return (
     <Transition show={isOpen} as={Fragment}>
-      <Dialog onClose={onClose} className="text-white">
+      <Dialog
+        onClose={onClose}
+        className="text-white focus-visible:outline-none"
+      >
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
@@ -78,7 +81,11 @@ const ProjectModal: React.FC<Props> = ({
                 <MarkdownParser markdownString={description} />
                 <div className="flex w-full flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
                   {websiteLink && (
-                    <Link href={websiteLink} target="_blank">
+                    <Link
+                      href={websiteLink}
+                      target="_blank"
+                      className="focus-visible:outline-none"
+                    >
                       <div className="flex w-full flex-row items-center justify-center space-x-4 border border-white/20 bg-white/5 px-8 py-2 transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit">
                         <p>Website</p>
                         <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
@@ -86,7 +93,11 @@ const ProjectModal: React.FC<Props> = ({
                     </Link>
                   )}
                   {codeLink && (
-                    <Link href={codeLink} target="_blank">
+                    <Link
+                      href={codeLink}
+                      target="_blank"
+                      className="focus-visible:outline-none"
+                    >
                       <div className="flex w-full flex-row items-center justify-center space-x-4 border border-white/20 bg-white/5 px-8 py-2 transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit">
                         <p>Code</p>
                         <CodeBracketIcon className="h-6 w-6 text-white" />
