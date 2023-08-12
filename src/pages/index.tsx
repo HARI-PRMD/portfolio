@@ -22,7 +22,7 @@ export default function Home() {
               className="flex flex-col space-y-4 md:absolute md:max-w-2xl md:space-y-12 md:bg-black md:p-8"
               data-aos="fade-up"
             >
-              <h1>Hari Pramod</h1>
+              <h1 className="title">Hari Pramod</h1>
               <p className="p-fixed opacity-60">
                 I am a software engineering student excited about the
                 opportunity to apply my skills and knowledge to real-world
@@ -42,7 +42,7 @@ export default function Home() {
           className="min-h-fit w-full space-y-8 px-4 pb-16 pt-32 md:px-32"
         >
           <div>
-            <h2>Education</h2>
+            <h2 className="heading1">Education</h2>
             <p className="pt-2 opacity-60 md:pt-4">
               Where I&apos;ve Studied, and my achievements there.
             </p>
@@ -87,7 +87,7 @@ export default function Home() {
           className="min-h-fit w-full space-y-8 px-4 pb-16 pt-32 md:px-32"
         >
           <div>
-            <h2>My Projects</h2>
+            <h2 className="heading1">My Projects</h2>
             <p className="pt-2 opacity-60 md:pt-4">
               Projects I have lead or created myself.
             </p>
@@ -102,7 +102,7 @@ export default function Home() {
           className="min-h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-16"
         >
           <div>
-            <h2>Technologies</h2>
+            <h2 className="heading1">Technologies</h2>
             <p className="pt-2 opacity-60 md:pt-4">
               Languages, Frameworks and tools I have worked with.
             </p>
@@ -116,7 +116,7 @@ export default function Home() {
           className="min-h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-16"
         >
           <div>
-            <h2>Volunteering</h2>
+            <h2 className="heading1">Volunteering</h2>
             <p className="pt-2 opacity-60 md:pt-4">
               Clubs and Society positions I have been a part of during my
               degree.

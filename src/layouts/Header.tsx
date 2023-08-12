@@ -42,7 +42,7 @@ const Header: React.FC = () => {
     >
       <div className="flex flex-row justify-between">
         <h2
-          className="h2 cursor-pointer md:pl-8"
+          className="heading1 cursor-pointer md:pl-8"
           onClick={() => handleHeadingClick("main")}
         >
           HP

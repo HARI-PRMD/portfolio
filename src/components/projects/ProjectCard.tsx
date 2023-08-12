@@ -21,7 +21,7 @@ const ProjectCard: React.FC<Props> = ({
     <div className="flex h-fit w-full flex-row grayscale transition-all duration-300 hover:grayscale-0 active:grayscale-0 md:space-x-8">
       <p className="hidden w-1/6 md:block">{month}</p>
       <div className="w-full space-y-4 md:w-5/6 md:space-y-8">
-        <h3>{title}</h3>
+        <h3 className="heading2">{title}</h3>
         <p className="md:hidden">{month}</p>
         {image && (
           <Image
