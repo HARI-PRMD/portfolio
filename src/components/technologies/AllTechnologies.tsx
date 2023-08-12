@@ -17,7 +17,7 @@ const AllTechnologies = () => {
         {technologiesLangFrameworksData.map((item, i) => (
           <div
             key={i}
-            className="fc group h-full w-16 items-center justify-center md:w-24"
+            className="group flex h-full w-16 flex-col items-center justify-center md:w-24"
             data-aos="fade-up"
           >
             <Image
@@ -39,7 +39,7 @@ const AllTechnologies = () => {
         {technologiesToolsData.map((item, i) => (
           <div
             key={i}
-            className="fc group h-full w-16 items-center justify-center md:w-24"
+            className="group flex h-full w-16 flex-col items-center justify-center md:w-24"
             data-aos="fade-up"
           >
             <Image

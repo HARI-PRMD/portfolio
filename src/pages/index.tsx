@@ -17,9 +17,9 @@ export default function Home() {
           id="main"
           className="mt-8 flex h-screen w-full flex-col-reverse p-8 md:flex-row md:space-x-8 md:px-32 md:py-16"
         >
-          <div className="fc bg-rd h-full items-start justify-start pt-8 md:w-3/5 md:justify-center">
+          <div className="bg-rd flex h-full flex-col items-start justify-start pt-8 md:w-3/5 md:justify-center">
             <div
-              className="fc space-y-4 md:absolute md:max-w-2xl md:space-y-12 md:bg-black md:p-8"
+              className="flex flex-col space-y-4 md:absolute md:max-w-2xl md:space-y-12 md:bg-black md:p-8"
               data-aos="fade-up"
             >
               <h1>Hari Pramod</h1>
@@ -33,7 +33,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <div className="fc h-full justify-end md:w-4/5 md:items-center md:justify-center">
+          <div className="flex h-full flex-col justify-end md:w-4/5 md:items-center md:justify-center">
             <div className="hero-pattern h-64 w-full bg-fixed object-cover md:h-4/5" />
           </div>
         </section>

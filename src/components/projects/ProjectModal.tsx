@@ -27,7 +27,7 @@ const ProjectModal: React.FC<Props> = ({
       onClick={(e) => onClose(e)}
     >
       <div
-        className="fc scroller container h-fit overflow-y-auto border border-white/20 bg-black md:h-5/6"
+        className="scroller container flex h-fit flex-col overflow-y-auto border border-white/20 bg-black md:h-5/6"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="sticky top-0 flex w-full flex-row justify-between border-white/20 bg-black/90 px-8 py-4 backdrop-blur">
@@ -38,7 +38,7 @@ const ProjectModal: React.FC<Props> = ({
           />
         </div>
         <div className="w-full space-y-4 p-4 md:px-24 md:py-8">
-          <div className="fc w-full items-center justify-center">
+          <div className="flex w-full flex-col items-center justify-center">
             {image ? (
               <Image
                 src={image}

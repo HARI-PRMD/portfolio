@@ -38,7 +38,7 @@ const Header: React.FC = () => {
   return (
     <div
       id="header"
-      className="fc fixed z-50 h-fit w-full bg-black/80 px-4 py-2 backdrop-blur-sm md:px-16 md:py-4"
+      className="fixed z-50 flex h-fit w-full flex-col bg-black/80 px-4 py-2 backdrop-blur-sm md:px-16 md:py-4"
     >
       <div className="flex flex-row justify-between">
         <h2
@@ -105,7 +105,7 @@ const Header: React.FC = () => {
         leaveFrom="opacity-100 translate-y-0"
         leaveTo="opacity-0 translate-y-[-64px]"
       >
-        <div className="fc w-full space-y-8 pb-2 pt-8 uppercase md:hidden">
+        <div className="flex w-full flex-col space-y-8 pb-2 pt-8 uppercase md:hidden">
           <p
             onClick={() => handleHeadingClick("education")}
             className="cursor-pointer"

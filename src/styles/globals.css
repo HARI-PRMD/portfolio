@@ -27,10 +27,6 @@
     .p-fixed {
         @apply font-body text-2xl z-10;
     }
-    
-    .fc {
-        @apply flex flex-col
-    }
 
     .scroller {
         @apply scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white scrollbar-thumb-rounded-xl
