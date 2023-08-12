@@ -67,7 +67,7 @@ const Header: React.FC = () => {
           ))}
         </div>
         <button className="para2 hidden h-fit cursor-not-allowed bg-white px-8 py-4 uppercase text-black md:block">
-          resume (soon)
+          resume
         </button>
       </div>{" "}
       <div className="uppercase md:hidden ">
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
                   ))}
                   <Menu.Item disabled>
                     <button className="para1 h-fit w-full cursor-pointer bg-white/40 px-8 py-4 text-black">
-                      resume (coming soon)
+                      resume
                     </button>
                   </Menu.Item>
                 </Menu.Items>
