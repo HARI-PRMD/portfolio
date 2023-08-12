@@ -41,12 +41,12 @@ const Header: React.FC = () => {
       className="fixed z-50 flex h-fit w-full flex-col bg-black/80 px-4 py-2 backdrop-blur-sm md:px-16 md:py-4"
     >
       <div className="flex flex-row justify-between">
-        <h2
+        <h1
           className="heading1 cursor-pointer md:pl-8"
           onClick={() => handleHeadingClick("main")}
         >
           HP
-        </h2>
+        </h1>
         <div className="hidden w-full max-w-4xl flex-row justify-evenly pt-4 uppercase md:flex">
           <p
             onClick={() => handleHeadingClick("education")}
@@ -85,7 +85,7 @@ const Header: React.FC = () => {
             <span className="mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100"></span>
           </p>
         </div>
-        <button className="para3 hidden h-fit bg-white px-8 py-4 uppercase text-black md:block">
+        <button className="para1 hidden h-fit bg-white px-8 py-4 uppercase text-black md:block">
           resume
         </button>
         <button className="md:hidden" onClick={() => setShowList(!showList)}>
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
           >
             volunteering
           </p>
-          <button className="para3 h-fit w-full cursor-pointer bg-white px-8 py-4 text-black">
+          <button className="para1 h-fit w-full cursor-pointer bg-white px-8 py-4 text-black">
             resume
           </button>
         </div>

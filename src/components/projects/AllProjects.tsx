@@ -47,7 +47,7 @@ const AllProjects: React.FC = () => {
     <div className="z-0 flex h-full w-full flex-col md:flex-row">
       <div className="flex flex-row space-x-16 py-8 pl-16 md:flex-col md:space-x-0 md:space-y-8 md:py-16">
         <button
-          className={`para1 ${
+          className={`heading3 ${
             activeYear === 0 ? "text-white" : "text-white/40"
           }`}
           onClick={() => scrollToYear(0)}
@@ -55,7 +55,7 @@ const AllProjects: React.FC = () => {
           2023
         </button>
         <button
-          className={`para1 ${
+          className={`heading3 ${
             activeYear === 1 ? "text-white" : "text-white/40"
           }`}
           onClick={() => scrollToYear(1)}

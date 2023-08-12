@@ -22,7 +22,7 @@ const CourseAchievementCard: React.FC<Props> = ({ data, isInView }) => {
       } flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none`}
       data-aos="fade-up"
     >
-      <p className="para2">{data.course}</p>
+      <h3 className="heading3">{data.course}</h3>
       {getGradeDescription(data.grade) !== "" && (
         <p className="subtitle opacity-60">{getGradeDescription(data.grade)}</p>
       )}

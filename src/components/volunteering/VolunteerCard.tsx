@@ -23,12 +23,12 @@ const VolunteerCard: React.FC<Props> = ({
         <Image
           src={image}
           alt="society"
-          width={500}
-          height={500}
+          width={250}
+          height={250}
           className="mb-8 h-24 w-24 object-scale-down md:mb-0"
         />
         <div className="flex w-full flex-col">
-          <p className="para2">{title}</p>
+          <h3 className="heading3">{title}</h3>
           <p className="subtitle pt-2">{society}</p>
           <p className="subtitle opacity-60">{startTime + " - " + endTime}</p>
           {description && (

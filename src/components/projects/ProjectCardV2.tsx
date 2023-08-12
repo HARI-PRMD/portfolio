@@ -90,7 +90,7 @@ const ProjectCardV2: React.FC<Props> = ({
               onClick={() => handleClick()}
             />
           )}
-          <p className="para2 pt-2">{title}</p>
+          <h3 className="heading3 pt-2">{title}</h3>
           <p className="subtitle py-2 opacity-60">
             {year ? month + " " + year.toString() : month}
           </p>

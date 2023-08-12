@@ -31,7 +31,7 @@ const ProjectModal: React.FC<Props> = ({
         onClick={(e) => e.stopPropagation()}
       >
         <div className="sticky top-0 flex w-full flex-row justify-between border-white/20 bg-black/90 px-8 py-4 backdrop-blur">
-          <h3 className="heading2">{title}</h3>
+          <h2 className="heading2">{title}</h2>
           <XMarkIcon
             onClick={onClose}
             className="h-8 w-8 cursor-pointer text-white md:h-12 md:w-12"
