@@ -9,7 +9,6 @@ const Header: React.FC = () => {
   // scrolls user to section on click
   const handleHeadingClick = (sectionId: string) => {
     const section: HTMLElement | null = document.getElementById(sectionId);
-    // if (section) section.scrollIntoView({ behavior: "smooth" });
     if (section) {
       const scrollPosition =
         section.getBoundingClientRect().top + window.scrollY + 1;

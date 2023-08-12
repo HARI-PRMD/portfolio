@@ -1,12 +1,12 @@
 import SEO from "~/components/SEO";
 import ScrollRightSubtitle from "~/components/accessibility/ScrollRightSubtitle";
-import AllProjectsV2 from "~/components/projects/AllProjectsV2";
 import AllTechnologies from "~/components/technologies/AllTechnologies";
 import AllVolunteering from "~/components/volunteering/AllVolunteering";
 import Layout from "~/layouts/Layout";
 import Image from "next/image";
 import AllCourseAchievements from "~/components/Education/AllCourseAchievements";
 import AllCompetitions from "~/components/Education/AllCompetitions";
+import AllProjects from "~/components/projects/AllProjects";
 
 export default function Home() {
   return (
@@ -96,7 +96,7 @@ export default function Home() {
             <ScrollRightSubtitle />
           </div>
           <div className="-z-30 h-full w-full">
-            <AllProjectsV2 />
+            <AllProjects />
           </div>
         </section>
         <section

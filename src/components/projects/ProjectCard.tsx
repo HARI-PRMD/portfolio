@@ -1,67 +1,68 @@
-import Link from "next/link";
-import Image from "next/image";
-
-import {
-  ArrowTopRightOnSquareIcon,
-  CodeBracketIcon,
-} from "@heroicons/react/24/outline";
 import { type ProjectCardDataType } from "~/types/types";
+import ImageHoverMessage from "../image/ImageHoverMessage";
+import PatternHoverMessage from "../image/PatternHoverMessage";
+import { useState } from "react";
+import ProjectModal from "./ProjectModal";
 
-type Props = ProjectCardDataType;
+type Props = ProjectCardDataType & {
+  isInView?: boolean;
+};
 
 const ProjectCard: React.FC<Props> = ({
   title,
   description,
   month,
+  year,
   websiteLink,
   codeLink,
   image,
+  isInView,
 }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  // toggle modal visibility
+  const handleClick = () => {
+    setShowModal(!showModal);
+  };
+
   return (
-    <div className="flex h-fit w-full flex-row grayscale transition-all duration-300 hover:grayscale-0 active:grayscale-0 md:space-x-8">
-      <p className="para1 hidden w-1/6 md:block">{month}</p>
-      <div className="w-full space-y-4 md:w-5/6 md:space-y-8">
-        <h2 className="heading2">{title}</h2>
-        <p className="para1 md:hidden">{month}</p>
-        {image && (
-          <Image
-            src={image}
-            width={2151}
-            height={1227}
-            alt="project-pic"
-            className="block h-fit w-96 object-cover 2xl:hidden"
-          />
-        )}
-        <p>{description}</p>
-        <div className="flex w-full flex-col space-y-4 md:flex-row md:space-x-8 md:space-y-0">
-          {websiteLink && (
-            <Link href={websiteLink}>
-              <div className="flex w-full flex-row items-center justify-center space-x-4 border-2 px-8 py-2 md:w-fit">
-                <p>Website</p>
-                <ArrowTopRightOnSquareIcon className="h-6 w-6 text-white" />
-              </div>
-            </Link>
+    <>
+      <ProjectModal
+        title={title}
+        description={description}
+        month={month}
+        year={year}
+        codeLink={codeLink}
+        websiteLink={websiteLink}
+        image={image}
+        onClose={() => setShowModal(false)}
+        isOpen={showModal}
+      />
+      <div
+        className={`${
+          isInView ? "scale-100 grayscale-0" : "scale-90 grayscale md:scale-100"
+        } flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-full md:snap-none md:space-x-8 md:grayscale md:hover:grayscale-0`}
+      >
+        <div className="w-full">
+          {image ? (
+            <ImageHoverMessage
+              url={image}
+              message="View Details"
+              onClick={() => handleClick()}
+            />
+          ) : (
+            <PatternHoverMessage
+              message="View Details"
+              onClick={() => handleClick()}
+            />
           )}
-          {codeLink && (
-            <Link href={codeLink}>
-              <div className="flex w-full flex-row items-center justify-center space-x-4 border-2 px-8 py-2 md:w-fit">
-                <p>Code</p>
-                <CodeBracketIcon className="h-6 w-6 text-white" />
-              </div>
-            </Link>
-          )}
+          <h3 className="heading3 pt-2">{title}</h3>
+          <p className="subtitle py-2 opacity-60">
+            {year ? month + " " + year.toString() : month}
+          </p>
         </div>
       </div>
-      {image && (
-        <Image
-          src={image}
-          width={2151}
-          height={1227}
-          alt="megalan"
-          className="hidden h-96 w-full object-cover 2xl:block"
-        />
-      )}
-    </div>
+    </>
   );
 };
 export default ProjectCard;
