@@ -23,10 +23,12 @@ const CourseAchievementCard: React.FC<Props> = ({ data, isInView }) => {
       data-aos="fade-up"
     >
       <h3 className="heading3">{data.course}</h3>
-      {getGradeDescription(data.grade) !== "" && (
-        <p className="subtitle opacity-60">{getGradeDescription(data.grade)}</p>
-      )}
-      <p className="subtitle opacity-60">{data.year}</p>
+      <div className="py-4">
+        {getGradeDescription(data.grade) !== "" && (
+          <p className="subtitle">{getGradeDescription(data.grade)}</p>
+        )}
+        <p className="subtitle opacity-60">{data.year}</p>
+      </div>
       <p className="subtitle">{data.description}</p>
     </div>
   );
