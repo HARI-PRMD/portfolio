@@ -23,12 +23,12 @@ export default function Home() {
               data-aos="fade-up"
             >
               <h1 className="title">Hari Pramod</h1>
-              <h3 className="heading3 opacity-60">
+              <p className="para1 opacity-60">
                 I am a software engineering student excited about the
                 opportunity to apply my skills and knowledge to real-world
                 software product design and development.
-              </h3>
-              <button className="heading2 w-full border border-white/10 bg-white/5 px-4 py-2 text-white transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit md:px-16 md:py-4">
+              </p>
+              <button className="heading3 w-full border border-white/10 bg-white/5 px-4 py-2 text-white transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit md:px-16 md:py-4">
                 See Resume
               </button>
             </div>

@@ -52,12 +52,12 @@ const ProjectCardV2: React.FC<Props> = ({
       <Transition
         show={showModal}
         enter="transition transform duration-300 ease-in-out"
-        enterFrom="opacity-0 translate-y-[64px]"
-        enterTo="opacity-100 translate-y-0"
+        enterFrom="opacity-0 scale-90"
+        enterTo="opacity-100 scale-100"
         className="fixed left-0 top-0 z-50 h-full w-screen"
         leave="transition duration-300 ease-in transform"
-        leaveFrom="opacity-100 translate-y-0"
-        leaveTo="opacity-0 translate-y-[64px]"
+        leaveFrom="opacity-100 scale-100"
+        leaveTo="opacity-0 scale-90"
       >
         <ProjectModal
           title={title}
