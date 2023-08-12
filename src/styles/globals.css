@@ -3,37 +3,44 @@
 @tailwind utilities;
 
 @layer base {
+    
+    /* Markdown Classes  */
     h1 {
-        @apply font-heading text-4xl md:text-8xl z-10;
+        @apply font-heading text-4xl md:text-6xl;
     }
+    
     h2 {
-        @apply font-heading text-4xl md:text-6xl z-10;
-    }
-    h3 {
-        @apply font-heading text-2xl md:text-4xl z-10;
+        @apply font-heading text-2xl md:text-4xl;
     }
 
     p {
-        @apply font-body text-base md:text-2xl z-10;
+        @apply font-body text-base md:text-2xl;
+    }
+
+    
+    /* Regular Classes */
+    .title {
+        @apply font-heading text-4xl md:text-8xl;
+    }
+
+    .heading1 {
+        @apply font-heading text-3xl md:text-6xl;
+    }
+
+    .heading2 {
+        @apply font-body text-2xl md:text-4xl;
+    }
+    
+    .heading3 {
+        @apply font-body text-xl md:text-2xl;
+    }
+
+    .para1 {
+        @apply font-body text-base md:text-xl;
     }
     
     .subtitle {
-        @apply font-body text-sm md:text-base z-10;
-    }
-
-    .p-main {
-        @apply font-body text-2xl md:text-4xl z-10;
-    }
-    .p-fixed {
-        @apply font-body text-2xl z-10;
-    }
-
-    .fr {
-        @apply flex flex-row 
-    }
-    
-    .fc {
-        @apply flex flex-col
+        @apply font-body text-sm md:text-base;
     }
 
     .scroller {

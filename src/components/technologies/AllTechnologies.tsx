@@ -6,18 +6,17 @@ import {
 import ScrollRightSubtitle from "../accessibility/ScrollRightSubtitle";
 
 const AllTechnologies = () => {
-  technologiesLangFrameworksData;
-  technologiesToolsData;
-
   return (
     <div>
-      <p className="p-main">Languages and Frameworks</p>
-      <ScrollRightSubtitle />
-      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto overflow-y-hidden pb-4 pt-8">
+      <div className="pb-16 pt-8">
+        <h2 className="heading2">Languages and Frameworks</h2>
+        <ScrollRightSubtitle />
+      </div>
+      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-12 overflow-x-auto overflow-y-hidden">
         {technologiesLangFrameworksData.map((item, i) => (
           <div
             key={i}
-            className="fc group h-full w-16 items-center justify-center md:w-24"
+            className="group flex h-full w-16 flex-col items-center justify-center md:w-24"
             data-aos="fade-up"
           >
             <Image
@@ -34,12 +33,15 @@ const AllTechnologies = () => {
         ))}
       </div>
 
-      <p className="p-main pt-4">Tools</p>
-      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto overflow-y-hidden pb-4 pt-8">
+      <div className="pb-16 pt-8">
+        <h2 className="heading2">Tools</h2>
+        <ScrollRightSubtitle />
+      </div>
+      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-12 overflow-x-auto overflow-y-hidden">
         {technologiesToolsData.map((item, i) => (
           <div
             key={i}
-            className="fc group h-full w-16 items-center justify-center md:w-24"
+            className="group flex h-full w-16 flex-col items-center justify-center md:w-24"
             data-aos="fade-up"
           >
             <Image
