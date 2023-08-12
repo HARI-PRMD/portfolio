@@ -15,7 +15,7 @@ export default function Home() {
       <Layout>
         <section
           id="main"
-          className="mt-8 flex h-screen w-full flex-col-reverse p-8 md:flex-row md:space-x-8 md:px-32 md:py-16"
+          className="mt-8 flex h-screen w-full flex-col-reverse md:flex-row md:space-x-8"
         >
           <div className="bg-rd flex h-full flex-col items-start justify-start pt-8 md:w-3/5 md:justify-center">
             <div
@@ -40,10 +40,7 @@ export default function Home() {
             <div className="hero-pattern h-64 w-full bg-fixed object-cover md:h-4/5" />
           </div>
         </section>
-        <section
-          id="education"
-          className="min-h-fit w-full space-y-8 px-4 pb-16 pt-32 md:px-32"
-        >
+        <section id="education" className="min-h-fit w-full space-y-8">
           <div>
             <h1 className="heading1">Education</h1>
             <p className="para1 pt-2 opacity-60 md:pt-4">
@@ -71,15 +68,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div>
-              <div className="pb-8">
+            <div className="space-y-8">
+              <div>
                 <h2 className="heading2">Course Achievements</h2>
                 <ScrollRightSubtitle />
               </div>
               <AllCourseAchievements />
             </div>
-            <div>
-              <div className="pb-8">
+            <div className="space-y-8">
+              <div>
                 <h2 className="heading2">Competitions</h2>
                 <ScrollRightSubtitle />
               </div>
@@ -87,10 +84,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section
-          id="projects"
-          className="min-h-fit w-full space-y-8 px-4 pb-16 pt-32 md:px-32"
-        >
+        <section id="projects" className="min-h-fit w-full space-y-8">
           <div>
             <h1 className="heading1">My Projects</h1>
             <p className="para1 pt-2 opacity-60 md:pt-4">
@@ -98,14 +92,9 @@ export default function Home() {
             </p>
             <ScrollRightSubtitle />
           </div>
-          <div className="-z-30 h-full w-full">
-            <AllProjects />
-          </div>
+          <AllProjects />
         </section>
-        <section
-          id="technologies"
-          className="min-h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-16"
-        >
+        <section id="technologies" className="min-h-fit w-full">
           <div>
             <h1 className="heading1">Technologies</h1>
             <p className="para1 pt-2 opacity-60 md:pt-4">
@@ -116,10 +105,7 @@ export default function Home() {
             <AllTechnologies />
           </div>
         </section>
-        <section
-          id="volunteering"
-          className="min-h-fit w-full space-y-8 px-4 pt-32 md:px-32 md:pb-16"
-        >
+        <section id="volunteering" className="min-h-fit w-full space-y-8">
           <div>
             <h1 className="heading1">Volunteering</h1>
             <p className="para1 pt-2 opacity-60 md:pt-4">

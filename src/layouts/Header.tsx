@@ -74,10 +74,21 @@ const Header: React.FC = () => {
         <Menu>
           {({ open }) => (
             <>
+              <Transition.Child
+                as={Fragment}
+                enter="ease-out duration-300"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
+                leave="ease-in duration-200"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
+              >
+                <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
+              </Transition.Child>
               <div className="flex flex-row justify-between focus-visible:outline-none">
                 <Menu.Item>
                   <h1
-                    className="title cursor-pointer md:pl-8"
+                    className="title z-40 cursor-pointer md:pl-8"
                     onClick={() => handleHeadingClick("main")}
                   >
                     HP
@@ -106,8 +117,10 @@ const Header: React.FC = () => {
                       {({ active }) => (
                         <p
                           className={`${
-                            active ? "bg-white/20 text-white" : "text-white"
-                          } p-4 `}
+                            activeSection === link.href || active
+                              ? "opacity-100"
+                              : "opacity-60"
+                          } heading3 p-4 `}
                           onClick={() => handleHeadingClick(link.href)}
                         >
                           {link.label}

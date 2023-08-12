@@ -14,8 +14,8 @@ const AllVolunteering = () => {
   });
 
   return (
-    <div className="scroller h-full w-full flex-none flex-row overflow-x-auto overflow-y-hidden md:flex md:space-x-8">
-      <div className="hidden w-1/2 flex-col space-y-8 md:flex">
+    <div className="scroller h-full w-full flex-none flex-row overflow-x-auto overflow-y-hidden md:flex md:space-x-12">
+      <div className="hidden w-1/2 flex-col space-y-12 md:flex">
         {data1.map((v, i) => (
           <VolunteerCard
             key={i}
@@ -28,7 +28,7 @@ const AllVolunteering = () => {
           />
         ))}
       </div>
-      <div className="hidden w-1/2 flex-col space-y-8 md:flex">
+      <div className="hidden w-1/2 flex-col space-y-12 md:flex">
         {data2.map((v, i) => (
           <VolunteerCard
             key={i}

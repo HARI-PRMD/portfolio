@@ -11,7 +11,7 @@ const Layout: React.FC<Props> = ({ children }) => {
       <div>
         <Header />
         <div className="flex flex-col items-center justify-start">
-          <div className="w-full md:container">{children}</div>
+          <div className="w-full space-y-32 p-4 md:container">{children}</div>
         </div>
       </div>
       <Footer />

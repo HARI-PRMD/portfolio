@@ -6,14 +6,13 @@ import {
 import ScrollRightSubtitle from "../accessibility/ScrollRightSubtitle";
 
 const AllTechnologies = () => {
-  technologiesLangFrameworksData;
-  technologiesToolsData;
-
   return (
     <div>
-      <h2 className="heading2">Languages and Frameworks</h2>
-      <ScrollRightSubtitle />
-      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto overflow-y-hidden pb-4 pt-8">
+      <div className="pb-16 pt-8">
+        <h2 className="heading2">Languages and Frameworks</h2>
+        <ScrollRightSubtitle />
+      </div>
+      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-12 overflow-x-auto overflow-y-hidden">
         {technologiesLangFrameworksData.map((item, i) => (
           <div
             key={i}
@@ -34,8 +33,11 @@ const AllTechnologies = () => {
         ))}
       </div>
 
-      <h2 className="heading2 pt-4">Tools</h2>
-      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto overflow-y-hidden pb-4 pt-8">
+      <div className="pb-16 pt-8">
+        <h2 className="heading2">Tools</h2>
+        <ScrollRightSubtitle />
+      </div>
+      <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-12 overflow-x-auto overflow-y-hidden">
         {technologiesToolsData.map((item, i) => (
           <div
             key={i}
