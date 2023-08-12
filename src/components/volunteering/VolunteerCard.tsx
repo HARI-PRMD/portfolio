@@ -28,7 +28,7 @@ const VolunteerCard: React.FC<Props> = ({
           className="mb-8 h-24 w-24 object-scale-down md:mb-0"
         />
         <div className="flex w-full flex-col">
-          <p className="p-fixed">{title}</p>
+          <p className="para2">{title}</p>
           <p className="subtitle pt-2">{society}</p>
           <p className="subtitle opacity-60">{startTime + " - " + endTime}</p>
           {description && (

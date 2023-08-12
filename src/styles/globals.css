@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 @layer base {
-
+    
+    /* Markdown Classes  */
     h1 {
         @apply font-heading text-4xl md:text-6xl;
     }
@@ -12,6 +13,12 @@
         @apply font-heading text-2xl md:text-4xl;
     }
 
+    p {
+        @apply font-body text-base md:text-2xl;
+    }
+
+    
+    /* Regular Classes */
     .title {
         @apply font-heading text-4xl md:text-8xl;
     }
@@ -24,20 +31,20 @@
         @apply font-heading text-2xl md:text-4xl;
     }
 
-    .para {
-        @apply font-body text-base md:text-2xl;
-    }
-
-    .subtitle {
-        @apply font-body text-sm md:text-base;
-    }
-
-    .p-main {
+    .para1 {
         @apply font-body text-2xl md:text-4xl;
     }
 
-    .p-fixed {
-        @apply font-body text-2xl ;
+    .para2 {
+        @apply font-body text-2xl;
+    }
+    
+    .para3 {
+        @apply font-body text-base md:text-2xl;
+    }
+    
+    .subtitle {
+        @apply font-body text-sm md:text-base;
     }
 
     .scroller {

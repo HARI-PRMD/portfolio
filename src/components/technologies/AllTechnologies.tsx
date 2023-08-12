@@ -11,7 +11,7 @@ const AllTechnologies = () => {
 
   return (
     <div>
-      <p className="p-main">Languages and Frameworks</p>
+      <p className="para1">Languages and Frameworks</p>
       <ScrollRightSubtitle />
       <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto overflow-y-hidden pb-4 pt-8">
         {technologiesLangFrameworksData.map((item, i) => (
@@ -34,7 +34,7 @@ const AllTechnologies = () => {
         ))}
       </div>
 
-      <p className="p-main pt-4">Tools</p>
+      <p className="para1 pt-4">Tools</p>
       <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-8 overflow-x-auto overflow-y-hidden pb-4 pt-8">
         {technologiesToolsData.map((item, i) => (
           <div

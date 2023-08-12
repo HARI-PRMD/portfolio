@@ -13,7 +13,7 @@ const CompetitionCard: React.FC<Props> = ({ data, isInView }) => {
       } flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none`}
       data-aos="fade-up"
     >
-      <p className="p-fixed">{data.title}</p>
+      <p className="para2">{data.title}</p>
       <div className="py-4">
         <p className="subtitle">{data.issuedBy}</p>
         <p className="subtitle opacity-60">{data.year}</p>

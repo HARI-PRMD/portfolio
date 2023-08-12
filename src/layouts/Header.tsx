@@ -85,7 +85,7 @@ const Header: React.FC = () => {
             <span className="mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100"></span>
           </p>
         </div>
-        <button className="p hidden h-fit bg-white px-8 py-4 uppercase text-black md:block">
+        <button className="para3 hidden h-fit bg-white px-8 py-4 uppercase text-black md:block">
           resume
         </button>
         <button className="md:hidden" onClick={() => setShowList(!showList)}>
@@ -130,7 +130,7 @@ const Header: React.FC = () => {
           >
             volunteering
           </p>
-          <button className="p h-fit w-full cursor-pointer bg-white px-8 py-4 text-black">
+          <button className="para3 h-fit w-full cursor-pointer bg-white px-8 py-4 text-black">
             resume
           </button>
         </div>
