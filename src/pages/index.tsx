@@ -28,8 +28,11 @@ export default function Home() {
                 opportunity to apply my skills and knowledge to real-world
                 software product design and development.
               </p>
-              <button className="heading3 w-full border border-white/10 bg-white/5 px-4 py-2 text-white transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit md:px-16 md:py-4">
-                See Resume
+              <button
+                disabled
+                className="heading3 w-full cursor-not-allowed border border-white/10 bg-white/5 px-4 py-2 text-white transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit md:px-16 md:py-4"
+              >
+                See Resume (coming soon)
               </button>
             </div>
           </div>

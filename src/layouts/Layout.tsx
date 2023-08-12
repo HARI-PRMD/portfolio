@@ -10,7 +10,9 @@ const Layout: React.FC<Props> = ({ children }) => {
     <main className="flex min-h-screen w-full flex-col justify-between bg-black text-white">
       <div>
         <Header />
-        {children}
+        <div className="flex flex-col items-center justify-start">
+          <div className="w-full md:container">{children}</div>
+        </div>
       </div>
       <Footer />
     </main>
