@@ -35,27 +35,27 @@
     
     /* Regular Classes */
     .title {
-        @apply font-heading text-4xl md:text-8xl;
+        @apply font-heading text-4xl md:text-8xl py-0;
     }
 
     .heading1 {
-        @apply font-heading text-3xl md:text-6xl;
+        @apply font-heading text-3xl md:text-6xl py-0;
     }
 
     .heading2 {
-        @apply font-body text-2xl md:text-4xl;
+        @apply font-body text-2xl md:text-4xl py-0;
     }
     
     .heading3 {
-        @apply font-body text-xl md:text-2xl;
+        @apply font-body text-xl md:text-2xl py-0;
     }
 
     .para1 {
-        @apply font-body text-base md:text-xl;
+        @apply font-body text-base md:text-xl py-0;
     }
     
     .subtitle {
-        @apply font-body text-sm md:text-base;
+        @apply font-body text-sm md:text-base py-0;
     }
 
     .scroller {

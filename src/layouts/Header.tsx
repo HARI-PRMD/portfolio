@@ -72,7 +72,7 @@ const Header: React.FC = () => {
             <p
               key={index}
               onClick={() => handleHeadingClick(link.href)}
-              className={`group cursor-pointer  text-xl transition duration-300 hover:opacity-100 ${
+              className={`para1 group cursor-pointer transition duration-300 hover:opacity-100 ${
                 activeSection === link.href ? "opacity-100" : "opacity-60"
               }`}
             >
