@@ -34,12 +34,12 @@ const Header: React.FC = () => {
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
+
       sections.forEach((section) => {
         const { top, bottom } = section.getBoundingClientRect();
-        const { id } = section;
-        console.log(top, bottom, id);
-        if (top <= 0 && bottom > 0) {
-          setActiveSection(id);
+
+        if (top <= window.innerHeight && bottom >= window.innerHeight / 2) {
+          setActiveSection(section.id);
         }
       });
     };
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
       <div className="hidden flex-row justify-between md:flex">
         <h1
           className="heading1 cursor-pointer md:pl-8"
-          onClick={() => handleHeadingClick("main")}
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
           HP
         </h1>
@@ -104,7 +104,9 @@ const Header: React.FC = () => {
                 <Menu.Item>
                   <h1
                     className="title z-40 cursor-pointer md:pl-8"
-                    onClick={() => handleHeadingClick("main")}
+                    onClick={() =>
+                      window.scrollTo({ top: 0, behavior: "smooth" })
+                    }
                   >
                     HP
                   </h1>
