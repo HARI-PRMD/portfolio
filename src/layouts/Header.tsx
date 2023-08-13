@@ -5,13 +5,28 @@ import { Fragment, useEffect, useState } from "react";
 const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  // scrolls user to section on click
+  // scrolls user to end of previous section on click
   const handleHeadingClick = (sectionId: string) => {
     const section: HTMLElement | null = document.getElementById(sectionId);
+
     if (section) {
-      const scrollPosition =
-        section.getBoundingClientRect().top + window.scrollY + 1;
-      window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+      const sections = document.querySelectorAll("section");
+      let targetSection: HTMLElement | null = null;
+
+      for (let i = 0; i < sections.length; i++) {
+        if (sections[i]?.id === sectionId) {
+          if (i > 0) {
+            targetSection = sections[i - 1] as HTMLElement;
+          }
+          break;
+        }
+      }
+
+      if (targetSection) {
+        const scrollPosition =
+          targetSection.getBoundingClientRect().bottom + window.scrollY + 1;
+        window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+      }
     }
   };
 
