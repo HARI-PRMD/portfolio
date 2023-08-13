@@ -53,7 +53,7 @@ const ProjectModal: React.FC<Props> = ({
           leaveTo="opacity-0 scale-95"
         >
           <div className="fixed inset-0 flex items-center justify-center p-4">
-            <Dialog.Panel className="scroller flex h-fit flex-col overflow-y-auto border border-white/20 bg-black sm:container  md:max-h-[5/6]">
+            <Dialog.Panel className="scroller flex h-full flex-col overflow-y-auto border border-white/20 bg-black sm:container md:h-4/5">
               <div className="sticky top-0 flex w-full flex-row justify-between border-white/20 bg-black/90 px-8 py-4 backdrop-blur">
                 <h2 className="heading2">{title}</h2>
                 <XMarkIcon

@@ -235,8 +235,24 @@ export const projectsDataV2: ProjectCardDataType[] = [
   },
   {
     title: "MegaLAN Atlantis Quests",
-    description:
-      "An end to end Stamp Rally Management System for an event hosted by 12 societies and 500+ attendees.",
+    description: `
+# 🔱 MegaLAN Atlantis Quests Website
+A Stamp Rally Website Developed for MegaLAN Atlantis during 2023 by @HARI-PRMD and @VishnuPrateek1
+## 🐬 Documentation
+You can find documentation on how to use it as an admin here: [Documentation](https://confirmed-smoke-6f8.notion.site/Megalan-Quests-User-Guide-f6784968de434e87aa44e4df6624fab7)
+The website is available here: [Website](https://megalan-atlantis-quests.vercel.app/)
+
+## 🦑 Tech Stack
+This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with \`create-t3-app\`.
+- [Next.js](https://nextjs.org)
+- [NextAuth.js](https://next-auth.js.org)
+- [Prisma](https://prisma.io)
+- [Tailwind CSS](https://tailwindcss.com)
+- [tRPC](https://trpc.io)
+- Typescript
+## 🌊 Deployment
+Deployed using \`Vercel\` and \`Supabase\` for free,
+    `,
     month: "May",
     year: 2023,
     codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
