@@ -18,7 +18,7 @@
     }
 
     ul {
-        @apply font-body text-base md:text-2xl py-2;
+        @apply font-body text-base md:text-2xl py-2 px-8;
     }
     
     li {
