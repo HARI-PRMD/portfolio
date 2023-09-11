@@ -223,18 +223,18 @@ export const technologiesToolsData: { name: string; url: string }[] = [
 ];
 
 export const projectsDataV2: ProjectCardDataType[] = [
+  //   {
+  //     title: "BaGLsoc Discord Verification Bot",
+  //     description:
+  //       "I developed a custom verification bot using Typescript and discord.js for the BaGL Society. The bot verifies new members by monitoring Google Form submissions, extracting email and Discord tag data, upon form submission the user is given the verified role.",
+  //     month: "August",
+  //     year: 2023,
+  //     codeLink: "https://github.com/BaGLsoc/bagel-bot",
+  //     image:
+  //       "https://cdn.discordapp.com/attachments/1092987636035092662/1142270386139050137/Screenshot_2023-08-19_at_11.34.33_am.png",
+  //   },
   {
-    title: "BaGLsoc Discord Verification Bot",
-    description:
-      "I developed a custom verification bot using Typescript and discord.js for the BaGL Society. The bot verifies new members by monitoring Google Form submissions, extracting email and Discord tag data, upon form submission the user is given the verified role.",
-    month: "August",
-    year: 2023,
-    codeLink: "https://github.com/BaGLsoc/bagel-bot",
-    image:
-      "https://cdn.discordapp.com/attachments/1092987636035092662/1142270386139050137/Screenshot_2023-08-19_at_11.34.33_am.png",
-  },
-  {
-    title: "RGS Verification Bot",
+    title: "Discord Verification Bot",
     description:
       "I developed a custom verification bot using Typescript and discord.js for the UNSW Rhythm Game Society. The bot verifies new members by monitoring Google Form submissions, extracting email and Discord tag data. It then sends a verification code via email and prompts users to enter the code for verification on the Discord community server. Upon success the user is given the verified role.",
     month: "June",
