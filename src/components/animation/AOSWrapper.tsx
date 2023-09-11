@@ -15,7 +15,7 @@ const AOSWrapper: React.FC<Props> = ({ children }) => {
       disable() {
         return window.innerWidth < 768 ? true : false;
       },
-      once: false,
+      once: true,
       duration: 500,
       easing: "ease-out",
     });

@@ -9,7 +9,7 @@ type Props = {
 };
 
 const SEO: React.FC<Props> = ({ title, description, image, url = baseUrl }) => {
-  const formattedTitle = `HP | ${title}`;
+  const formattedTitle = `Hari Pramod | ${title}`;
 
   const IMAGE =
     "https://media.discordapp.net/attachments/1092987636035092662/1125346156852035634/metaimage.png";
