@@ -321,6 +321,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     month: "October",
     year: 2022,
     codeLink: "https://github.com/csesoc/trainee-3-22t3",
+    websiteLink: "https://loft-ruddy.vercel.app/",
     image:
       "https://media.discordapp.net/attachments/1092987636035092662/1125060877054390302/monospace_font_pic.png",
   },
