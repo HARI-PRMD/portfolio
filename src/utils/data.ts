@@ -234,6 +234,18 @@ export const projectsDataV2: ProjectCardDataType[] = [
   //       "https://cdn.discordapp.com/attachments/1092987636035092662/1142270386139050137/Screenshot_2023-08-19_at_11.34.33_am.png",
   //   },
   {
+    title: "MegaLAN Full Blossom Quests",
+    description:
+      "Lead development of custom stamp rally system for Sydney's biggest LAN event hosted by 11 UNSW Societies and Clubs.",
+    month: "September",
+    year: 2023,
+    codeLink:
+      "https://github.com/megalan-association/megalan-quests-full-blossom",
+    websiteLink: "https://www.quests.megalan.com.au/",
+    image:
+      "https://media.discordapp.net/attachments/1092987636035092662/1155326894095470714/MegaLAN_Quests_Full_Blossom_Poster.png",
+  },
+  {
     title: "Discord Verification Bot",
     description:
       "I developed a custom verification bot using Typescript and discord.js for the UNSW Rhythm Game Society. The bot verifies new members by monitoring Google Form submissions, extracting email and Discord tag data. It then sends a verification code via email and prompts users to enter the code for verification on the Discord community server. Upon success the user is given the verified role.",
