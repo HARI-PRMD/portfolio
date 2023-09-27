@@ -20,17 +20,25 @@ const VolunteerCard: React.FC<Props> = ({
       data-aos="fade-up"
     >
       <div className="flex flex-col items-center md:flex-row md:space-x-8">
-        <Image
-          src={image}
-          alt="society"
-          width={250}
-          height={250}
-          className="mb-8 h-24 w-24 object-scale-down md:mb-0"
-        />
-        <div className="flex w-full flex-col">
-          <h3 className="heading3">{title}</h3>
-          <p className="subtitle pt-2">{society}</p>
-          <p className="subtitle opacity-60">{startTime + " - " + endTime}</p>
+        <div className="flex w-full flex-col gap-4">
+          <div className="flex flex-col items-center justify-start gap-4 md:flex-row">
+            <div>
+              <Image
+                src={image}
+                alt="society"
+                width={250}
+                height={250}
+                className="mb-8 h-24 w-24 object-scale-down md:mb-0"
+              />
+            </div>
+            <div>
+              <h3 className="heading3">{title}</h3>
+              <p className="subtitle pt-2">{society}</p>
+              <p className="subtitle opacity-60">
+                {startTime + " - " + endTime}
+              </p>
+            </div>
+          </div>
           {description && (
             <p className="subtitle hidden pt-2 md:block">{description}</p>
           )}

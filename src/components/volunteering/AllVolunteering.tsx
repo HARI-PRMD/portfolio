@@ -9,8 +9,12 @@ const AllVolunteering = () => {
   const data1: volunteeringDataType[] = [];
   const data2: volunteeringDataType[] = [];
 
-  volunteeringData.forEach((vol, index) => {
-    index % 2 === 0 ? data1.push(vol) : data2.push(vol);
+  volunteeringData.slice(0, volunteeringData.length).forEach((vol, index) => {
+    if (index !== volunteeringData.length - 1) {
+      index % 2 === 0 ? data1.push(vol) : data2.push(vol);
+    } else {
+      data2.push(vol);
+    }
   });
 
   return (
