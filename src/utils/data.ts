@@ -13,7 +13,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Development Team Lead",
     society: "UNSW MegaLAN",
     description:
-      "lead development of the first version of the custom MegaLAN Stamp rally system with the Atlantis Quests Website.",
+      "Lead Development of two Custom Full Stack Web-Apps to Digitise MegaLAN's Stamp Rally System during my First and Second Year of University. These Apps were used at an event with 500+ attendees, hosted by 12 UNSW societies and Developed in under 3 Weeks Each. I enjoyed the challenge of learning, designing, developing and deploying/hosting a full-stack app which involved database design, frontend and backend development. I learnt 4 new frameworks to achieve the successful outcomes showcasing my ability to efficiently pick up new skills.",
     startTime: "Jun 2023",
     endTime: "Present",
   },
@@ -22,7 +22,8 @@ export const volunteeringData: volunteeringDataType[] = [
       "https://cdn.discordapp.com/attachments/956904556132962334/957176629354958869/OP_Logo_small.jpg",
     title: "Technical Director",
     society: "UNSW One Piece Society",
-    description: "",
+    description:
+      "Designed and Developed a Full Stack Responsive Website with SEO and the ability to fully edit all data on the website from Discord, making the website easier to manage for future executives. Alongside this I have improved quality of life for the team by implementing a custom google script to post previews of new emails on the one piece society gmail to Discord.",
     startTime: "Mar 2023",
     endTime: "Present",
   },
@@ -31,7 +32,8 @@ export const volunteeringData: volunteeringDataType[] = [
       "https://media.discordapp.net/attachments/974618772071669770/1004558762138402876/RGS_Logo_AI.png",
     title: "Secretary",
     society: "UNSW Rhythm Game Society",
-    description: "",
+    description:
+      "I joined our society's executive team at its inception with 50 members and, within a year, orchestrated its growth to over 600 members. I improved our operations by automating a Discord verification system for non-UNSW students using Google Scripts and a custom bot as well as a discord integrated notfications system for new emails sent to the club inbox. I fostered collaborations with fellow UNSW society executives, expanding our influence and forming strategic partnerships. Additionally, I played a pivotal role in organizing and hosting our presence at four MegaLAN events and monthly meetups. My commitment to transparent governance was evident through meticulous minute-keeping for EGMs, AGMs, and executive meetings.",
     startTime: "Jun 2022",
     endTime: "Present",
   },
@@ -40,7 +42,8 @@ export const volunteeringData: volunteeringDataType[] = [
       "https://cdn.discordapp.com/attachments/1092987636035092662/1125021072773885972/Screenshot_2023-07-02_at_9.11.57_pm.png",
     title: "Programming and Development Sub-committee",
     society: "UNSW Computer Enthusiasts Society",
-    description: "",
+    description:
+      "I lead the design and development of the first version of full-stack custom stamp rally web-app during my first year for MegaLAN which was initially managed by PCsoc. This included features such as, admin dashboard to manage tasks, admins, and complete a task, a user dashboard with a list of incomplete and completed tasks cards, a leaderboard page, and a raffle page to decide the winner using the Fisher-Yates shuffle algorithm. Built using the Next.js, Prisma, tRPC, TailwindCSS, NextAuth.js and Typescript.",
     startTime: "Nov 2022",
     endTime: "Present",
   },
@@ -49,7 +52,8 @@ export const volunteeringData: volunteeringDataType[] = [
       "https://cdn.discordapp.com/attachments/1092987636035092662/1125022063397191771/csesocwhiteblue.9bc2ecf4.png",
     title: "Trainee Lead",
     society: "UNSW Computer Science and Engineering Society",
-    description: "",
+    description:
+      "Trained 3 trainees in how to build full-stack web applications using the T3 Stack during my second year. Together we built a forum website where students could share their notes and post questions using Next.js, Prisma, tRPC, TailwindCSS, NextAuth.js and Typescript and deployed on vercel and supabase.",
     startTime: "Jan 2023",
     endTime: "Jun 2023",
   },
@@ -59,7 +63,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Trainee",
     society: "UNSW Computer Science and Engineering Society",
     description:
-      "Worked in a team of 5 and built a front-end web app for studying/productivity using React, Typescript, CSS and ViteJS.",
+      "Worked in a team of 5 to build a single page front-end web application for studying and productivity called Loft. This contained widgets like Customisable Pomodoro Timer, Youtube Video Player, Notepad with Text Formatting and a To Do List, with customisable themes and fonts using React, Typescript, CSS and ViteJS.",
     startTime: "Sep 2022",
     endTime: "Dec 2022",
   },
@@ -69,7 +73,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Music Subcommittee",
     society: "UNSW lo-fi society",
     description:
-      "Produced a song for the Lo-fi; Society Mixtape and provided help where I could with distribution of the songs.",
+      "Assisted the Music Director in organising and publishing Lo-fi; Society's yearly Mixtape onto streaming platforms. Improved engagement at events, and formed strong connections with other society leaders as part of improving Lo-fi; society's perceived brand image and value.",
     startTime: "Apr 2022",
     endTime: "Jan 2023",
   },
@@ -340,6 +344,13 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
 ];
 
 export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
+  {
+    course: "Engineering Design and Professional Practice (DESN2000)",
+    description:
+      "Developed a prototype of a Educational Finance Management Mobile App called Figma Life in Figma, and maintained a Design Journal Documenting the entire design process methods used and followed.",
+    year: 2023,
+    grade: 88,
+  },
   {
     course: "Requirements and Design Workshop (SENG2021)",
     description:
