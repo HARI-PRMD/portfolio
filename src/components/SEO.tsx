@@ -11,8 +11,7 @@ type Props = {
 const SEO: React.FC<Props> = ({ title, description, image, url = baseUrl }) => {
   const formattedTitle = `Hari Pramod | ${title}`;
 
-  const IMAGE =
-    "https://media.discordapp.net/attachments/1092987636035092662/1125346156852035634/metaimage.png";
+  const IMAGE = "https://i.imgur.com/vfmOTnx.png";
   const favicon = `${baseUrl}/static/favicon.ico`;
 
   return (

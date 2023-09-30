@@ -8,8 +8,7 @@ import {
 
 export const volunteeringData: volunteeringDataType[] = [
   {
-    image:
-      "https://media.discordapp.net/attachments/1092987636035092662/1125067898826801253/Screenshot_2023-07-03_at_12.17.59_am.png",
+    image: "https://i.imgur.com/SDIhsOC.png",
     title: "Development Team Lead",
     society: "UNSW MegaLAN",
     description:
@@ -18,8 +17,7 @@ export const volunteeringData: volunteeringDataType[] = [
     endTime: "Present",
   },
   {
-    image:
-      "https://cdn.discordapp.com/attachments/956904556132962334/957176629354958869/OP_Logo_small.jpg",
+    image: "https://i.imgur.com/saD2CLN.jpg",
     title: "Technical Director",
     society: "UNSW One Piece Society",
     description:
@@ -28,8 +26,7 @@ export const volunteeringData: volunteeringDataType[] = [
     endTime: "Present",
   },
   {
-    image:
-      "https://media.discordapp.net/attachments/974618772071669770/1004558762138402876/RGS_Logo_AI.png",
+    image: "https://i.imgur.com/aFJ3Djr.png",
     title: "Secretary",
     society: "UNSW Rhythm Game Society",
     description:
@@ -38,8 +35,7 @@ export const volunteeringData: volunteeringDataType[] = [
     endTime: "Present",
   },
   {
-    image:
-      "https://cdn.discordapp.com/attachments/1092987636035092662/1125021072773885972/Screenshot_2023-07-02_at_9.11.57_pm.png",
+    image: "https://i.imgur.com/uOYgzPC.png",
     title: "Programming and Development Sub-committee",
     society: "UNSW Computer Enthusiasts Society",
     description:
@@ -48,8 +44,7 @@ export const volunteeringData: volunteeringDataType[] = [
     endTime: "Present",
   },
   {
-    image:
-      "https://cdn.discordapp.com/attachments/1092987636035092662/1125022063397191771/csesocwhiteblue.9bc2ecf4.png",
+    image: "https://i.imgur.com/Ic8u02C.png",
     title: "Trainee Lead",
     society: "UNSW Computer Science and Engineering Society",
     description:
@@ -58,8 +53,7 @@ export const volunteeringData: volunteeringDataType[] = [
     endTime: "Jun 2023",
   },
   {
-    image:
-      "https://cdn.discordapp.com/attachments/1092987636035092662/1125022063397191771/csesocwhiteblue.9bc2ecf4.png",
+    image: "https://i.imgur.com/Ic8u02C.png",
     title: "Trainee",
     society: "UNSW Computer Science and Engineering Society",
     description:
@@ -68,8 +62,7 @@ export const volunteeringData: volunteeringDataType[] = [
     endTime: "Dec 2022",
   },
   {
-    image:
-      "https://media.discordapp.net/attachments/1092987636035092662/1125065812709998652/unswlofisoc.png",
+    image: "https://i.imgur.com/tc9zGkb.png",
     title: "Music Subcommittee",
     society: "UNSW lo-fi society",
     description:
@@ -88,8 +81,7 @@ export const projectsData: AllProjects = {
       month: "May",
       codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
       websiteLink: "https://megalan-atlantis-quests.vercel.app/",
-      image:
-        "https://media.discordapp.net/attachments/1092987636035092662/1124960255722401842/Screenshot_2023-07-02_at_5.09.42_pm.png",
+      image: "https://i.imgur.com/l61jfFn.png",
     },
     {
       title: "EZ Invoice",
@@ -99,8 +91,7 @@ export const projectsData: AllProjects = {
       codeLink: "https://github.com/HARI-PRMD/SENG2021-application",
       websiteLink:
         "https://se2021-23t1-einvoicing-frontend-f14a-di-git-342b0e-merryrosalie.vercel.app/",
-      image:
-        "https://media.discordapp.net/attachments/1092987636035092662/1125062082858078268/Screenshot_2023-07-02_at_11.54.52_pm.png",
+      image: "https://i.imgur.com/xf6wZFL.png",
     },
     {
       title: "Note Sharing Forum",
@@ -109,8 +100,7 @@ export const projectsData: AllProjects = {
       month: "March",
       codeLink: "https://github.com/csesoc/trainee-3-23t1",
       websiteLink: "https://trainee-3-23t1-deploy.vercel.app/",
-      image:
-        "https://media.discordapp.net/attachments/1092987636035092662/1125069729741148220/Screenshot_2023-07-03_at_12.25.17_am.png",
+      image: "https://i.imgur.com/UE71tGE.png",
     },
   ],
   2022: [
@@ -121,8 +111,7 @@ export const projectsData: AllProjects = {
       month: "December",
       codeLink: "https://github.com/HARI-PRMD/uni-clubs-frontend",
       websiteLink: "https://uniclubs.vercel.app/",
-      image:
-        "https://media.discordapp.net/attachments/1092987636035092662/1125060553233158245/Screenshot_2023-07-02_at_11.48.49_pm.png",
+      image: "https://i.imgur.com/H0IEwLa.png",
     },
     {
       title: "Loft",
@@ -130,8 +119,7 @@ export const projectsData: AllProjects = {
         "A Pomodoro Timer, Productivity Website Developed in a team as part of CSESoc's Training Program",
       month: "October",
       codeLink: "https://github.com/csesoc/trainee-3-22t3",
-      image:
-        "https://media.discordapp.net/attachments/1092987636035092662/1125060877054390302/monospace_font_pic.png",
+      image: "https://i.imgur.com/DgWjrLu.png",
     },
   ],
 };
@@ -139,90 +127,91 @@ export const projectsData: AllProjects = {
 export const technologiesLangFrameworksData: { name: string; url: string }[] = [
   {
     name: "Javascript",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132174482665132032/800px-JavaScript-logo.png",
+    url: "https://i.imgur.com/I31PHHR.png",
   },
   {
     name: "Typescript",
-    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132173840529764392/2048px-Typescript_logo_2020.png",
+    url: "https://i.imgur.com/jrvq4Xa.png",
   },
   {
     name: "Python",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132176773669462046/Python-logo-notext.svg-2.png",
+    url: "https://i.imgur.com/3LjYzQF.png",
   },
   {
     name: "Regex",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132226116061511720/image-12-2.png",
+    url: "https://i.imgur.com/zlN3kQM.png",
   },
   {
     name: "HTML",
-    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132184679794085939/image-8.png",
+    url: "https://i.imgur.com/8toiYql.png",
   },
 
   {
     name: "CSS",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132183041603813447/css-icon-2048x2028-2rmmfask.png",
+    url: "https://i.imgur.com/HctithI.png",
   },
   {
     name: "TailwindCSS",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132184262762835998/Tailwind_CSS_logo.svg-2.png",
+    url: "https://i.imgur.com/aeJcPyk.png",
   },
   {
     name: "React",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132174819899752510/2300px-React-icon.png",
+    url: "https://i.imgur.com/Wz5XgWU.png",
   },
   {
     name: "Next.js",
-    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132175597242683502/image-4.png",
+    url: "https://i.imgur.com/0lieJI8.png",
   },
   {
     name: "Express.js",
-    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132184947684278272/image-5-2.png",
+    url: "https://i.imgur.com/YDFvuAO.png",
   },
   {
     name: "tRPC",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132177024220401745/trpc-logo-741E01B855-seeklogo.png",
+    url: "https://i.imgur.com/Q8zXteA.png",
   },
   {
     name: "Zod",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132225561029255298/sDh8bAT3pW8AAAAASUVORK5CYII.png",
+    url: "https://i.imgur.com/vUBmb5z.png",
   },
   {
     name: "NextAuth.js",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132195448187260959/logo-sm.png",
+    url: "https://i.imgur.com/SE1wuLc.png",
   },
   {
     name: "Prisma",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132178248353189999/image-6.png",
+    url: "https://i.imgur.com/btJeW2A.png",
   },
 ];
+
 export const technologiesToolsData: { name: string; url: string }[] = [
   {
     name: "Github",
-    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132181654551658587/image-7.png",
+    url: "https://i.imgur.com/graG8M4.png",
   },
   {
     name: "npm",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132182773625540698/2560px-Npm-logo.png",
+    url: "https://i.imgur.com/y2xDgiR.png",
   },
   {
     name: "Vercel",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132185309099073646/image-9.png",
+    url: "https://i.imgur.com/QhLoN4g.png",
   },
   {
     name: "Supabase",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132185399767339088/supabase-logo-DCC676FFE2-seeklogo.png",
+    url: "https://i.imgur.com/Ot66zDz.png",
   },
   {
     name: "Figma",
-    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132181881358647346/668cccb3f734f342e07c0185e6d9a975.png",
+    url: "https://i.imgur.com/bHoKOUF.png",
   },
   {
     name: "Confluence",
-    url: "https://media.discordapp.net/attachments/1092987636035092662/1132182167900934154/confluence-logo-D9B07137C2-seeklogo.png",
+    url: "https://i.imgur.com/N2FJy08.png",
   },
   {
     name: "Jira",
-    url: "https://cdn.discordapp.com/attachments/1092987636035092662/1132182620244029450/Jira-Emblem-2.png",
+    url: "https://i.imgur.com/09s9Gn0.png",
   },
 ];
 
@@ -235,8 +224,18 @@ export const projectsDataV2: ProjectCardDataType[] = [
   //     year: 2023,
   //     codeLink: "https://github.com/BaGLsoc/bagel-bot",
   //     image:
-  //       "https://cdn.discordapp.com/attachments/1092987636035092662/1142270386139050137/Screenshot_2023-08-19_at_11.34.33_am.png",
+  //       "https://i.imgur.com/bObcFOg.png",
   //   },
+  {
+    title: "UNSW One Piece Society Website",
+    description:
+      "Designed and developed a full stack website for unsw one piece society with SEO, backend and db support making it scalable and easy to update.",
+    month: "September",
+    year: 2023,
+    codeLink: "https://github.com/One-Piece-Society/website",
+    websiteLink: "https://opsoc.tk/",
+    image: "https://i.imgur.com/AW0X5s1.png",
+  },
   {
     title: "MegaLAN Full Blossom Quests",
     description:
@@ -246,8 +245,7 @@ export const projectsDataV2: ProjectCardDataType[] = [
     codeLink:
       "https://github.com/megalan-association/megalan-quests-full-blossom",
     websiteLink: "https://www.quests.megalan.com.au/",
-    image:
-      "https://media.discordapp.net/attachments/1092987636035092662/1155326894095470714/MegaLAN_Quests_Full_Blossom_Poster.png",
+    image: "https://i.imgur.com/YTPPqR4.png",
   },
   {
     title: "Discord Verification Bot",
@@ -256,8 +254,7 @@ export const projectsDataV2: ProjectCardDataType[] = [
     month: "June",
     year: 2023,
     codeLink: "https://github.com/unswrgs/rgs-bot",
-    image:
-      "https://media.discordapp.net/attachments/1119108267927404565/1131415578809217054/Screenshot_2023-07-20_at_12.41.26_pm.png",
+    image: "https://i.imgur.com/ajDLDvs.png",
   },
   {
     title: "MegaLAN Atlantis Quests",
@@ -283,8 +280,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     year: 2023,
     codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
     websiteLink: "https://megalan-atlantis-quests.vercel.app/",
-    image:
-      "https://media.discordapp.net/attachments/1092987636035092662/1124960255722401842/Screenshot_2023-07-02_at_5.09.42_pm.png",
+    image: "https://i.imgur.com/l61jfFn.png",
   },
   {
     title: "EZ Invoice",
@@ -295,8 +291,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     codeLink: "https://github.com/HARI-PRMD/SENG2021-application",
     websiteLink:
       "https://se2021-23t1-einvoicing-frontend-f14a-di-git-342b0e-merryrosalie.vercel.app/",
-    image:
-      "https://media.discordapp.net/attachments/1092987636035092662/1125062082858078268/Screenshot_2023-07-02_at_11.54.52_pm.png",
+    image: "https://i.imgur.com/xf6wZFL.png",
   },
   {
     title: "Note Sharing Forum",
@@ -306,8 +301,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     year: 2023,
     codeLink: "https://github.com/csesoc/trainee-3-23t1",
     websiteLink: "https://trainee-3-23t1-deploy.vercel.app/",
-    image:
-      "https://media.discordapp.net/attachments/1092987636035092662/1125069729741148220/Screenshot_2023-07-03_at_12.25.17_am.png",
+    image: "https://i.imgur.com/UE71tGE.png",
   },
 
   {
@@ -327,8 +321,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     year: 2022,
     codeLink: "https://github.com/HARI-PRMD/uni-clubs-frontend",
     websiteLink: "https://uniclubs.vercel.app/",
-    image:
-      "https://media.discordapp.net/attachments/1092987636035092662/1125060553233158245/Screenshot_2023-07-02_at_11.48.49_pm.png",
+    image: "https://i.imgur.com/H0IEwLa.png",
   },
   {
     title: "Loft",
@@ -338,8 +331,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     year: 2022,
     codeLink: "https://github.com/csesoc/trainee-3-22t3",
     websiteLink: "https://loft-ruddy.vercel.app/",
-    image:
-      "https://media.discordapp.net/attachments/1092987636035092662/1125060877054390302/monospace_font_pic.png",
+    image: "https://i.imgur.com/DgWjrLu.png",
   },
 ];
 

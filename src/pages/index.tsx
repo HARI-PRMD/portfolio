@@ -52,7 +52,7 @@ export default function Home() {
               <div className="group flex flex-col items-center border border-white/20 bg-white/5 p-8 md:flex-row md:space-x-8">
                 <Image
                   alt="unsw"
-                  src="https://media.discordapp.net/attachments/1092987636035092662/1134773322610130984/university-of-new-south-wales-logo-png-transparent-background1.png"
+                  src="https://i.imgur.com/9usq5EW.png"
                   width={500}
                   height={500}
                   className="h-24 w-24 transform object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
