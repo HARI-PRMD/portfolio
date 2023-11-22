@@ -23,7 +23,7 @@ export const volunteeringData: volunteeringDataType[] = [
     description:
       "Designed and Developed a Full Stack Responsive Website with SEO and the ability to fully edit all data on the website from Discord, making the website easier to manage for future executives. Alongside this I have improved quality of life for the team by implementing a custom google script to post previews of new emails on the one piece society gmail to Discord.",
     startTime: "Mar 2023",
-    endTime: "Present",
+    endTime: "Sep 2023",
   },
   {
     image: "https://i.imgur.com/aFJ3Djr.png",
@@ -32,7 +32,7 @@ export const volunteeringData: volunteeringDataType[] = [
     description:
       "I joined our society's executive team at its inception with 50 members and, within a year, orchestrated its growth to over 600 members. I improved our operations by automating a Discord verification system for non-UNSW students using Google Scripts and a custom bot as well as a discord integrated notfications system for new emails sent to the club inbox. I fostered collaborations with fellow UNSW society executives, expanding our influence and forming strategic partnerships. Additionally, I played a pivotal role in organizing and hosting our presence at four MegaLAN events and monthly meetups. My commitment to transparent governance was evident through meticulous minute-keeping for EGMs, AGMs, and executive meetings.",
     startTime: "Jun 2022",
-    endTime: "Present",
+    endTime: "Sep 2023",
   },
   {
     image: "https://i.imgur.com/uOYgzPC.png",
@@ -41,7 +41,7 @@ export const volunteeringData: volunteeringDataType[] = [
     description:
       "I lead the design and development of the first version of full-stack custom stamp rally web-app during my first year for MegaLAN which was initially managed by PCsoc. This included features such as, admin dashboard to manage tasks, admins, and complete a task, a user dashboard with a list of incomplete and completed tasks cards, a leaderboard page, and a raffle page to decide the winner using the Fisher-Yates shuffle algorithm. Built using the Next.js, Prisma, tRPC, TailwindCSS, NextAuth.js and Typescript.",
     startTime: "Nov 2022",
-    endTime: "Present",
+    endTime: "Sep 2023",
   },
   {
     image: "https://i.imgur.com/Ic8u02C.png",
