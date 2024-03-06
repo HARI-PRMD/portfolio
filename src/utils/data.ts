@@ -12,7 +12,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Development Team Lead",
     society: "UNSW MegaLAN",
     description:
-      "Lead Development of two Custom Full Stack Web-Apps to Digitise MegaLAN's Stamp Rally System during my First and Second Year of University. These Apps were used at an event with 500+ attendees, hosted by 12 UNSW societies and Developed in under 3 Weeks Each. I enjoyed the challenge of learning, designing, developing and deploying/hosting a full-stack app which involved database design, frontend and backend development. I learnt 4 new frameworks to achieve the successful outcomes showcasing my ability to efficiently pick up new skills.",
+      "Led the rapid development of 3 custom full-stack web apps, digitizing MegaLAN's Stamp Rally System. Successfully deployed and used at an event with 500+ attendees, showcasing efficient skill acquisition, project management and delivery.",
     startTime: "Jun 2023",
     endTime: "Present",
   },
@@ -21,7 +21,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Technical Director",
     society: "UNSW One Piece Society",
     description:
-      "Designed and Developed a Full Stack Responsive Website with SEO and the ability to fully edit all data on the website from Discord, making the website easier to manage for future executives. Alongside this I have improved quality of life for the team by implementing a custom google script to post previews of new emails on the one piece society gmail to Discord.",
+      "Designed and developed a full-stack responsive website, optimizing SEO. Enabled Discord-based content management for future executives, enhancing website manageability and user experience.",
     startTime: "Mar 2023",
     endTime: "Sep 2023",
   },
@@ -30,7 +30,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Secretary",
     society: "UNSW Rhythm Game Society",
     description:
-      "I joined our society's executive team at its inception with 50 members and, within a year, orchestrated its growth to over 600 members. I improved our operations by automating a Discord verification system for non-UNSW students using Google Scripts and a custom bot as well as a discord integrated notfications system for new emails sent to the club inbox. I fostered collaborations with fellow UNSW society executives, expanding our influence and forming strategic partnerships. Additionally, I played a pivotal role in organizing and hosting our presence at four MegaLAN events and monthly meetups. My commitment to transparent governance was evident through meticulous minute-keeping for EGMs, AGMs, and executive meetings.",
+      "Orchestrated significant society growth from 50 to over 600 members. Automated Discord verification and implemented an email inbox notifications system integrated with discord, improving club operations and fostered collaborations with other societies.",
     startTime: "Jun 2022",
     endTime: "Sep 2023",
   },
@@ -39,7 +39,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Programming and Development Sub-committee",
     society: "UNSW Computer Enthusiasts Society",
     description:
-      "I lead the design and development of the first version of full-stack custom stamp rally web-app during my first year for MegaLAN which was initially managed by PCsoc. This included features such as, admin dashboard to manage tasks, admins, and complete a task, a user dashboard with a list of incomplete and completed tasks cards, a leaderboard page, and a raffle page to decide the winner using the Fisher-Yates shuffle algorithm. Built using the Next.js, Prisma, tRPC, TailwindCSS, NextAuth.js and Typescript.",
+      "Led the design and development of a full-stack custom stamp rally web app. Utilized Next.js, Prisma, tRPC, TailwindCSS, NextAuth.js, and TypeScript, enhancing MegaLAN's event experience.",
     startTime: "Nov 2022",
     endTime: "Sep 2023",
   },
@@ -48,7 +48,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Trainee Lead",
     society: "UNSW Computer Science and Engineering Society",
     description:
-      "Trained 3 trainees in how to build full-stack web applications using the T3 Stack during my second year. Together we built a forum website where students could share their notes and post questions using Next.js, Prisma, tRPC, TailwindCSS, NextAuth.js and Typescript and deployed on vercel and supabase.",
+      "Trained 3 individuals in building full-stack web applications using the T3 Stack. Together, we developed an educational forum website using Next.js, Prisma, tRPC, TailwindCSS, NextAuth.js, and TypeScript, deployed on Vercel and Supabase.",
     startTime: "Jan 2023",
     endTime: "Jun 2023",
   },
@@ -57,7 +57,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Trainee",
     society: "UNSW Computer Science and Engineering Society",
     description:
-      "Worked in a team of 5 to build a single page front-end web application for studying and productivity called Loft. This contained widgets like Customisable Pomodoro Timer, Youtube Video Player, Notepad with Text Formatting and a To Do List, with customisable themes and fonts using React, Typescript, CSS and ViteJS.",
+      "Contributed collaboratively within a team of 5 to build a single-page front-end web application called Loft. Featured customizable widgets such as Pomodoro Timer, Youtube Video Player, Notepad with Text Formatting, and a To-Do List. Utilized technologies such as React, TypeScript, CSS, and ViteJS.",
     startTime: "Sep 2022",
     endTime: "Dec 2022",
   },
@@ -66,7 +66,7 @@ export const volunteeringData: volunteeringDataType[] = [
     title: "Music Subcommittee",
     society: "UNSW lo-fi society",
     description:
-      "Assisted the Music Director in organising and publishing Lo-fi; Society's yearly Mixtape onto streaming platforms. Improved engagement at events, and formed strong connections with other society leaders as part of improving Lo-fi; society's perceived brand image and value.",
+      "Collaborated with the Music Director to curate and release Lo-fi Society's annual Mixtape on streaming platforms. Enhanced event participation and established impactful connections with fellow society leaders, contributing to the overall improvement of Lo-fi Society's brand image and value.",
     startTime: "Apr 2022",
     endTime: "Jan 2023",
   },
@@ -229,7 +229,7 @@ export const projectsDataV2: ProjectCardDataType[] = [
   {
     title: "UNSW One Piece Society Website",
     description:
-      "Designed and developed a full stack website for unsw one piece society with SEO, backend and db support making it scalable and easy to update.",
+      "Leveraged NextJS, TypeScript, tRPC, and Prisma for responsive design. Implemented TailwindCSS for a modern aesthetic. Employed WebP format and compression techniques for optimized image performance. Hosted on Vercel with Supabase integration, ensuring a seamless and efficient user experience.",
     month: "September",
     year: 2023,
     codeLink: "https://github.com/One-Piece-Society/website",
@@ -239,7 +239,7 @@ export const projectsDataV2: ProjectCardDataType[] = [
   {
     title: "MegaLAN Full Blossom Quests",
     description:
-      "Lead development of custom stamp rally system for Sydney's biggest LAN event hosted by 11 UNSW Societies and Clubs.",
+      "Developed a Stamp Rally Management System, featuring a task creation system for societies within designated rooms. Implemented a QR code scanning mechanism for admin task completion. Introduced a raffle system for winner selection. Utilized NextJS, TypeScript, tRPC, Prisma, and TailwindCSS for seamless integration and optimal functionality during MegaLAN events.",
     month: "September",
     year: 2023,
     codeLink:
@@ -326,7 +326,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
   {
     title: "Loft",
     description:
-      "A Pomodoro Timer, Productivity Website Developed in a team as part of CSESoc's Training Program",
+      "Loft is a dynamic single-page front-end web application which includes a range of customizable widgets designed to enhance user interaction and productivity. Notable features encompass a Pomodoro Timer, YouTube Video Player, Notepad with Text Formatting, and a To-Do List, with Theme and Font Switching. Loft provides a versatile and engaging platform, showcasing the team's proficiency in React, TypeScript, CSS, and ViteJS.",
     month: "October",
     year: 2022,
     codeLink: "https://github.com/csesoc/trainee-3-22t3",
