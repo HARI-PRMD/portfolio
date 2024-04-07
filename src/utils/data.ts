@@ -216,16 +216,6 @@ export const technologiesToolsData: { name: string; url: string }[] = [
 ];
 
 export const projectsDataV2: ProjectCardDataType[] = [
-  //   {
-  //     title: "BaGLsoc Discord Verification Bot",
-  //     description:
-  //       "I developed a custom verification bot using Typescript and discord.js for the BaGL Society. The bot verifies new members by monitoring Google Form submissions, extracting email and Discord tag data, upon form submission the user is given the verified role.",
-  //     month: "August",
-  //     year: 2023,
-  //     codeLink: "https://github.com/BaGLsoc/bagel-bot",
-  //     image:
-  //       "https://i.imgur.com/bObcFOg.png",
-  //   },
   {
     title: "UNSW One Piece Society Website",
     description:
@@ -234,7 +224,7 @@ export const projectsDataV2: ProjectCardDataType[] = [
     year: 2023,
     codeLink: "https://github.com/One-Piece-Society/website",
     websiteLink: "https://opsoc.tk/",
-    image: "https://i.imgur.com/AW0X5s1.png",
+    image: "/images/onepiece.webp",
   },
   {
     title: "MegaLAN Full Blossom Quests",
@@ -245,7 +235,7 @@ export const projectsDataV2: ProjectCardDataType[] = [
     codeLink:
       "https://github.com/megalan-association/megalan-quests-full-blossom",
     websiteLink: "https://www.quests.megalan.com.au/",
-    image: "https://i.imgur.com/YTPPqR4.png",
+    image: "/images/fullblossom.webp",
   },
   {
     title: "Discord Verification Bot",
@@ -254,7 +244,7 @@ export const projectsDataV2: ProjectCardDataType[] = [
     month: "June",
     year: 2023,
     codeLink: "https://github.com/unswrgs/rgs-bot",
-    image: "https://i.imgur.com/ajDLDvs.png",
+    image: "/images/discordbot.webp",
   },
   {
     title: "MegaLAN Atlantis Quests",
@@ -280,7 +270,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     year: 2023,
     codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
     websiteLink: "https://megalan-atlantis-quests.vercel.app/",
-    image: "https://i.imgur.com/l61jfFn.png",
+    image: "/images/atlantis.webp",
   },
   {
     title: "EZ Invoice",
@@ -291,7 +281,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     codeLink: "https://github.com/HARI-PRMD/SENG2021-application",
     websiteLink:
       "https://se2021-23t1-einvoicing-frontend-f14a-di-git-342b0e-merryrosalie.vercel.app/",
-    image: "https://i.imgur.com/xf6wZFL.png",
+    image: "/images/ezinvoice.webp",
   },
   {
     title: "Note Sharing Forum",
@@ -301,7 +291,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     year: 2023,
     codeLink: "https://github.com/csesoc/trainee-3-23t1",
     websiteLink: "https://trainee-3-23t1-deploy.vercel.app/",
-    image: "https://i.imgur.com/UE71tGE.png",
+    image: "/images/forum.webp",
   },
 
   {
@@ -321,7 +311,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     year: 2022,
     codeLink: "https://github.com/HARI-PRMD/uni-clubs-frontend",
     websiteLink: "https://uniclubs.vercel.app/",
-    image: "https://i.imgur.com/H0IEwLa.png",
+    image: "/images/uniclubs.webp",
   },
   {
     title: "Loft",
@@ -331,7 +321,7 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
     year: 2022,
     codeLink: "https://github.com/csesoc/trainee-3-22t3",
     websiteLink: "https://loft-ruddy.vercel.app/",
-    image: "https://i.imgur.com/DgWjrLu.png",
+    image: "/images/loft.webp",
   },
 ];
 
