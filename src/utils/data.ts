@@ -187,31 +187,31 @@ export const technologiesLangFrameworksData: { name: string; url: string }[] = [
 export const technologiesToolsData: { name: string; url: string }[] = [
   {
     name: "Github",
-    url: "https://i.imgur.com/graG8M4.png",
+    url: "/images/github.webp",
   },
   {
     name: "npm",
-    url: "https://i.imgur.com/y2xDgiR.png",
+    url: "/images/npm.webp",
   },
   {
     name: "Vercel",
-    url: "https://i.imgur.com/QhLoN4g.png",
+    url: "/images/vercel.webp",
   },
   {
     name: "Supabase",
-    url: "https://i.imgur.com/Ot66zDz.png",
+    url: "/images/supabase.webp",
   },
   {
     name: "Figma",
-    url: "https://i.imgur.com/bHoKOUF.png",
+    url: "/images/figma.webp",
   },
   {
     name: "Confluence",
-    url: "https://i.imgur.com/N2FJy08.png",
+    url: "/images/confluence.webp",
   },
   {
     name: "Jira",
-    url: "https://i.imgur.com/09s9Gn0.png",
+    url: "/images/jira.webp",
   },
 ];
 
