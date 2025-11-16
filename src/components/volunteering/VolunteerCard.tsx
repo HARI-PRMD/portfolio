@@ -1,4 +1,5 @@
 import Image from "next/image";
+import FadeIn from "../animation/FadeIn";
 import { type volunteeringDataType } from "~/types/types";
 
 type Props = volunteeringDataType & { isInView?: boolean };
@@ -12,12 +13,11 @@ const VolunteerCard: React.FC<Props> = ({
   description,
   isInView,
 }) => {
+  const cardStateClass = isInView ? "scale-100 grayscale-0" : "scale-90 grayscale";
+
   return (
-    <div
-      className={`${
-        isInView ? "scale-100 grayscale-0" : "scale-90 grayscale"
-      } flex h-full w-64 min-w-[16rem] transform snap-x snap-center flex-col items-center justify-center border border-white/20 bg-white/5 p-8 grayscale transition-all duration-300 ease-in-out xs:w-72 md:h-fit md:w-full md:items-start md:justify-start md:hover:grayscale-0 md:active:grayscale-0`}
-      data-aos="fade-up"
+    <FadeIn
+      className={`${cardStateClass} flex h-full w-64 min-w-[16rem] transform snap-x snap-center flex-col items-center justify-center border border-white/20 bg-white/5 p-8 grayscale transition-all duration-300 ease-in-out xs:w-72 md:h-fit md:w-full md:items-start md:justify-start md:hover:grayscale-0 md:active:grayscale-0`}
     >
       <div className="flex flex-col items-center md:flex-row md:space-x-8">
         <div className="flex w-full flex-col gap-4">
@@ -45,7 +45,7 @@ const VolunteerCard: React.FC<Props> = ({
         </div>
       </div>
       {description && <p className="subtitle pt-2 md:hidden">{description}</p>}
-    </div>
+    </FadeIn>
   );
 };
 export default VolunteerCard;

@@ -1,3 +1,4 @@
+import FadeIn from "../animation/FadeIn";
 import { type CourseAchievementCardDataType } from "~/types/types";
 
 type Props = {
@@ -15,12 +16,12 @@ const CourseAchievementCard: React.FC<Props> = ({ data, isInView }) => {
       return "";
     }
   };
+
+  const cardStateClass = isInView ? "scale-100" : "scale-90";
+
   return (
-    <div
-      className={`${
-        isInView ? "scale-100" : "scale-90"
-      } flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none`}
-      data-aos="fade-up"
+    <FadeIn
+      className={`${cardStateClass} flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none`}
     >
       <h3 className="heading3">{data.course}</h3>
       <div className="py-4">
@@ -30,7 +31,7 @@ const CourseAchievementCard: React.FC<Props> = ({ data, isInView }) => {
         <p className="subtitle opacity-60">{data.year}</p>
       </div>
       <p className="subtitle">{data.description}</p>
-    </div>
+    </FadeIn>
   );
 };
 

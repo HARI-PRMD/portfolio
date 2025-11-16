@@ -6,7 +6,16 @@
 - Next.js
 - TailwindCSS
 - HeadlessUI
-- Typescript
+- Framer Motion
+- TypeScript
+- pnpm
 
 ### 🚀 Deployed on
 - Vercel
+
+### 🧑‍💻 Local development
+
+```bash
+pnpm install
+pnpm dev
+```

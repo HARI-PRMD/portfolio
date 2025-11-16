@@ -1,5 +1,4 @@
 import { type AppType } from "next/dist/shared/lib/utils";
-import AOSWrapper from "~/components/animation/AOSWrapper";
 import "~/styles/globals.css";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
 
@@ -15,11 +14,9 @@ const SourceSans = Source_Sans_3({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <AOSWrapper>
-      <main className={`${PlayFair.variable} ${SourceSans.variable}`}>
-        <Component {...pageProps} />
-      </main>
-    </AOSWrapper>
+    <main className={`${PlayFair.variable} ${SourceSans.variable}`}>
+      <Component {...pageProps} />
+    </main>
   );
 };
 

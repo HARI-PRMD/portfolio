@@ -1,6 +1,6 @@
 import { projectsDataV2 } from "~/utils/data";
 import { useState } from "react";
-import AnimationWrapper from "../animation/AnimationWrapper";
+import FadeIn from "../animation/FadeIn";
 import ProjectCard from "./ProjectCard";
 
 const AllProjects: React.FC = () => {
@@ -20,9 +20,8 @@ const AllProjects: React.FC = () => {
       }}
     >
       {projectsDataV2?.map((p, i) => (
-        <AnimationWrapper key={i} animation="fade-up">
+        <FadeIn key={i}>
           <ProjectCard
-            key={i}
             title={p.title}
             description={p.description}
             month={p.month}
@@ -32,7 +31,7 @@ const AllProjects: React.FC = () => {
             image={p.image}
             isInView={cardInViewIndex === i}
           />
-        </AnimationWrapper>
+        </FadeIn>
       ))}
     </div>
   );
