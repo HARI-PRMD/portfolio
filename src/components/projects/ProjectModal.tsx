@@ -51,8 +51,9 @@ const ProjectModal: React.FC<Props> = ({
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <div className="fixed inset-0 flex items-center justify-center p-4">
-            <Dialog.Panel className="relative mx-auto mt-16 flex h-full w-full max-w-4xl flex-col overflow-hidden border border-white/20 bg-black text-white max-h-[calc(100vh-6rem)] md:mt-0 md:h-[85vh]">
+          <div className="fixed inset-0 overflow-y-auto">
+            <div className="flex min-h-full items-start justify-center p-4">
+              <Dialog.Panel className="relative flex w-full max-w-4xl flex-col overflow-hidden border border-white/20 bg-black text-white">
               <div className="relative h-64 w-full overflow-hidden border-b border-white/10 md:h-80">
                 {image ? (
                   <Image
@@ -84,7 +85,7 @@ const ProjectModal: React.FC<Props> = ({
                 </button>
               </div>
 
-              <div className="flex flex-1 flex-col justify-between overflow-y-auto">
+              <div className="flex flex-1 flex-col justify-between">
                 <div className="p-8 text-left">
                   <MarkdownParser
                     markdownString={description}
@@ -118,7 +119,8 @@ const ProjectModal: React.FC<Props> = ({
                   )}
                 </div>
               </div>
-            </Dialog.Panel>
+              </Dialog.Panel>
+            </div>
           </div>
         </Transition.Child>
       </Dialog>
