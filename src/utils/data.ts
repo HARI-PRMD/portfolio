@@ -81,8 +81,7 @@ export const experienceData: ExperienceItem[] = [
     start: "June 2025",
     end: "Present",
     highlights: [
-      "Embedded with customers to ship Lyra's product into production environments as part of the forward deployed engineering team.",
-      "Support go-live efforts from Sydney, ensuring each deployment aligns with rapidly evolving product goals.",
+      "Full-stack development of internal and client-facing applications",
     ],
     logo: "/images/lyra-logo.svg",
     logoAlt: "Lyra logo",
