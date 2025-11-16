@@ -5,6 +5,11 @@ import type { ExperienceItem } from "~/types/types";
 
 type Props = ExperienceItem & { isInView: boolean };
 
+const formatRange = (startDate: string, endDate: string) => {
+  const format = (value: string) => value.split(" ").slice(0, 2).join(" ");
+  return `${format(startDate)} – ${format(endDate)}`;
+};
+
 const ExperienceCard = ({
   company,
   title,
@@ -17,7 +22,7 @@ const ExperienceCard = ({
   callToAction,
   isInView,
 }: Props) => {
-  const timeframe = `${start} – ${end}`;
+  const timeframe = formatRange(start, end);
   const cardState = isInView ? "scale-100 grayscale-0" : "scale-90 grayscale";
 
   return (

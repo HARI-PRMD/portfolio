@@ -51,7 +51,7 @@ const ProjectModal: React.FC<Props> = ({
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
-          <div className="fixed inset-0 overflow-y-auto">
+          <div className="fixed inset-0 overflow-y-auto pt-24">
             <div className="flex min-h-full items-start justify-center p-4">
               <Dialog.Panel className="relative flex w-full max-w-4xl flex-col overflow-hidden border border-white/20 bg-black text-white">
               <div className="relative h-64 w-full overflow-hidden border-b border-white/10 md:h-80">
