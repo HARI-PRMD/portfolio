@@ -22,11 +22,12 @@ const MONTH_ABBREVIATIONS: Record<string, string> = {
 
 const formatRange = (startDate: string, endDate: string) => {
   const format = (value: string) => {
-    const [month, year] = value.split(" ");
-    if (!year) {
-      return MONTH_ABBREVIATIONS[month] ?? month;
-    }
+    const [monthRaw, year] = value.split(" ");
+    const month = monthRaw ?? value;
     const shortMonth = MONTH_ABBREVIATIONS[month] ?? month;
+    if (!year) {
+      return shortMonth;
+    }
     return `${shortMonth} ${year}`;
   };
   return `${format(startDate)} – ${format(endDate)}`;
