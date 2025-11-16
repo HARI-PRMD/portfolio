@@ -1,23 +1,15 @@
-import { motion } from "framer-motion";
-import type { HTMLAttributes, ReactNode } from "react";
+import { motion, type HTMLMotionProps } from "framer-motion";
+import type { ReactNode } from "react";
 
 type FadeInProps = {
   children: ReactNode;
-  className?: string;
   delay?: number;
   y?: number;
-} & HTMLAttributes<HTMLDivElement>;
+} & HTMLMotionProps<"div">;
 
-const FadeIn = ({
-  children,
-  className,
-  delay = 0,
-  y = 32,
-  ...rest
-}: FadeInProps) => {
+const FadeIn = ({ children, delay = 0, y = 32, ...rest }: FadeInProps) => {
   return (
     <motion.div
-      className={className}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
