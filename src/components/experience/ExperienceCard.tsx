@@ -5,8 +5,30 @@ import type { ExperienceItem } from "~/types/types";
 
 type Props = ExperienceItem & { isInView: boolean };
 
+const MONTH_ABBREVIATIONS: Record<string, string> = {
+  January: "Jan",
+  February: "Feb",
+  March: "Mar",
+  April: "Apr",
+  May: "May",
+  June: "Jun",
+  July: "Jul",
+  August: "Aug",
+  September: "Sep",
+  October: "Oct",
+  November: "Nov",
+  December: "Dec",
+};
+
 const formatRange = (startDate: string, endDate: string) => {
-  const format = (value: string) => value.split(" ").slice(0, 2).join(" ");
+  const format = (value: string) => {
+    const [month, year] = value.split(" ");
+    if (!year) {
+      return MONTH_ABBREVIATIONS[month] ?? month;
+    }
+    const shortMonth = MONTH_ABBREVIATIONS[month] ?? month;
+    return `${shortMonth} ${year}`;
+  };
   return `${format(startDate)} – ${format(endDate)}`;
 };
 
