@@ -81,13 +81,14 @@ export const experienceData: ExperienceItem[] = [
     start: "June 2025",
     end: "Present",
     highlights: [
-      "Full-stack development of internal and client-facing applications",
+      "Embedded with customers to ship Lyra's product into production environments as part of the forward deployed engineering team.",
+      "Support go-live efforts from Sydney, ensuring each deployment aligns with rapidly evolving product goals.",
     ],
     logo: "/images/lyra-logo.svg",
     logoAlt: "Lyra logo",
   },
   {
-    company: "UNSW",
+    company: "UNSW Computer Science and Engineering",
     title: "Mentor for SENG2021",
     location: "Sydney, NSW, Australia",
     start: "January 2024",
@@ -248,8 +249,27 @@ export const technologiesToolsData: { name: string; url: string }[] = [
 export const projectsDataV2: ProjectCardDataType[] = [
   {
     title: "UNSW One Piece Society Website",
-    description:
-      "Leveraged NextJS, TypeScript, tRPC, and Prisma for responsive design. Implemented TailwindCSS for a modern aesthetic. Employed WebP format and compression techniques for optimized image performance. Hosted on Vercel with Supabase integration, ensuring a seamless and efficient user experience.",
+    description: `
+# 🏴‍☠️ UNSW One Piece Society's Website
+
+![logo](/doc_images//opsoc-banner-art.webp)
+
+## 🔗 [https://unsw-one-piece-society.vercel.app/](https://unsw-one-piece-society.vercel.app/)
+
+## 👥 Team
+
+The First Version of this website was Designed and Developed by [Hari Pramod](https://hari-portfolio-ten.vercel.app) the First Technical Director of UNSW One Piece Society in 2023, with general assistance and assets from The Marketing Team (2023).
+
+Special thanks to [Alex](https://github.com/Gitalexzhong) for initially deploying the application on his domain, and Jeet and [Colby](https://github.com/ColbyRehn) for Finding Artwork to use in the website.
+
+## 💻 Technology
+
+This is a [NextJS](https://nextjs.org) built with [Typescript](https://www.typescriptlang.org/) that uses [Tailwind CSS](https://tailwindcss.com) for styling.
+
+## 🚀 Deployment
+
+App Deployed on [Vercel](https://vercel.com/home)
+    `,
     month: "September",
     year: 2023,
     codeLink: "https://github.com/One-Piece-Society/website",
@@ -258,8 +278,51 @@ export const projectsDataV2: ProjectCardDataType[] = [
   },
   {
     title: "MegaLAN Full Blossom Quests",
-    description:
-      "Developed a Stamp Rally Management System, featuring a task creation system for societies within designated rooms. Implemented a QR code scanning mechanism for admin task completion. Introduced a raffle system for winner selection. Utilized NextJS, TypeScript, tRPC, Prisma, and TailwindCSS for seamless integration and optimal functionality during MegaLAN events.",
+    description: `
+# 🌸 MegaLAN Full Blossom Quests Website
+
+![logo](/doc_images//megalan-logo.png)
+
+A Stamp Rally Website Developed for MegaLAN Full Blossom during September 2023
+
+## 🌼 Team
+
+### 🧑‍💻 Leads
+
+- [Vishnu](https://github.com/VishnuPrateek1)
+- [Hari](https://hari-portfolio-ten.vercel.app)
+
+### 💻 Development
+
+- [Max](https://github.com/max8539)
+- [Isaac](https://github.com/Gyoumi)
+
+### 🎨 Design
+
+- Renee
+- [Christine](https://github.com/Christin322)
+
+## 🍃 Documentation
+
+You can our video on how to use it as an admin here: [Documentation](https://youtu.be/ayUnhIeEo9k)
+
+The website is available here: [Website](https://www.quests.megalan.com.au/)
+
+## 🌺 Tech Stack
+
+This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with \`create-t3-app\`,
+
+- [Next.js](https://nextjs.org)
+- [NextAuth.js](https://next-auth.js.org)
+- [Prisma](https://prisma.io)
+- [Tailwind CSS](https://tailwindcss.com)
+- [tRPC](https://trpc.io)
+- Typescript
+
+## 🌄 Deployment
+
+Deployed using Vercel and Supabase
+    `,
     month: "September",
     year: 2023,
     codeLink:
@@ -269,8 +332,17 @@ export const projectsDataV2: ProjectCardDataType[] = [
   },
   {
     title: "Discord Verification Bot",
-    description:
-      "I developed a custom verification bot using Typescript and discord.js for the UNSW Rhythm Game Society. The bot verifies new members by monitoring Google Form submissions, extracting email and Discord tag data. It then sends a verification code via email and prompts users to enter the code for verification on the Discord community server. Upon success the user is given the verified role.",
+    description: `
+# UNSW Rhythm Game Society Discord Bot
+
+A bot developed by [@HARI-PRMD](https://github.com/HARI-PRMD) for [UNSW Rhythm Game Society](https://www.arc.unsw.edu.au/get-involved/opportunity?name=Rhythm%20Games%20Society)
+
+## Available Features
+
+- Verifies Users by reading new responses from the Google Verification Form and sending them verification emails. (automatic)
+- Ping -> Pong (interaction)
+- About Bot (interaction)
+    `,
     month: "June",
     year: 2023,
     codeLink: "https://github.com/unswrgs/rgs-bot",
@@ -304,8 +376,36 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
   },
   {
     title: "EZ Invoice",
-    description:
-      "Developed e-invoice management website with sales and customer tracking as well as invoice generation, validation and rendering in a team as part of the SENG2021 Requirements and Design Workshop Course.",
+    description: `
+# 🧾 SENG2021 F14A Discord Moderators Frontend
+
+This webapp was bootstrapped using create-t3-app and built on the [T3 Stack](https://create.t3.gg/).
+
+## 💻 Our Webapp
+
+🔗 Deployed using [Vercel](https://vercel.com) at [https://se2021-23t1-einvoicing-frontend-f14a-di-git-342b0e-merryrosalie.vercel.app](https://se2021-23t1-einvoicing-frontend-f14a-di-git-342b0e-merryrosalie.vercel.app)
+
+## 💡 App Concept
+
+This webapp provides customers and the target market of our [Invoice Rendering API](https://app.swaggerhub.com/apis-docs/JohnieCar15/InvoiceRendering/1.0.0#/) with an interface that allows it to connect with other similar microservices to provide a wholistic experience to the customer rich with features.
+
+## 📝 Documentation
+
+- [Confluence Documentation](https://unswcse.atlassian.net/wiki/spaces/F14ADISCOR/overview)
+- [Jira Issue Board](https://unswcse.atlassian.net/jira/software/projects/F14ADISCOR/boards/125)
+- [Swagger API Documentation](https://app.swaggerhub.com/apis-docs/JohnieCar15/InvoiceRendering/1.0.0#/)
+
+## 🧑‍💻 T3 Stack Frameworks and Modules
+
+- [React](https://react.dev)
+- [Typescript](https://www.typescriptlang.org)
+- [Next.js](https://nextjs.org)
+- [NextAuth.js](https://next-auth.js.org)
+- [Prisma](https://prisma.io)
+- [Tailwind CSS](https://tailwindcss.com)
+- [tRPC](https://trpc.io)
+
+    `,
     month: "April",
     year: 2023,
     codeLink: "https://github.com/HARI-PRMD/SENG2021-application",
@@ -345,8 +445,84 @@ Deployed using \`Vercel\` and \`Supabase\` for free,
   },
   {
     title: "Loft",
-    description:
-      "Loft is a dynamic single-page front-end web application which includes a range of customizable widgets designed to enhance user interaction and productivity. Notable features encompass a Pomodoro Timer, YouTube Video Player, Notepad with Text Formatting, and a To-Do List, with Theme and Font Switching. Loft provides a versatile and engaging platform, showcasing the team's proficiency in React, TypeScript, CSS, and ViteJS.",
+    description: `
+# Loft
+
+## Summary
+
+Loft is a productivity web app with the following widgets,
+
+- Customizable Pomodoro Timer
+- Youtube Video Player
+- Notepad with Text Formatting
+- To Do List
+
+as well as customization settings supporting,
+
+- Themes
+  - light mode
+  - dark mode
+- Fonts
+  - Arial
+  - Serif
+  - Monospace
+
+## How To Start App
+
+\`\`\`bash
+  git clone git@github.com:csesoc/trainee-3-22t3.git
+  cd frontend
+  npm install
+  npm run dev
+\`\`\`
+
+## Tech Stack
+
+- React
+- Typescript
+- ViteJS
+- CSS
+
+# Gallery
+
+## Widgets
+
+### **Timer**
+
+![Timer](/doc_images/timer_widget.gif)
+
+### **To-Do**
+
+![To Do](/doc_images/to_do_widget.gif)
+
+### **Notes**
+
+![Notes](/doc_images/notes_widget.gif)
+
+### **Video-Player**
+
+![Video Player](/doc_images/video_player_widget.gif)
+
+## Themes
+
+### **Light-Mode**
+
+![Light Mode](/doc_images/light_theme_pic.png)
+
+### **Dark-Mode**
+
+![Dark Mode](/doc_images/dark_theme_pic.png)
+
+## Fonts
+
+### **Monospace**
+
+![mono space](/doc_images/monospace_font_pic.png)
+
+## Change Background Image
+
+![Changed background pic](/doc_images/change_bg_pic.png)
+    `,
     month: "October",
     year: 2022,
     codeLink: "https://github.com/csesoc/trainee-3-22t3",

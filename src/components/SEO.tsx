@@ -24,7 +24,7 @@ const SEO: React.FC<Props> = ({ title, description, image, url = baseUrl }) => {
         content="unsw, portfolio, hari pramod, hari, hehe, software engineering, computer science, linkedin, job, hire, code, javascript, typescript, full stack, website, webapp, design, web design"
       />
       <meta name="robots" content="index, follow" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       <meta name="language" content="English" />
       <link rel="icon" href={favicon} />
 
