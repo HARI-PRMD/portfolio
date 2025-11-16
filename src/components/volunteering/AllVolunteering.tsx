@@ -12,12 +12,8 @@ const splitVolunteeringData = (
   ];
 
   items.forEach((item, index) => {
-    if (index === items.length - 1) {
-      columns[1].push(item);
-      return;
-    }
-
-    columns[index % 2].push(item);
+    const columnIndex = index === items.length - 1 ? 1 : index % 2;
+    columns[columnIndex]?.push(item);
   });
 
   return columns;
