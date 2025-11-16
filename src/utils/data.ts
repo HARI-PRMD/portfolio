@@ -4,6 +4,7 @@ import {
   type volunteeringDataType,
   type CourseAchievementCardDataType,
   type CompetitionCardDataType,
+  type ExperienceItem,
 } from "~/types/types";
 
 export const volunteeringData: volunteeringDataType[] = [
@@ -69,6 +70,36 @@ export const volunteeringData: volunteeringDataType[] = [
       "Collaborated with the Music Director to curate and release Lo-fi Society's annual Mixtape on streaming platforms. Enhanced event participation and established impactful connections with fellow society leaders, contributing to the overall improvement of Lo-fi Society's brand image and value.",
     startTime: "Apr 2022",
     endTime: "Jan 2023",
+  },
+];
+
+export const experienceData: ExperienceItem[] = [
+  {
+    company: "Lyra",
+    title: "Forward Deployed Engineer",
+    location: "Sydney, NSW, Australia",
+    start: "June 2025",
+    end: "Present",
+    highlights: [
+      "Embedded with customers to ship Lyra's product into production environments as part of the forward deployed engineering team.",
+      "Support go-live efforts from Sydney, ensuring each deployment aligns with rapidly evolving product goals.",
+    ],
+    logo: "/images/lyra-logo.svg",
+    logoAlt: "Lyra logo",
+  },
+  {
+    company: "UNSW Computer Science and Engineering",
+    title: "Mentor for SENG2021",
+    location: "Sydney, NSW, Australia",
+    start: "January 2024",
+    end: "May 2024",
+    highlights: [
+      "Mentored 25 students in architecting and developing microservice-based invoice management systems using agile methodologies.",
+      "Guided a student team to win the Macquarie Bank Group Prize for best project and presentation.",
+      "Delivered supplementary lectures on backend and frontend deployment across six cloud hosting platforms to extend course content.",
+    ],
+    logo: "https://i.imgur.com/9usq5EW.png",
+    logoAlt: "UNSW crest",
   },
 ];
 

@@ -35,29 +35,17 @@ export type CompetitionCardDataType = {
   year: number;
 };
 
-export type AosAnimationType =
-  | "fade"
-  | "fade-up"
-  | "fade-down"
-  | "fade-right"
-  | "fade-left"
-  | "fade-up-right"
-  | "fade-up-left"
-  | "fade-down-right"
-  | "fade-down-left"
-  | "zoom-in"
-  | "zoom-in-up"
-  | "zoom-in-down"
-  | "zoom-in-right"
-  | "zoom-in-left"
-  | "zoom-out"
-  | "zoom-out-up"
-  | "zoom-out-down"
-  | "zoom-out-right"
-  | "zoom-out-left"
-  | "slide-up"
-  | "slide-down"
-  | "slide-right"
-  | "slide-left"
-  | "flip-left"
-  | "flip-right";
+export type ExperienceItem = {
+  company: string;
+  title: string;
+  location: string;
+  start: string;
+  end: string;
+  highlights: string[];
+  logo?: string;
+  logoAlt?: string;
+  callToAction?: {
+    label: string;
+    href: string;
+  };
+};

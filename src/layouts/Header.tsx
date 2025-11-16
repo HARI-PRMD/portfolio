@@ -5,29 +5,16 @@ import { Fragment, useEffect, useState } from "react";
 const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
 
-  // scrolls user to end of previous section on click
-  const handleHeadingClick = (sectionId: string) => {
-    const section: HTMLElement | null = document.getElementById(sectionId);
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
 
-    if (section) {
-      const sections = document.querySelectorAll("section");
-      let targetSection: HTMLElement | null = null;
+    const header = document.getElementById("header");
+    const headerHeight = header?.getBoundingClientRect().height ?? 0;
+    const targetOffset =
+      section.getBoundingClientRect().top + window.scrollY - headerHeight;
 
-      for (let i = 0; i < sections.length; i++) {
-        if (sections[i]?.id === sectionId) {
-          if (i > 0) {
-            targetSection = sections[i - 1] as HTMLElement;
-          }
-          break;
-        }
-      }
-
-      if (targetSection) {
-        const scrollPosition =
-          targetSection.getBoundingClientRect().bottom + window.scrollY + 1;
-        window.scrollTo({ top: scrollPosition, behavior: "smooth" });
-      }
-    }
+    window.scrollTo({ top: targetOffset, behavior: "smooth" });
   };
 
   // highlights current section in view
@@ -49,6 +36,7 @@ const Header: React.FC = () => {
   }, []);
 
   const links = [
+    { href: "experience", label: "Experience" },
     { href: "education", label: "Education" },
     { href: "projects", label: "Projects" },
     { href: "technologies", label: "Technologies" },
@@ -71,7 +59,7 @@ const Header: React.FC = () => {
           {links.map((link, index) => (
             <p
               key={index}
-              onClick={() => handleHeadingClick(link.href)}
+              onClick={() => scrollToSection(link.href)}
               className={`para1 group cursor-pointer transition duration-300 hover:opacity-100 ${
                 activeSection === link.href ? "opacity-100" : "opacity-60"
               }`}
@@ -138,7 +126,7 @@ const Header: React.FC = () => {
                               ? "opacity-100"
                               : "opacity-60"
                           } heading3 p-4 `}
-                          onClick={() => handleHeadingClick(link.href)}
+                          onClick={() => scrollToSection(link.href)}
                         >
                           {link.label}
                         </p>
