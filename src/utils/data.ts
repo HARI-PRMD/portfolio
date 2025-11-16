@@ -84,10 +84,8 @@ export const experienceData: ExperienceItem[] = [
       "Embedded with customers to ship Lyra's product into production environments as part of the forward deployed engineering team.",
       "Support go-live efforts from Sydney, ensuring each deployment aligns with rapidly evolving product goals.",
     ],
-    callToAction: {
-      label: "Join our team",
-      href: "https://bit.ly/applytolyra",
-    },
+    logo: "/images/lyra-logo.svg",
+    logoAlt: "Lyra logo",
   },
   {
     company: "UNSW Computer Science and Engineering",
@@ -100,6 +98,8 @@ export const experienceData: ExperienceItem[] = [
       "Guided a student team to win the Macquarie Bank Group Prize for best project and presentation.",
       "Delivered supplementary lectures on backend and frontend deployment across six cloud hosting platforms to extend course content.",
     ],
+    logo: "https://i.imgur.com/9usq5EW.png",
+    logoAlt: "UNSW crest",
   },
 ];
 

@@ -42,6 +42,8 @@ export type ExperienceItem = {
   start: string;
   end: string;
   highlights: string[];
+  logo?: string;
+  logoAlt?: string;
   callToAction?: {
     label: string;
     href: string;

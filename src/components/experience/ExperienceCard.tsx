@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "../animation/FadeIn";
 import type { ExperienceItem } from "~/types/types";
@@ -11,21 +12,40 @@ const ExperienceCard = ({
   start,
   end,
   highlights,
+  logo,
+  logoAlt,
   callToAction,
   isInView,
 }: Props) => {
   const timeframe = `${start} – ${end}`;
-  const cardState = isInView ? "scale-100" : "scale-90";
+  const cardState = isInView ? "scale-100 grayscale-0" : "scale-90 grayscale";
 
   return (
     <FadeIn
-      className={`${cardState} flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none`}
+      className={`${cardState} flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none md:hover:grayscale-0 md:active:grayscale-0`}
     >
-      <p className="subtitle uppercase tracking-wide opacity-60">{company}</p>
-      <h3 className="heading3 pt-2">{title}</h3>
-      <p className="subtitle opacity-60">
-        {timeframe} · {location}
-      </p>
+      <div className="flex items-center gap-4 pb-4">
+        {logo && (
+          <div className="flex h-14 w-14 items-center justify-center border border-white/20 bg-black/20 p-2">
+            <Image
+              src={logo}
+              alt={logoAlt ?? `${company} logo`}
+              width={56}
+              height={56}
+              className="h-full w-full object-contain"
+            />
+          </div>
+        )}
+        <div>
+          <p className="subtitle uppercase tracking-wide opacity-60">
+            {company}
+          </p>
+          <h3 className="heading3 pt-2">{title}</h3>
+          <p className="subtitle opacity-60">
+            {timeframe} · {location}
+          </p>
+        </div>
+      </div>
       <div className="py-4 space-y-2">
         {highlights.map((item, index) => (
           <p key={index} className="subtitle opacity-80">
