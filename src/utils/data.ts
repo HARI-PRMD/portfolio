@@ -88,7 +88,7 @@ export const experienceData: ExperienceItem[] = [
     logoAlt: "Lyra logo",
   },
   {
-    company: "UNSW Computer Science and Engineering",
+    company: "UNSW",
     title: "Mentor for SENG2021",
     location: "Sydney, NSW, Australia",
     start: "January 2024",
