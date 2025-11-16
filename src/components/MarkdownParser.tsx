@@ -6,20 +6,17 @@ type Props = {
   className?: string;
 };
 
-// Disabling mangle and headerIds options to clear warnings
-const markedOptions = {
-  mangle: false,
-  headerIds: false,
-};
-
 const MarkdownParser: React.FC<Props> = ({ markdownString, className }) => {
   // Function to convert Markdown to HTML using 'marked' library
   const parseMarkdownToHTML = (markdownString: string): { __html: string } => {
-    return { __html: marked(markdownString, markedOptions) };
+    return { __html: marked.parse(markdownString) as string };
   };
+  const combinedClassName = ["markdown-body", className]
+    .filter(Boolean)
+    .join(" ");
   return (
     <div
-      className={className}
+      className={combinedClassName}
       dangerouslySetInnerHTML={parseMarkdownToHTML(markdownString)}
     />
   );

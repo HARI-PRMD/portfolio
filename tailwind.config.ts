@@ -3,6 +3,8 @@
 import { type Config } from "tailwindcss";
 import typography from "@tailwindcss/typography";
 
+type ThemeFn = (path: string) => string;
+
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -27,29 +29,182 @@ export default {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
-      typography: (theme) => ({
-        invert: {
-          css: {
-            '--tw-prose-body': theme('colors.white / 0.85'),
-            '--tw-prose-headings': theme('colors.white'),
-            '--tw-prose-links': theme('colors.white'),
-            '--tw-prose-bold': theme('colors.white'),
-            '--tw-prose-counters': theme('colors.white / 0.6'),
-            '--tw-prose-bullets': theme('colors.white / 0.4'),
-            '--tw-prose-hr': theme('colors.white / 0.1'),
-            '--tw-prose-quotes': theme('colors.white'),
-            '--tw-prose-quote-borders': theme('colors.white / 0.4'),
-            '--tw-prose-captions': theme('colors.white / 0.5'),
-            '--tw-prose-th-borders': theme('colors.white / 0.4'),
-            '--tw-prose-td-borders': theme('colors.white / 0.1'),
-            a: {
-              textDecoration: 'none',
-              borderBottom: '1px solid rgba(255,255,255,0.4)',
-              paddingBottom: theme('spacing[0.5]'),
+      typography: (theme: ThemeFn) => {
+        const baseHeading = {
+          fontFamily: "var(--font-Playfair-Display)",
+          fontWeight: "500",
+          letterSpacing: "0.04em",
+        };
+
+        return {
+          DEFAULT: {
+            css: {
+              maxWidth: "none",
+              color: theme("colors.neutral.800"),
+              fontFamily: "var(--font-Source-Sans-3)",
+              h1: {
+                ...baseHeading,
+                color: theme("colors.neutral.900"),
+                fontSize: "2.5rem",
+                lineHeight: "1.2",
+                marginTop: theme("spacing.8"),
+                marginBottom: theme("spacing.4"),
+              },
+              h2: {
+                ...baseHeading,
+                color: theme("colors.neutral.900"),
+                fontSize: "2rem",
+                lineHeight: "1.3",
+                marginTop: theme("spacing.6"),
+                marginBottom: theme("spacing.3"),
+              },
+              h3: {
+                ...baseHeading,
+                color: theme("colors.neutral.900"),
+                fontSize: "1.5rem",
+                marginTop: theme("spacing.5"),
+                marginBottom: theme("spacing.3"),
+              },
+              p: {
+                marginTop: theme("spacing.4"),
+                marginBottom: theme("spacing.4"),
+                fontSize: "1.05rem",
+                lineHeight: "1.8",
+              },
+              a: {
+                color: theme("colors.neutral.900"),
+                textDecoration: "none",
+                borderBottom: `1px solid ${theme("colors.neutral.400")}`,
+                paddingBottom: "0.125rem",
+                transition: "color 150ms ease, border-color 150ms ease",
+                "&:hover": {
+                  color: theme("colors.neutral.700"),
+                  borderColor: theme("colors.neutral.500"),
+                },
+              },
+              ul: {
+                marginTop: theme("spacing.4"),
+                marginBottom: theme("spacing.4"),
+                paddingLeft: theme("spacing.6"),
+              },
+              ol: {
+                marginTop: theme("spacing.4"),
+                marginBottom: theme("spacing.4"),
+                paddingLeft: theme("spacing.6"),
+              },
+              li: {
+                marginTop: theme("spacing.1"),
+                marginBottom: theme("spacing.1"),
+              },
+              strong: {
+                color: theme("colors.neutral.900"),
+                fontWeight: "600",
+              },
+              code: {
+                color: theme("colors.neutral.900"),
+                backgroundColor: theme("colors.neutral.100"),
+                padding: "0.1rem 0.35rem",
+                borderRadius: "0.25rem",
+                fontWeight: "400",
+              },
+              pre: {
+                backgroundColor: theme("colors.neutral.900"),
+                color: theme("colors.white"),
+                borderRadius: theme("borderRadius.lg"),
+                padding: theme("spacing.5"),
+              },
+              hr: {
+                marginTop: theme("spacing.6"),
+                marginBottom: theme("spacing.6"),
+                borderColor: theme("colors.neutral.200"),
+              },
             },
           },
-        },
-      }),
+          invert: {
+            css: {
+              maxWidth: "none",
+              color: "rgb(255 255 255 / 0.82)",
+              fontFamily: "var(--font-Source-Sans-3)",
+              h1: {
+                ...baseHeading,
+                color: "#fff",
+                fontSize: "2.5rem",
+                lineHeight: "1.2",
+                marginTop: theme("spacing.8"),
+                marginBottom: theme("spacing.4"),
+              },
+              h2: {
+                ...baseHeading,
+                color: "#fff",
+                fontSize: "2rem",
+                lineHeight: "1.3",
+                marginTop: theme("spacing.6"),
+                marginBottom: theme("spacing.3"),
+              },
+              h3: {
+                ...baseHeading,
+                color: "#fff",
+                fontSize: "1.5rem",
+                marginTop: theme("spacing.5"),
+                marginBottom: theme("spacing.3"),
+              },
+              p: {
+                marginTop: theme("spacing.4"),
+                marginBottom: theme("spacing.4"),
+                fontSize: "1.05rem",
+                lineHeight: "1.75",
+              },
+              a: {
+                color: "#fff",
+                textDecoration: "none",
+                borderBottom: "1px solid rgba(255,255,255,0.4)",
+                paddingBottom: "0.125rem",
+                transition: "color 150ms ease, border-color 150ms ease",
+                "&:hover": {
+                  color: "rgb(255 255 255 / 0.9)",
+                  borderColor: "rgba(255,255,255,0.7)",
+                },
+              },
+              ul: {
+                marginTop: theme("spacing.4"),
+                marginBottom: theme("spacing.4"),
+                paddingLeft: theme("spacing.6"),
+              },
+              ol: {
+                marginTop: theme("spacing.4"),
+                marginBottom: theme("spacing.4"),
+                paddingLeft: theme("spacing.6"),
+              },
+              li: {
+                marginTop: theme("spacing.1"),
+                marginBottom: theme("spacing.1"),
+              },
+              strong: {
+                color: "rgb(255 255 255 / 0.95)",
+                fontWeight: "600",
+              },
+              code: {
+                color: "rgb(255 255 255 / 0.95)",
+                backgroundColor: "rgb(255 255 255 / 0.08)",
+                padding: "0.1rem 0.35rem",
+                borderRadius: "0.25rem",
+                fontWeight: "400",
+              },
+              pre: {
+                backgroundColor: "rgb(15 15 15 / 0.7)",
+                color: "#fff",
+                borderRadius: theme("borderRadius.lg"),
+                padding: theme("spacing.5"),
+              },
+              hr: {
+                marginTop: theme("spacing.6"),
+                marginBottom: theme("spacing.6"),
+                borderColor: "rgba(255,255,255,0.2)",
+              },
+            },
+          },
+        };
+      },
     },
   },
   plugins: [require("tailwind-scrollbar")({ nocompatible: true }), typography],

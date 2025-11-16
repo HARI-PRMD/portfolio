@@ -4,35 +4,6 @@
 
 @layer base {
     
-    /* Markdown Classes  */
-    h1 {
-        @apply font-heading text-3xl md:text-6xl pt-8 pb-4;
-    }
-    
-    h2 {
-        @apply font-heading text-2xl md:text-4xl pt-4 pb-2;
-    }
-
-    p {
-        @apply font-body text-base md:text-2xl py-2;
-    }
-
-    ul {
-        @apply font-body text-base md:text-2xl py-2 px-8;
-    }
-    
-    li {
-        @apply py-1 list-disc;
-    }
-
-    a {
-        @apply underline underline-offset-4 text-white/60;
-    }
-
-    div > a {
-        @apply no-underline text-white;
-    }
-    
     /* Regular Classes */
     .title {
         @apply font-heading text-4xl md:text-8xl py-0;
@@ -58,8 +29,14 @@
         @apply font-body text-sm md:text-base py-0;
     }
 
-    .scroller {
+.scroller {
         @apply scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white scrollbar-thumb-rounded-xl
+    }
+}
+
+@layer components {
+    .markdown-body {
+        @apply font-body text-base leading-7 text-white/80;
     }
 }
 

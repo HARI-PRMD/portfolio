@@ -36,6 +36,7 @@ dependencies:
   '@t3-oss/env-nextjs': 0.3.1_av7qkjx4kk2tiqpncrkjarwxi4
   '@vercel/analytics': 1.5.0_next@13.5.11+react@18.2.0
   framer-motion: 10.18.0_biqbaboplfbrettd7655fr4n2y
+  marked: 17.0.0
   next: 13.5.11_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -54,7 +55,6 @@ devDependencies:
   autoprefixer: 10.4.22_postcss@8.5.6
   eslint: 8.57.1
   eslint-config-next: 13.5.11_k2rwabtyo525wwqr6566umnmhy
-  marked: 17.0.0
   postcss: 8.5.6
   prettier: 2.8.8
   prettier-plugin-tailwindcss: 0.2.8_prettier@2.8.8
@@ -2425,7 +2425,7 @@ packages:
     resolution: {integrity: sha512-KkDYEWEEiYJw/KC+DVm1zzlpMQSMIu6YRltkcCvwheCp8HWPXCk9JwOmHJKBlGfzcpzcIt6x3sMnTsRm/51oDg==}
     engines: {node: '>= 20'}
     hasBin: true
-    dev: true
+    dev: false
 
   /math-intrinsics/1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
