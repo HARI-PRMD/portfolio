@@ -22,19 +22,17 @@ const ExperienceCard = ({
 
   return (
     <FadeIn
-      className={`${cardState} flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none md:hover:grayscale-0 md:active:grayscale-0`}
+      className={`${cardState} group flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none md:hover:grayscale-0 md:active:grayscale-0`}
     >
       <div className="flex items-center gap-4 pb-4">
         {logo && (
-          <div className="flex h-14 w-14 items-center justify-center border border-white/20 bg-black/20 p-2">
-            <Image
-              src={logo}
-              alt={logoAlt ?? `${company} logo`}
-              width={56}
-              height={56}
-              className="h-full w-full object-contain"
-            />
-          </div>
+          <Image
+            src={logo}
+            alt={logoAlt ?? `${company} logo`}
+            width={56}
+            height={56}
+            className="h-14 w-14 object-contain filter grayscale transition-all duration-300 group-hover:grayscale-0"
+          />
         )}
         <div>
           <p className="subtitle uppercase tracking-wide opacity-60">
