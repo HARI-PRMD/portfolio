@@ -27,6 +27,29 @@ export default {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       },
+      typography: (theme) => ({
+        invert: {
+          css: {
+            '--tw-prose-body': theme('colors.white / 0.85'),
+            '--tw-prose-headings': theme('colors.white'),
+            '--tw-prose-links': theme('colors.white'),
+            '--tw-prose-bold': theme('colors.white'),
+            '--tw-prose-counters': theme('colors.white / 0.6'),
+            '--tw-prose-bullets': theme('colors.white / 0.4'),
+            '--tw-prose-hr': theme('colors.white / 0.1'),
+            '--tw-prose-quotes': theme('colors.white'),
+            '--tw-prose-quote-borders': theme('colors.white / 0.4'),
+            '--tw-prose-captions': theme('colors.white / 0.5'),
+            '--tw-prose-th-borders': theme('colors.white / 0.4'),
+            '--tw-prose-td-borders': theme('colors.white / 0.1'),
+            a: {
+              textDecoration: 'none',
+              borderBottom: '1px solid rgba(255,255,255,0.4)',
+              paddingBottom: theme('spacing[0.5]'),
+            },
+          },
+        },
+      }),
     },
   },
   plugins: [require("tailwind-scrollbar")({ nocompatible: true }), typography],

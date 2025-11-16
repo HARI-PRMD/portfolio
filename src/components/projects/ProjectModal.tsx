@@ -89,7 +89,7 @@ const ProjectModal: React.FC<Props> = ({
                 <div className="p-8 text-left">
                   <MarkdownParser
                     markdownString={description}
-                    className="prose prose-invert max-w-none space-y-4 text-base leading-7 text-white/85 md:text-lg"
+                    className="prose prose-invert max-w-none space-y-4 text-base leading-7 text-white/85 md:text-lg prose-headings:font-heading prose-headings:uppercase prose-headings:tracking-[0.2em] prose-strong:text-white prose-a:no-underline prose-a:border-b prose-a:border-white/40 prose-li:marker:text-white/60 prose-hr:border-white/10"
                   />
                 </div>
                 <div className="flex flex-wrap gap-4 border-t border-white/10 p-8">
