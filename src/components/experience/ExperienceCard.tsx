@@ -74,7 +74,7 @@ const ExperienceCard = ({
       </div>
       <div className="py-4 space-y-2">
         {highlights.map((item, index) => (
-          <p key={index} className="subtitle opacity-80">
+          <p key={index} className="subtitle font-light opacity-80">
             {item}
           </p>
         ))}

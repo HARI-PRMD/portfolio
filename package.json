@@ -19,7 +19,7 @@
     "@vercel/analytics": "^1.5.0",
     "framer-motion": "^10.16.4",
     "marked": "^17.0.0",
-    "next": "^16.0.7",
+    "next": "^16.0.10",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "zod": "^3.21.4"
@@ -28,21 +28,21 @@
     "@tailwindcss/typography": "^0.5.19",
     "@types/eslint": "^8.37.0",
     "@types/marked": "^5.0.1",
-    "@types/node": "^18.16.0",
+    "@types/node": "^25.0.2",
     "@types/prettier": "^2.7.2",
-    "@types/react": "^18.2.6",
-    "@types/react-dom": "^18.2.4",
-    "@typescript-eslint/eslint-plugin": "^5.59.6",
-    "@typescript-eslint/parser": "^5.59.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@typescript-eslint/eslint-plugin": "^8.19.1",
+    "@typescript-eslint/parser": "^8.19.1",
     "autoprefixer": "^10.4.14",
-    "eslint": "^8.40.0",
-    "eslint-config-next": "^13.4.2",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "^16.0.10",
     "postcss": "^8.4.21",
     "prettier": "^2.8.8",
     "prettier-plugin-tailwindcss": "^0.2.8",
     "tailwind-scrollbar": "^3.0.4",
     "tailwindcss": "^3.3.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.9.3"
   },
   "ct3aMetadata": {
     "initVersion": "7.15.0"

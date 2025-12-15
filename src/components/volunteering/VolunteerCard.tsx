@@ -33,18 +33,22 @@ const VolunteerCard: React.FC<Props> = ({
             </div>
             <div>
               <h3 className="heading3">{title}</h3>
-              <p className="subtitle pt-2">{society}</p>
-              <p className="subtitle opacity-60">
+              <p className="subtitle font-light pt-2">{society}</p>
+              <p className="subtitle font-light opacity-60">
                 {startTime + " - " + endTime}
               </p>
             </div>
           </div>
           {description && (
-            <p className="subtitle hidden pt-2 md:block">{description}</p>
+            <p className="subtitle font-light hidden pt-2 md:block">
+              {description}
+            </p>
           )}
         </div>
       </div>
-      {description && <p className="subtitle pt-2 md:hidden">{description}</p>}
+      {description && (
+        <p className="subtitle font-light pt-2 md:hidden">{description}</p>
+      )}
     </FadeIn>
   );
 };

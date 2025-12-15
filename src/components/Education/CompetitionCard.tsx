@@ -15,10 +15,10 @@ const CompetitionCard: React.FC<Props> = ({ data, isInView }) => {
     >
       <h3 className="heading3">{data.title}</h3>
       <div className="py-4">
-        <p className="subtitle">{data.issuedBy}</p>
-        <p className="subtitle opacity-60">{data.year}</p>
+        <p className="subtitle font-light">{data.issuedBy}</p>
+        <p className="subtitle font-light opacity-60">{data.year}</p>
       </div>
-      <p className="subtitle">{data.description}</p>
+      <p className="subtitle font-light">{data.description}</p>
     </FadeIn>
   );
 };

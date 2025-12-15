@@ -19,7 +19,12 @@ const config = {
     defaultLocale: "en",
   },
   images: {
-    domains: ["i.imgur.com"],
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "i.imgur.com",
+      },
+    ],
   },
 };
 
