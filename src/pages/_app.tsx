@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { type AppType } from "next/dist/shared/lib/utils";
 import "~/styles/globals.css";
 import { Playfair_Display, Source_Sans_3 } from "next/font/google";
@@ -18,6 +19,7 @@ const MyApp: AppType = ({ Component, pageProps }) => {
     <main className={`${PlayFair.variable} ${SourceSans.variable}`}>
       <Component {...pageProps} />
       <Analytics />
+      <SpeedInsights />
     </main>
   );
 };
