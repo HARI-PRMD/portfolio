@@ -29,7 +29,7 @@ const TechnologyGrid = ({ title, items }: TechnologyGridProps) => (
             src={item.url}
             width={500}
             height={500}
-            className="aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale md:min-w-[96px]"
+            className="aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]"
           />
           <p className="subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60">
             {item.name}
