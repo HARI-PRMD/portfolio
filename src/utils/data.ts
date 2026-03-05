@@ -81,7 +81,7 @@ export const experienceData: ExperienceItem[] = [
     start: "June 2025",
     end: "Present",
     highlights: [
-      "Deployed as a Forward Deployed Engineer through Lyra Technologies to Paraform, a US-based recruitment startup, shipping weekly full-stack features into production.",
+      "Deployed as a Forward Deployed Engineer through Lyra Technologies to Paraform, a US-based recruitment startup, shipping daily full-stack features into production.",
       "Built end-to-end enterprise integrations across multiple platforms including SendGrid, Salesforce, Slack, and customer support tooling.",
       "Designed and maintained 370+ analytics queries and dashboards covering product metrics, activation funnels, and performance insights.",
       "Optimised critical API endpoints to significantly improve response times and reduce database load.",
@@ -611,7 +611,6 @@ export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
     description:
       "Built Teamer, an AI-powered team formation platform, as a solo developer. Selected as one of the best thesis projects of 2025 and presented at the CSE Thesis Showcase.",
     year: 2025,
-    grade: 0,
   },
   {
     course: "Web Front-End Programming (COMP6080)",

@@ -23,7 +23,7 @@ export type volunteeringDataType = {
 
 export type CourseAchievementCardDataType = {
   course: string;
-  grade: number;
+  grade?: number;
   description: string;
   year: number;
 };
