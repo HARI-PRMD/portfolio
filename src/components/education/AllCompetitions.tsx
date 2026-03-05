@@ -1,23 +1,20 @@
 import { CompetitionCardData } from "~/utils/data";
 import CompetitionCard from "./CompetitionCard";
-import { useState } from "react";
+import { useScrollSnap } from "~/hooks/useScrollSnap";
 
 const AllCompetitions = () => {
-  const [snappedIndex, setSnappedIndex] = useState<number>(0);
+  const { snappedIndex, handleScroll } = useScrollSnap(
+    CompetitionCardData.length,
+  );
+
   return (
     <div
       className="scroller grid h-full w-full snap-x snap-mandatory grid-flow-col gap-2 overflow-x-auto overflow-y-hidden px-16 pb-4 md:grid-flow-row md:grid-cols-2 md:gap-12 md:px-0"
-      onScroll={(e) => {
-        const element = e.target as HTMLElement;
-        const scrollLeft = element.scrollLeft;
-        const cardWidth = element.scrollWidth / CompetitionCardData.length;
-        const snappedIndex = Math.round(scrollLeft / cardWidth);
-        setSnappedIndex(snappedIndex);
-      }}
+      onScroll={handleScroll}
     >
       {CompetitionCardData.map((data, index) => (
         <CompetitionCard
-          key={index}
+          key={data.title}
           data={data}
           isInView={snappedIndex === index}
         />

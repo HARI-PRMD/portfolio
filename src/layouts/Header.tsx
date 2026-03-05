@@ -72,8 +72,8 @@ const Header: React.FC = () => {
         <button className="para2 hidden h-fit cursor-not-allowed bg-white px-8 py-4 uppercase text-black md:block">
           resume
         </button>
-      </div>{" "}
-      <div className="uppercase md:hidden ">
+      </div>
+      <div className="uppercase md:hidden">
         <Menu>
           {({ open }) => (
             <>

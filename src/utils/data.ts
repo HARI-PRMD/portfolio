@@ -1,13 +1,12 @@
 import {
   type ProjectCardDataType,
-  type AllProjects,
-  type volunteeringDataType,
+  type VolunteeringDataType,
   type CourseAchievementCardDataType,
   type CompetitionCardDataType,
   type ExperienceItem,
 } from "~/types/types";
 
-export const volunteeringData: volunteeringDataType[] = [
+export const volunteeringData: VolunteeringDataType[] = [
   {
     image: "https://i.imgur.com/SDIhsOC.png",
     title: "Development Team Lead",
@@ -104,58 +103,6 @@ export const experienceData: ExperienceItem[] = [
     logoAlt: "UNSW crest",
   },
 ];
-
-export const projectsData: AllProjects = {
-  2023: [
-    {
-      title: "MegaLAN Atlantis Quests",
-      description:
-        "An end to end Stamp Rally Management System for an event hosted by 12 societies and 500+ attendees.",
-      month: "May",
-      codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
-      websiteLink: "https://megalan-atlantis-quests.vercel.app/",
-      image: "https://i.imgur.com/l61jfFn.png",
-    },
-    {
-      title: "EZ Invoice",
-      description:
-        "Developed e-invoice management website with sales and customer tracking as well as invoice generation, validation and rendering in a team as part of the SENG2021 Requirements and Design Workshop Course.",
-      month: "April",
-      codeLink: "https://github.com/HARI-PRMD/SENG2021-application",
-      websiteLink:
-        "https://se2021-23t1-einvoicing-frontend-f14a-di-git-342b0e-merryrosalie.vercel.app/",
-      image: "https://i.imgur.com/xf6wZFL.png",
-    },
-    {
-      title: "Note Sharing Forum",
-      description:
-        "Lead development of a mock note sharing forum website built by a group of 5 as part of CSESoc's Training Program",
-      month: "March",
-      codeLink: "https://github.com/csesoc/trainee-3-23t1",
-      websiteLink: "https://trainee-3-23t1-deploy.vercel.app/",
-      image: "https://i.imgur.com/UE71tGE.png",
-    },
-  ],
-  2022: [
-    {
-      title: "UniClubs",
-      description:
-        "A Clubs and Events Discovery Website Designed and Developed by Me",
-      month: "December",
-      codeLink: "https://github.com/HARI-PRMD/uni-clubs-frontend",
-      websiteLink: "https://uniclubs.vercel.app/",
-      image: "https://i.imgur.com/H0IEwLa.png",
-    },
-    {
-      title: "Loft",
-      description:
-        "A Pomodoro Timer, Productivity Website Developed in a team as part of CSESoc's Training Program",
-      month: "October",
-      codeLink: "https://github.com/csesoc/trainee-3-22t3",
-      image: "https://i.imgur.com/DgWjrLu.png",
-    },
-  ],
-};
 
 export const technologiesLangFrameworksData: { name: string; url: string }[] = [
   {
