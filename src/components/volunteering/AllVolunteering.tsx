@@ -27,12 +27,12 @@ const AllVolunteering = () => {
   return (
     <div className="scroller h-full w-full flex-none flex-row overflow-x-auto overflow-y-hidden md:flex md:space-x-12">
       <div className="hidden w-1/2 flex-col space-y-12 md:flex">
-        {leftColumn.map((volunteer, index) => (
+        {leftColumn.map((volunteer) => (
           <VolunteerCard key={`${volunteer.society}-${volunteer.title}`} {...volunteer} />
         ))}
       </div>
       <div className="hidden w-1/2 flex-col space-y-12 md:flex">
-        {rightColumn.map((volunteer, index) => (
+        {rightColumn.map((volunteer) => (
           <VolunteerCard key={`${volunteer.society}-${volunteer.title}`} {...volunteer} />
         ))}
       </div>

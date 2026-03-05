@@ -195,7 +195,7 @@ export const technologiesToolsData: { name: string; url: string }[] = [
   },
 ];
 
-export const projectsDataV2: ProjectCardDataType[] = [
+export const projectsData: ProjectCardDataType[] = [
   {
     title: "Teamer",
     description: `
