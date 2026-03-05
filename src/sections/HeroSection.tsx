@@ -10,9 +10,9 @@ const HeroSection = () => {
         <FadeIn className="flex flex-col space-y-4 md:absolute md:max-w-2xl md:space-y-12 md:bg-black md:p-8">
           <h1 className="title">Hari Pramod</h1>
           <p className="para1 opacity-60">
-            I am a software engineering student excited about the opportunity to
-            apply my skills and knowledge to real-world software product design
-            and development.
+            Forward Deployed Engineer at Lyra, building and shipping software
+            products in production environments. UNSW Software Engineering
+            graduate (Honours), 2025.
           </p>
           <button
             disabled

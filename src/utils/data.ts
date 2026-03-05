@@ -15,7 +15,7 @@ export const volunteeringData: volunteeringDataType[] = [
     description:
       "Led the rapid development of 3 custom full-stack web apps, digitizing MegaLAN's Stamp Rally System. Successfully deployed and used at an event with 500+ attendees, showcasing efficient skill acquisition, project management and delivery.",
     startTime: "Jun 2023",
-    endTime: "Present",
+    endTime: "Jan 2024",
   },
   {
     image: "https://i.imgur.com/saD2CLN.jpg",
@@ -81,8 +81,10 @@ export const experienceData: ExperienceItem[] = [
     start: "June 2025",
     end: "Present",
     highlights: [
-      "Embedded with customers to ship Lyra's product into production environments as part of the forward deployed engineering team.",
-      "Support go-live efforts from Sydney, ensuring each deployment aligns with rapidly evolving product goals.",
+      "Embedded with a client to ship weekly full-stack features, deploying Lyra's product into production environments.",
+      "Built end-to-end enterprise integrations across multiple platforms including SendGrid, Salesforce, Slack, and customer support tooling.",
+      "Designed and maintained 370+ analytics queries and dashboards covering product metrics, activation funnels, and performance insights.",
+      "Optimised critical API endpoints to significantly improve response times and reduce database load.",
     ],
     logo: "/images/lyra-logo.svg",
     logoAlt: "Lyra logo",
@@ -247,6 +249,78 @@ export const technologiesToolsData: { name: string; url: string }[] = [
 ];
 
 export const projectsDataV2: ProjectCardDataType[] = [
+  {
+    title: "Teamer",
+    description: `
+# Teamer - AI-Powered Team Formation Platform
+
+## Honours Thesis Project (Feb - Nov 2025)
+
+A full-stack AI-powered team formation platform built as an Honours thesis project.
+
+## Highlights
+
+- **Best Thesis Project** at UNSW Thesis Showcase 2025
+- 5 matching strategies: similar, complementary, mutual selection, schedule-based, and AI-assisted
+- Vercel AI SDK + OpenAI (GPT-4o-mini) for intelligent survey generation and student-to-team matching
+- Passed full Codebase Security & Risk Assessment (CSRA)
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org) with App Router
+- [tRPC](https://trpc.io) for type-safe APIs
+- [Prisma](https://prisma.io) with PostgreSQL
+- [NextAuth.js](https://next-auth.js.org) for authentication
+- [Vercel AI SDK](https://sdk.vercel.ai/) + OpenAI API
+- [Tailwind CSS](https://tailwindcss.com)
+- Deployed on [Railway](https://railway.app)
+    `,
+    month: "November",
+    year: 2025,
+    image: "/images/teamer.jpeg",
+  },
+  {
+    title: "Capture the Narrative",
+    description: `
+# Capture the Narrative - AI Bot Competition
+
+## Multi-University Research Competition (Sep - Oct 2025)
+
+The world's first social media wargame, developed by UNSW's Institute for Cyber Security and School of Computer Science and Engineering. 108 teams from 18 Australian universities competed to build AI bots that could influence a simulated presidential election on "Legit Social", a platform modelled after early Twitter/BlueSky.
+
+The platform was populated with thousands of AI-generated agents, each with unique personas, political leanings, and social behaviours - from journalists and politicians to everyday citizens of the fictional South Pacific nation of Kingston.
+
+## What We Built
+
+- Deployed 40 autonomous AI bots with RAG-based memory systems for persistent context across the campaign
+- Built a custom TypeScript client from scratch, bypassing the provided Python SDK for performance and flexibility
+- Implemented automated platform sync (cron-based) to track popular posts, news articles, candidate activity, and notifications
+- Designed bot coordination strategies including echo chamber amplification, trending tag engagement, and candidate interaction
+
+## Results
+
+- Climbed from 28th to 8th place on the leaderboard within 3 days
+- Adapted strategies 6-10 times per day by observing platform dynamics and bot behaviours
+- The competition overall saw 7 million+ posts generated, with bots producing over 60% of all platform content
+
+## Links
+
+- [Official Website](https://capturethenarrative.com/)
+- [UNSW News Article](https://www.unsw.edu.au/news/2025/08/groundbreaking-competition-shines-spotlight-on-social-media-manipulation)
+- [How AI bots can swing elections](https://www.unsw.edu.au/newsroom/news/2026/01/social-media-wargame-reveals-how-ai-bots-can-swing-election)
+
+## Tech Stack
+
+- TypeScript
+- Custom API client
+- RAG memory system
+- Cron-based automation
+    `,
+    month: "September",
+    year: 2025,
+    image: "/images/capture-the-narrative.png",
+    websiteLink: "https://capturethenarrative.com/",
+  },
   {
     title: "UNSW One Piece Society Website",
     description: `
@@ -533,6 +607,20 @@ as well as customization settings supporting,
 
 export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
   {
+    course: "Web Front-End Programming (COMP6080)",
+    description:
+      "Built multiple front-end web applications using vanilla JavaScript, React, and modern CSS, assessed through individual projects with strict quality and accessibility requirements.",
+    year: 2024,
+    grade: 97,
+  },
+  {
+    course: "Computer Graphics (COMP3421)",
+    description:
+      "Implemented 3D rendering pipelines, ray tracing, and shader programming using OpenGL and WebGL fundamentals.",
+    year: 2024,
+    grade: 92,
+  },
+  {
     course: "Engineering Design and Professional Practice (DESN2000)",
     description:
       "Developed a prototype of a Educational Finance Management Mobile App called Figma Life in Figma, and maintained a Design Journal Documenting the entire design process methods used and followed.",
@@ -556,6 +644,13 @@ export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
 ];
 
 export const CompetitionCardData: CompetitionCardDataType[] = [
+  {
+    title: "Best Thesis Project - UNSW Thesis Showcase 2025",
+    description:
+      "Selected as one of the best thesis projects and presented Teamer, an AI-powered team formation platform, at the CSE Thesis Showcase.",
+    issuedBy: "UNSW School of Computer Science and Engineering",
+    year: 2025,
+  },
   {
     title: "Tied 1st place, and Won Raffle in CTF Competition",
     description:
