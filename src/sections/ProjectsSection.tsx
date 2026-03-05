@@ -6,7 +6,7 @@ const ProjectsSection = () => {
   return (
     <section id="projects" className="min-h-fit w-full space-y-8">
       <SectionHeading
-        title="My Projects"
+        title="Projects"
         description="Projects I have lead or created myself."
       >
         <ScrollRightSubtitle />

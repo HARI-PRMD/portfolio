@@ -607,6 +607,13 @@ as well as customization settings supporting,
 
 export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
   {
+    course: "Honours Thesis (COMP4951)",
+    description:
+      "Built Teamer, an AI-powered team formation platform, as a solo developer. Selected as one of the best thesis projects of 2025 and presented at the CSE Thesis Showcase.",
+    year: 2025,
+    grade: 0,
+  },
+  {
     course: "Web Front-End Programming (COMP6080)",
     description:
       "Built multiple front-end web applications using vanilla JavaScript, React, and modern CSS, assessed through individual projects with strict quality and accessibility requirements.",
@@ -644,13 +651,6 @@ export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
 ];
 
 export const CompetitionCardData: CompetitionCardDataType[] = [
-  {
-    title: "Best Thesis Project - UNSW Thesis Showcase 2025",
-    description:
-      "Selected as one of the best thesis projects and presented Teamer, an AI-powered team formation platform, at the CSE Thesis Showcase.",
-    issuedBy: "UNSW School of Computer Science and Engineering",
-    year: 2025,
-  },
   {
     title: "Tied 1st place, and Won Raffle in CTF Competition",
     description:
