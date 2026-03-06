@@ -2,8 +2,8 @@ import Image from "next/image";
 import FadeIn from "~/components/animation/FadeIn";
 import ScrollRightSubtitle from "~/components/accessibility/ScrollRightSubtitle";
 import SectionHeading from "~/components/common/SectionHeading";
-import AllCourseAchievements from "~/components/Education/AllCourseAchievements";
-import AllCompetitions from "~/components/Education/AllCompetitions";
+import AllCourseAchievements from "~/components/education/AllCourseAchievements";
+import AllCompetitions from "~/components/education/AllCompetitions";
 
 const EducationSection = () => {
   return (

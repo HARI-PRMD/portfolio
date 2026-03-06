@@ -30,7 +30,7 @@ const formatRange = (startDate: string, endDate: string) => {
     }
     return `${shortMonth} ${year}`;
   };
-  return `${format(startDate)} – ${format(endDate)}`;
+  return `${format(startDate)} - ${format(endDate)}`;
 };
 
 const ExperienceCard = ({

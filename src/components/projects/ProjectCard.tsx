@@ -20,11 +20,6 @@ const ProjectCard: React.FC<Props> = ({
 }) => {
   const [showModal, setShowModal] = useState(false);
 
-  // toggle modal visibility
-  const handleClick = () => {
-    setShowModal(!showModal);
-  };
-
   return (
     <>
       <ProjectModal
@@ -48,12 +43,12 @@ const ProjectCard: React.FC<Props> = ({
             <ImageHoverMessage
               url={image}
               message="View Details"
-              onClick={() => handleClick()}
+              onClick={() => setShowModal(true)}
             />
           ) : (
             <PatternHoverMessage
               message="View Details"
-              onClick={() => handleClick()}
+              onClick={() => setShowModal(true)}
             />
           )}
           <h3 className="heading3 pt-2">{title}</h3>

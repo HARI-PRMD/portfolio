@@ -1,13 +1,12 @@
 import {
   type ProjectCardDataType,
-  type AllProjects,
-  type volunteeringDataType,
+  type VolunteeringDataType,
   type CourseAchievementCardDataType,
   type CompetitionCardDataType,
   type ExperienceItem,
 } from "~/types/types";
 
-export const volunteeringData: volunteeringDataType[] = [
+export const volunteeringData: VolunteeringDataType[] = [
   {
     image: "https://i.imgur.com/SDIhsOC.png",
     title: "Development Team Lead",
@@ -15,7 +14,7 @@ export const volunteeringData: volunteeringDataType[] = [
     description:
       "Led the rapid development of 3 custom full-stack web apps, digitizing MegaLAN's Stamp Rally System. Successfully deployed and used at an event with 500+ attendees, showcasing efficient skill acquisition, project management and delivery.",
     startTime: "Jun 2023",
-    endTime: "Present",
+    endTime: "Jan 2024",
   },
   {
     image: "https://i.imgur.com/saD2CLN.jpg",
@@ -81,8 +80,10 @@ export const experienceData: ExperienceItem[] = [
     start: "June 2025",
     end: "Present",
     highlights: [
-      "Embedded with customers to ship Lyra's product into production environments as part of the forward deployed engineering team.",
-      "Support go-live efforts from Sydney, ensuring each deployment aligns with rapidly evolving product goals.",
+      "Deployed as a Forward Deployed Engineer through Lyra Technologies to Paraform, a US-based recruitment startup, shipping daily full-stack features into production.",
+      "Built end-to-end enterprise integrations across multiple platforms including SendGrid, Salesforce, Slack, and customer support tooling.",
+      "Designed and maintained 370+ analytics queries and dashboards covering product metrics, activation funnels, and performance insights.",
+      "Optimised critical API endpoints to significantly improve response times and reduce database load.",
     ],
     logo: "/images/lyra-logo.svg",
     logoAlt: "Lyra logo",
@@ -102,58 +103,6 @@ export const experienceData: ExperienceItem[] = [
     logoAlt: "UNSW crest",
   },
 ];
-
-export const projectsData: AllProjects = {
-  2023: [
-    {
-      title: "MegaLAN Atlantis Quests",
-      description:
-        "An end to end Stamp Rally Management System for an event hosted by 12 societies and 500+ attendees.",
-      month: "May",
-      codeLink: "https://github.com/unswpcsoc/megalan-t2-bingo-website",
-      websiteLink: "https://megalan-atlantis-quests.vercel.app/",
-      image: "https://i.imgur.com/l61jfFn.png",
-    },
-    {
-      title: "EZ Invoice",
-      description:
-        "Developed e-invoice management website with sales and customer tracking as well as invoice generation, validation and rendering in a team as part of the SENG2021 Requirements and Design Workshop Course.",
-      month: "April",
-      codeLink: "https://github.com/HARI-PRMD/SENG2021-application",
-      websiteLink:
-        "https://se2021-23t1-einvoicing-frontend-f14a-di-git-342b0e-merryrosalie.vercel.app/",
-      image: "https://i.imgur.com/xf6wZFL.png",
-    },
-    {
-      title: "Note Sharing Forum",
-      description:
-        "Lead development of a mock note sharing forum website built by a group of 5 as part of CSESoc's Training Program",
-      month: "March",
-      codeLink: "https://github.com/csesoc/trainee-3-23t1",
-      websiteLink: "https://trainee-3-23t1-deploy.vercel.app/",
-      image: "https://i.imgur.com/UE71tGE.png",
-    },
-  ],
-  2022: [
-    {
-      title: "UniClubs",
-      description:
-        "A Clubs and Events Discovery Website Designed and Developed by Me",
-      month: "December",
-      codeLink: "https://github.com/HARI-PRMD/uni-clubs-frontend",
-      websiteLink: "https://uniclubs.vercel.app/",
-      image: "https://i.imgur.com/H0IEwLa.png",
-    },
-    {
-      title: "Loft",
-      description:
-        "A Pomodoro Timer, Productivity Website Developed in a team as part of CSESoc's Training Program",
-      month: "October",
-      codeLink: "https://github.com/csesoc/trainee-3-22t3",
-      image: "https://i.imgur.com/DgWjrLu.png",
-    },
-  ],
-};
 
 export const technologiesLangFrameworksData: { name: string; url: string }[] = [
   {
@@ -246,7 +195,79 @@ export const technologiesToolsData: { name: string; url: string }[] = [
   },
 ];
 
-export const projectsDataV2: ProjectCardDataType[] = [
+export const projectsData: ProjectCardDataType[] = [
+  {
+    title: "Teamer",
+    description: `
+# Teamer - AI-Powered Team Formation Platform
+
+## Honours Thesis Project (Feb - Nov 2025)
+
+A full-stack AI-powered team formation platform built as an Honours thesis project.
+
+## Highlights
+
+- **Best Thesis Project** at UNSW Thesis Showcase 2025
+- 5 matching strategies: similar, complementary, mutual selection, schedule-based, and AI-assisted
+- Vercel AI SDK + OpenAI (GPT-4o-mini) for intelligent survey generation and student-to-team matching
+- Passed full Codebase Security & Risk Assessment (CSRA)
+
+## Tech Stack
+
+- [Next.js 15](https://nextjs.org) with App Router
+- [tRPC](https://trpc.io) for type-safe APIs
+- [Prisma](https://prisma.io) with PostgreSQL
+- [NextAuth.js](https://next-auth.js.org) for authentication
+- [Vercel AI SDK](https://sdk.vercel.ai/) + OpenAI API
+- [Tailwind CSS](https://tailwindcss.com)
+- Deployed on [Railway](https://railway.app)
+    `,
+    month: "November",
+    year: 2025,
+    image: "/images/teamer.jpeg",
+  },
+  {
+    title: "Capture the Narrative",
+    description: `
+# Capture the Narrative - AI Bot Competition
+
+## Multi-University Research Competition (Sep - Oct 2025)
+
+The world's first social media wargame, developed by UNSW's Institute for Cyber Security and School of Computer Science and Engineering. 108 teams from 18 Australian universities competed to build AI bots that could influence a simulated presidential election on "Legit Social", a platform modelled after early Twitter/BlueSky.
+
+The platform was populated with thousands of AI-generated agents, each with unique personas, political leanings, and social behaviours - from journalists and politicians to everyday citizens of the fictional South Pacific nation of Kingston.
+
+## What We Built
+
+- Deployed 40 autonomous AI bots with RAG-based memory systems for persistent context across the campaign
+- Built a custom TypeScript client from scratch, bypassing the provided Python SDK for performance and flexibility
+- Implemented automated platform sync (cron-based) to track popular posts, news articles, candidate activity, and notifications
+- Designed bot coordination strategies including echo chamber amplification, trending tag engagement, and candidate interaction
+
+## Results
+
+- Climbed from 28th to 8th place on the leaderboard within 3 days
+- Adapted strategies 6-10 times per day by observing platform dynamics and bot behaviours
+- The competition overall saw 7 million+ posts generated, with bots producing over 60% of all platform content
+
+## Links
+
+- [Official Website](https://capturethenarrative.com/)
+- [UNSW News Article](https://www.unsw.edu.au/news/2025/08/groundbreaking-competition-shines-spotlight-on-social-media-manipulation)
+- [How AI bots can swing elections](https://www.unsw.edu.au/newsroom/news/2026/01/social-media-wargame-reveals-how-ai-bots-can-swing-election)
+
+## Tech Stack
+
+- TypeScript
+- Custom API client
+- RAG memory system
+- Cron-based automation
+    `,
+    month: "September",
+    year: 2025,
+    image: "/images/capture-the-narrative.png",
+    websiteLink: "https://capturethenarrative.com/",
+  },
   {
     title: "UNSW One Piece Society Website",
     description: `
@@ -532,6 +553,26 @@ as well as customization settings supporting,
 ];
 
 export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
+  {
+    course: "Honours Thesis (COMP4951)",
+    description:
+      "Built Teamer, an AI-powered team formation platform, as a solo developer. Selected as one of the best thesis projects of 2025 and presented at the CSE Thesis Showcase.",
+    year: 2025,
+  },
+  {
+    course: "Web Front-End Programming (COMP6080)",
+    description:
+      "Built multiple front-end web applications using vanilla JavaScript, React, and modern CSS, assessed through individual projects with strict quality and accessibility requirements.",
+    year: 2024,
+    grade: 97,
+  },
+  {
+    course: "Computer Graphics (COMP3421)",
+    description:
+      "Implemented 3D rendering pipelines, ray tracing, and shader programming using OpenGL and WebGL fundamentals.",
+    year: 2024,
+    grade: 92,
+  },
   {
     course: "Engineering Design and Professional Practice (DESN2000)",
     description:

@@ -7,7 +7,8 @@ type Props = {
 };
 
 const CourseAchievementCard: React.FC<Props> = ({ data, isInView }) => {
-  const getGradeDescription = (grade: number) => {
+  const getGradeDescription = (grade?: number) => {
+    if (!grade) return "";
     if (grade >= 85) {
       return "Received a High Distinction Grade";
     } else if (grade >= 75) {

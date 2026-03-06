@@ -8,11 +8,7 @@ export type ProjectCardDataType = {
   image?: string;
 };
 
-export type AllProjects = {
-  [key: number]: ProjectCardDataType[];
-};
-
-export type volunteeringDataType = {
+export type VolunteeringDataType = {
   image: string;
   society: string;
   title: string;
@@ -23,7 +19,7 @@ export type volunteeringDataType = {
 
 export type CourseAchievementCardDataType = {
   course: string;
-  grade: number;
+  grade?: number;
   description: string;
   year: number;
 };

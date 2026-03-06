@@ -1,8 +1,8 @@
 import Image from "next/image";
 import FadeIn from "../animation/FadeIn";
-import { type volunteeringDataType } from "~/types/types";
+import { type VolunteeringDataType } from "~/types/types";
 
-type Props = volunteeringDataType & { isInView?: boolean };
+type Props = VolunteeringDataType & { isInView?: boolean };
 
 const VolunteerCard: React.FC<Props> = ({
   image,
@@ -25,7 +25,7 @@ const VolunteerCard: React.FC<Props> = ({
             <div>
               <Image
                 src={image}
-                alt="society"
+                alt={`${society} logo`}
                 width={250}
                 height={250}
                 className="mb-8 h-24 w-24 object-scale-down md:mb-0"
