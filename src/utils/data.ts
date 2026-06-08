@@ -208,9 +208,7 @@ A full-stack AI-powered team formation platform built as an Honours thesis proje
 ## Highlights
 
 - **Best Thesis Project** at UNSW Thesis Showcase 2025
-- 5 matching strategies: similar, complementary, mutual selection, schedule-based, and AI-assisted
 - Vercel AI SDK + OpenAI (GPT-4o-mini) for intelligent survey generation and student-to-team matching
-- Passed full Codebase Security & Risk Assessment (CSRA)
 
 ## Tech Stack
 
@@ -220,7 +218,6 @@ A full-stack AI-powered team formation platform built as an Honours thesis proje
 - [NextAuth.js](https://next-auth.js.org) for authentication
 - [Vercel AI SDK](https://sdk.vercel.ai/) + OpenAI API
 - [Tailwind CSS](https://tailwindcss.com)
-- Deployed on [Railway](https://railway.app)
     `,
     month: "November",
     year: 2025,
