@@ -23,6 +23,10 @@ const FadeIn = ({
 
   return (
     <motion.div
+      // Framer reads `initial` only at mount. `isMobile` resolves after mount
+      // (SSR-safe), so remount when it flips to pick up the corrected offset —
+      // otherwise the resting y stays at 32 and the move-up still plays.
+      key={staticOnMobile ? `fade-${isMobile ? "static" : "shift"}` : undefined}
       initial={{ opacity: 0, y: offsetY }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.3 }}
