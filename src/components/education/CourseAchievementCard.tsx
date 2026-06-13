@@ -22,6 +22,7 @@ const CourseAchievementCard: React.FC<Props> = ({ data, isInView }) => {
 
   return (
     <FadeIn
+      staticOnMobile
       className={`${cardStateClass} flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none`}
     >
       <h3 className="heading3">{data.course}</h3>
