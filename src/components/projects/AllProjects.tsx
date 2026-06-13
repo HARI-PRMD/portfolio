@@ -12,7 +12,7 @@ const AllProjects: React.FC = () => {
       onScroll={handleScroll}
     >
       {projectsData.map((p, i) => (
-        <FadeIn key={`${p.title}-${i}`}>
+        <FadeIn key={`${p.title}-${i}`} staticOnMobile>
           <ProjectCard {...p} isInView={snappedIndex === i} />
         </FadeIn>
       ))}

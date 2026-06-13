@@ -50,6 +50,7 @@ const ExperienceCard = ({
 
   return (
     <FadeIn
+      staticOnMobile
       className={`${cardState} group flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none md:hover:grayscale-0 md:active:grayscale-0`}
     >
       <div className="flex items-center gap-4 pb-4">

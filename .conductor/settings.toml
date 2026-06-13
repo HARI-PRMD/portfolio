@@ -1,0 +1,10 @@
+"$schema" = "https://conductor.build/schemas/settings.repo.schema.json"
+
+[scripts]
+# Install dependencies when a workspace is created.
+setup = "pnpm install"
+# Start the Next.js dev server on this workspace's assigned port.
+run = "pnpm dev --port $CONDUCTOR_PORT"
+# Each workspace runs on its own port with no shared local resource,
+# so multiple workspaces can run at the same time.
+run_mode = "concurrent"
