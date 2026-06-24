@@ -15,7 +15,7 @@ const SectionHeading = ({
 }: SectionHeadingProps) => {
   return (
     <div className={className}>
-      <h1 className="heading1">{title}</h1>
+      <h2 className="heading1">{title}</h2>
       {description && (
         <p className="para1 pt-2 opacity-60 md:pt-4">{description}</p>
       )}

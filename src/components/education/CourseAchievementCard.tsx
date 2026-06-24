@@ -3,10 +3,9 @@ import { type CourseAchievementCardDataType } from "~/types/types";
 
 type Props = {
   data: CourseAchievementCardDataType;
-  isInView: boolean;
 };
 
-const CourseAchievementCard: React.FC<Props> = ({ data, isInView }) => {
+const CourseAchievementCard: React.FC<Props> = ({ data }) => {
   const getGradeDescription = (grade?: number) => {
     if (!grade) return "";
     if (grade >= 85) {
@@ -18,17 +17,17 @@ const CourseAchievementCard: React.FC<Props> = ({ data, isInView }) => {
     }
   };
 
-  const cardStateClass = isInView ? "scale-100" : "scale-90";
-
   return (
     <FadeIn
       staticOnMobile
-      className={`${cardStateClass} flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none`}
+      className="flex w-[min(18rem,calc(100vw-2rem))] snap-center flex-col border border-white/20 bg-white/5 p-8 md:w-full md:snap-none"
     >
       <h3 className="heading3">{data.course}</h3>
       <div className="py-4">
         {getGradeDescription(data.grade) !== "" && (
-          <p className="subtitle font-light">{getGradeDescription(data.grade)}</p>
+          <p className="subtitle font-light">
+            {getGradeDescription(data.grade)}
+          </p>
         )}
         <p className="subtitle font-light opacity-60">{data.year}</p>
       </div>

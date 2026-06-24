@@ -14,24 +14,24 @@ type TechnologyGridProps = {
 const TechnologyGrid = ({ title, items }: TechnologyGridProps) => (
   <div>
     <div className="pb-16 pt-8">
-      <h2 className="heading2">{title}</h2>
+      <h3 className="heading2">{title}</h3>
       <ScrollRightSubtitle />
     </div>
-    <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-12 overflow-x-auto overflow-y-hidden">
+    <div className="scroller grid h-full w-full grid-flow-col grid-rows-2 justify-stretch gap-x-12 gap-y-8 overflow-x-auto overflow-y-hidden pb-4">
       {items.map((item, i) => (
         <FadeIn
           key={`${item.name}-${i}`}
-          className="group flex h-full w-16 flex-col items-center justify-center md:w-24"
+          className="group flex h-full w-20 flex-col items-center justify-center md:w-24"
           y={16}
         >
           <Image
             alt={item.name}
             src={item.url}
-            width={500}
-            height={500}
-            className="aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]"
+            width={96}
+            height={96}
+            className="aspect-square h-fit w-full max-w-[64px] object-scale-down transition-all duration-300 md:min-w-[96px] md:grayscale md:group-focus-within:grayscale-0 md:group-hover:grayscale-0"
           />
-          <p className="subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60">
+          <p className="subtitle pt-2 text-center opacity-70 transition-opacity duration-300 md:opacity-0 md:group-focus-within:opacity-60 md:group-hover:opacity-60">
             {item.name}
           </p>
         </FadeIn>

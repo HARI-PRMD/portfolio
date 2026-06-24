@@ -3,7 +3,7 @@ import Link from "next/link";
 import FadeIn from "../animation/FadeIn";
 import type { ExperienceItem } from "~/types/types";
 
-type Props = ExperienceItem & { isInView: boolean };
+type Props = ExperienceItem;
 
 const MONTH_ABBREVIATIONS: Record<string, string> = {
   January: "Jan",
@@ -43,15 +43,13 @@ const ExperienceCard = ({
   logo,
   logoAlt,
   callToAction,
-  isInView,
 }: Props) => {
   const timeframe = formatRange(start, end);
-  const cardState = isInView ? "scale-100 grayscale-0" : "scale-90 grayscale";
 
   return (
     <FadeIn
       staticOnMobile
-      className={`${cardState} group flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none md:hover:grayscale-0 md:active:grayscale-0`}
+      className="group flex w-[min(18rem,calc(100vw-2rem))] snap-center flex-col border border-white/20 bg-white/5 p-8 transition-colors duration-300 ease-in-out md:w-full md:snap-none md:grayscale md:focus-within:grayscale-0 md:hover:grayscale-0"
     >
       <div className="flex items-center gap-4 pb-4">
         {logo && (
@@ -60,7 +58,7 @@ const ExperienceCard = ({
             alt={logoAlt ?? `${company} logo`}
             width={56}
             height={56}
-            className="h-14 w-14 object-contain filter grayscale transition-all duration-300 group-hover:grayscale-0"
+            className="object-contain grayscale filter transition-all duration-300 group-hover:grayscale-0"
           />
         )}
         <div>
@@ -73,7 +71,7 @@ const ExperienceCard = ({
           </p>
         </div>
       </div>
-      <div className="py-4 space-y-2">
+      <div className="space-y-2 py-4">
         {highlights.map((item, index) => (
           <p key={index} className="subtitle font-light opacity-80">
             {item}
@@ -84,8 +82,8 @@ const ExperienceCard = ({
         <Link
           href={callToAction.href}
           target="_blank"
-          rel="noreferrer"
-          className="para2 w-fit border border-white/20 px-4 py-2 text-white transition-colors duration-300 hover:border-white/60"
+          rel="noopener noreferrer"
+          className="para2 w-fit border border-white/20 px-4 py-2 text-white transition-colors duration-300 hover:border-white/60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
         >
           {callToAction.label}
         </Link>

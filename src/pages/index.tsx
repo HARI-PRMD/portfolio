@@ -10,7 +10,10 @@ import VolunteeringSection from "~/sections/VolunteeringSection";
 export default function Home() {
   return (
     <>
-      <SEO title="Portfolio" description="Landing Page" />
+      <SEO
+        title="Portfolio"
+        description="Portfolio of Hari Pramod, a Forward Deployed Engineer building production software."
+      />
       <Layout>
         <HeroSection />
         <ExperienceSection />

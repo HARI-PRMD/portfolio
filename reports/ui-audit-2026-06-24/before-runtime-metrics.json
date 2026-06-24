@@ -1,0 +1,844 @@
+{
+  "logsBefore": [
+    {
+      "level": "warn",
+      "message": "[HMR] Invalid message: {\"type\":\"isrManifest\",\"data\":{\"/\":true}}\nTypeError: Cannot read properties of undefined (reading 'components')\n    at handleStaticIndicator (http://127.0.0.1:3000/_next/static/chunks/0k18_next_dist_client_0n7ffv-._.js:2800:46)\n    at processMessage (http://127.0.0.1:3000/_next/static/chunks/0k18_next_dist_client_0n7ffv-._.js:2814:17)\n    at http://127.0.0.1:3000/_next/static/chunks/0k18_next_dist_client_0n7ffv-._.js:2688:13\n    at WebSocket.handleMessage (http://127.0.0.1:3000/_next/static/chunks/0k18_next_dist_client_0n7ffv-._.js:2333:17)",
+      "timestamp": "2026-06-24T08:46:10.211Z",
+      "url": "http://127.0.0.1:3000/_next/static/chunks/0k18_next_dist_0ipqr_i._.js"
+    },
+    {
+      "level": "warn",
+      "message": "Image with src \"https://i.imgur.com/9usq5EW.png\" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: \"auto\"' or 'height: \"auto\"' to maintain the aspect ratio.",
+      "timestamp": "2026-06-24T08:46:10.329Z",
+      "url": "http://127.0.0.1:3000/_next/static/chunks/0k18_next_dist_0ipqr_i._.js"
+    }
+  ],
+  "auditMetricsBefore": {
+    "documentWidths": {
+      "clientWidth": 302,
+      "scrollWidth": 302
+    },
+    "focusables": [
+      {
+        "aria": null,
+        "className": "para2 hidden h-fit cursor-not-allowed bg-white px-8 py-4 uppercase text-black md:block",
+        "disabled": false,
+        "rect": {
+          "h": 0,
+          "w": 0,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "resume",
+        "visible": false
+      },
+      {
+        "aria": null,
+        "className": "title z-40 cursor-pointer md:pl-8",
+        "disabled": null,
+        "rect": {
+          "h": 48,
+          "w": 48,
+          "x": 16,
+          "y": 8
+        },
+        "role": "menuitem",
+        "tabIndex": -1,
+        "tag": "h1",
+        "text": "HP",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "focus-visible:outline-none",
+        "disabled": false,
+        "rect": {
+          "h": 48,
+          "w": 48,
+          "x": 238,
+          "y": 8
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "heading3 w-full cursor-not-allowed border border-white/10 bg-white/5 px-4 py-2 text-white transition-colors duration-300 hover:border-white/",
+        "disabled": true,
+        "rect": {
+          "h": 46,
+          "w": 258,
+          "x": 16,
+          "y": -2658
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "See Resume",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 144,
+          "w": 256,
+          "x": 17,
+          "y": 333
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 294,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 558,
+          "y": 345
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 822,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 1086,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 1350,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 1614,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 1878,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "hero-pattern relative aspect-video h-fit w-full cursor-pointer bg-black bg-cover transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 2142,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 2406,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": "View Details",
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "disabled": false,
+        "rect": {
+          "h": 130,
+          "w": 230,
+          "x": 2670,
+          "y": 344
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "View Details",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "font-semibold text-white underline-offset-4 hover:underline",
+        "disabled": null,
+        "rect": {
+          "h": 30,
+          "w": 146,
+          "x": 108,
+          "y": 2533
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "a",
+        "text": "@HARI-PRMD (Me!)",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "",
+        "disabled": false,
+        "rect": {
+          "h": 0,
+          "w": 1,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "",
+        "visible": false
+      },
+      {
+        "aria": "Close project details",
+        "className": "absolute right-4 top-4 border border-white/30 bg-black/60 px-3 py-2 text-white transition hover:border-white/70 hover:bg-black",
+        "disabled": false,
+        "rect": {
+          "h": 38,
+          "w": 46,
+          "x": 212,
+          "y": 129
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "",
+        "disabled": null,
+        "rect": {
+          "h": 22,
+          "w": 73,
+          "x": 79,
+          "y": 1468
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "a",
+        "text": "Next.js 15",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "",
+        "disabled": null,
+        "rect": {
+          "h": 22,
+          "w": 37,
+          "x": 79,
+          "y": 1528
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "a",
+        "text": "tRPC",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "",
+        "disabled": null,
+        "rect": {
+          "h": 22,
+          "w": 51,
+          "x": 79,
+          "y": 1588
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "a",
+        "text": "Prisma",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "",
+        "disabled": null,
+        "rect": {
+          "h": 22,
+          "w": 86,
+          "x": 79,
+          "y": 1648
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "a",
+        "text": "NextAuth.js",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "",
+        "disabled": null,
+        "rect": {
+          "h": 22,
+          "w": 102,
+          "x": 79,
+          "y": 1708
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "a",
+        "text": "Vercel AI SDK",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "",
+        "disabled": null,
+        "rect": {
+          "h": 22,
+          "w": 96,
+          "x": 79,
+          "y": 1768
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "a",
+        "text": "Tailwind CSS",
+        "visible": true
+      },
+      {
+        "aria": null,
+        "className": "",
+        "disabled": false,
+        "rect": {
+          "h": 0,
+          "w": 1,
+          "x": 0,
+          "y": 0
+        },
+        "role": null,
+        "tabIndex": 0,
+        "tag": "button",
+        "text": "",
+        "visible": false
+      }
+    ],
+    "motionClasses": [
+      {
+        "className": "para1 group cursor-pointer transition duration-300 hover:opacity-100 opacity-60",
+        "tag": "p",
+        "text": "Experience"
+      },
+      {
+        "className": "mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100",
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "className": "para1 group cursor-pointer transition duration-300 hover:opacity-100 opacity-60",
+        "tag": "p",
+        "text": "Education"
+      },
+      {
+        "className": "mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100",
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "className": "para1 group cursor-pointer transition duration-300 hover:opacity-100 opacity-100",
+        "tag": "p",
+        "text": "Projects"
+      },
+      {
+        "className": "mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100",
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "className": "para1 group cursor-pointer transition duration-300 hover:opacity-100 opacity-60",
+        "tag": "p",
+        "text": "Technologies"
+      },
+      {
+        "className": "mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100",
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "className": "para1 group cursor-pointer transition duration-300 hover:opacity-100 opacity-60",
+        "tag": "p",
+        "text": "Volunteering"
+      },
+      {
+        "className": "mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100",
+        "tag": "span",
+        "text": ""
+      },
+      {
+        "className": "h-12 w-12 text-white transition-transform duration-300 ",
+        "tag": "svg",
+        "text": ""
+      },
+      {
+        "className": "heading3 w-full cursor-not-allowed border border-white/10 bg-white/5 px-4 py-2 text-white transition-colors duration-300 hover:border-white/40 hover:bg-white/10 md:w-fit md:px-16 m",
+        "tag": "button",
+        "text": "See Resume"
+      },
+      {
+        "className": "hero-pattern h-64 w-full bg-fixed object-cover md:h-3/5",
+        "tag": "div",
+        "text": ""
+      },
+      {
+        "className": "scale-100 grayscale-0 group flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-",
+        "tag": "div",
+        "text": "LyraForward Deployed EngineerJun 2025 - Present · Sydney, NS"
+      },
+      {
+        "className": "h-14 w-14 object-contain filter grayscale transition-all duration-300 group-hover:grayscale-0",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "scale-90 grayscale group flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-non",
+        "tag": "div",
+        "text": "UNSWMentor for SENG2021Jan 2024 - May 2024 · Sydney, NSW, Au"
+      },
+      {
+        "className": "h-14 w-14 object-contain filter grayscale transition-all duration-300 group-hover:grayscale-0",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "h-24 w-24 transform object-contain grayscale transition-all duration-300 group-hover:grayscale-0",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "scale-100 flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none",
+        "tag": "div",
+        "text": "Honours Thesis (COMP4951)2025Built Teamer, an AI-powered tea"
+      },
+      {
+        "className": "scale-90 flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none",
+        "tag": "div",
+        "text": "Web Front-End Programming (COMP6080)Received a High Distinct"
+      },
+      {
+        "className": "scale-90 flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none",
+        "tag": "div",
+        "text": "Computer Graphics (COMP3421)Received a High Distinction Grad"
+      },
+      {
+        "className": "scale-90 flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none",
+        "tag": "div",
+        "text": "Engineering Design and Professional Practice (DESN2000)Recei"
+      },
+      {
+        "className": "scale-90 flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none",
+        "tag": "div",
+        "text": "Requirements and Design Workshop (SENG2021)Received a Distin"
+      },
+      {
+        "className": "scale-90 flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none",
+        "tag": "div",
+        "text": "Backend Development (COMP1531)Received a High Distinction Gr"
+      },
+      {
+        "className": "scale-100 flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none",
+        "tag": "div",
+        "text": "Tied 1st place, and Won Raffle in CTF CompetitionUNSW Securi"
+      },
+      {
+        "className": "scale-90 flex w-64 transform snap-x snap-center flex-col border border-white/20 bg-white/5 p-8 transition-all duration-300 ease-in-out xs:w-72 md:w-full md:snap-none",
+        "tag": "div",
+        "text": "Placed Top 10 in Beginner CTF UNSW Security Society (SecSoc)"
+      },
+      {
+        "className": "scale-100 grayscale-0 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-full md:sna",
+        "tag": "div",
+        "text": "View DetailsTeamerNovember 2025"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsCapture the NarrativeSeptember 2025"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsUNSW One Piece Society WebsiteSeptember 2023"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsMegaLAN Full Blossom QuestsSeptember 2023"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsDiscord Verification BotJune 2023"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsMegaLAN Atlantis QuestsMay 2023"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsEZ InvoiceApril 2023"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsNote Sharing ForumMarch 2023"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsUNSW Arc Web ScraperFebruary 2023"
+      },
+      {
+        "className": "hero-pattern relative aspect-video h-fit w-full cursor-pointer bg-black bg-cover transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsUniClubsDecember 2022"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "scale-90 grayscale md:scale-100 flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-f",
+        "tag": "div",
+        "text": "View DetailsLoftOctober 2022"
+      },
+      {
+        "className": "relative aspect-video h-fit w-full cursor-pointer bg-cover bg-center transition-all duration-500 ease-in-out hover:scale-110",
+        "tag": "button",
+        "text": "View Details"
+      },
+      {
+        "className": "absolute inset-0 flex flex-col items-center justify-center bg-gradient-radial from-black/60 to-black/40 opacity-0 transition-opacity duration-500 hover:opacity-100",
+        "tag": "div",
+        "text": "View Details"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "Javascript"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "Typescript"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "Python"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "Regex"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "HTML"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "CSS"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "TailwindCSS"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "React"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "Next.js"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      },
+      {
+        "className": "subtitle pt-2 opacity-0 transition-opacity duration-300 group-hover:opacity-60 group-active:opacity-60",
+        "tag": "p",
+        "text": "Express.js"
+      },
+      {
+        "className": "aspect-square h-fit w-full max-w-[64px] object-scale-down grayscale transition-all duration-300 group-hover:grayscale-0 md:min-w-[96px]",
+        "tag": "img",
+        "text": ""
+      }
+    ],
+    "scrollY": 3249,
+    "tinyVisibleTargets": [
+      "[Circular]",
+      "[Circular]",
+      "[Circular]",
+      "[Circular]",
+      "[Circular]",
+      "[Circular]",
+      "[Circular]",
+      "[Circular]"
+    ],
+    "unnamedVisibleButtons": [
+      "[Circular]"
+    ],
+    "viewport": [
+      302,
+      654
+    ]
+  }
+}

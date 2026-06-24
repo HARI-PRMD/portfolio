@@ -16,11 +16,11 @@ const EducationSection = () => {
         <FadeIn>
           <div className="group flex flex-col items-center border border-white/20 bg-white/5 p-8 md:flex-row md:space-x-8">
             <Image
-              alt="unsw"
-              src="https://i.imgur.com/9usq5EW.png"
-              width={500}
-              height={500}
-              className="h-24 w-24 transform object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
+              alt="UNSW crest"
+              src="/images/logos/unsw.png"
+              width={96}
+              height={96}
+              className="transform object-contain grayscale transition-all duration-300 group-hover:grayscale-0"
             />
             <div className="pt-4 md:pt-0">
               <h3 className="heading3">
@@ -33,14 +33,14 @@ const EducationSection = () => {
         </FadeIn>
         <div className="space-y-8">
           <div>
-            <h2 className="heading2">Course Achievements</h2>
+            <h3 className="heading2">Course Achievements</h3>
             <ScrollRightSubtitle />
           </div>
           <AllCourseAchievements />
         </div>
         <div className="space-y-8">
           <div>
-            <h2 className="heading2">Competitions</h2>
+            <h3 className="heading2">Competitions</h3>
             <ScrollRightSubtitle />
           </div>
           <AllCompetitions />

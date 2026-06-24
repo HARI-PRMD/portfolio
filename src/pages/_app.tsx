@@ -16,11 +16,11 @@ const SourceSans = Source_Sans_3({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`${PlayFair.variable} ${SourceSans.variable}`}>
+    <div className={`${PlayFair.variable} ${SourceSans.variable}`}>
       <Component {...pageProps} />
       <Analytics />
       <SpeedInsights />
-    </main>
+    </div>
   );
 };
 

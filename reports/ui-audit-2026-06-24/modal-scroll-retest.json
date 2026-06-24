@@ -1,0 +1,65 @@
+{
+  "testedAt": "2026-06-24",
+  "target": "http://127.0.0.1:3000/#projects",
+  "modalProject": "Teamer",
+  "desktop": {
+    "viewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "openState": {
+      "htmlOverflowY": "hidden",
+      "bodyOverflowY": "visible",
+      "wrapperOverflowY": "hidden",
+      "wrapperCanScroll": true,
+      "scrollableElementCount": 1,
+      "onlyScrollableElement": "project modal panel",
+      "panelCanScroll": true,
+      "panelClientHeight": 802,
+      "panelScrollHeight": 1042
+    },
+    "scrollInteraction": {
+      "panelScrollTopBefore": 0,
+      "panelScrollTopAfterCenterWheel": 240.5,
+      "windowScrollYBefore": 3337.5,
+      "windowScrollYAfterCenterWheel": 3337.5,
+      "windowScrollYAfterRightEdgeWheel": 3338,
+      "rightEdgeWindowDeltaPx": 0.5
+    },
+    "closeCleanup": {
+      "closeButtonsAfterClose": 0,
+      "htmlOverflowYAfterClose": "visible",
+      "bodyOverflowYAfterClose": "visible"
+    }
+  },
+  "mobile": {
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "openState": {
+      "htmlOverflowY": "hidden",
+      "bodyOverflowY": "visible",
+      "wrapperOverflowY": "hidden",
+      "wrapperCanScroll": false,
+      "scrollableElementCount": 1,
+      "onlyScrollableElement": "project modal panel",
+      "panelCanScroll": true,
+      "panelClientHeight": 746,
+      "panelScrollHeight": 1031
+    },
+    "scrollInteraction": {
+      "panelScrollTopBefore": 0,
+      "panelScrollTopAfterCenterWheel": 285,
+      "windowScrollYBefore": 3181.5,
+      "windowScrollYAfterCenterWheel": 3181.5,
+      "windowScrollYAfterRightEdgeWheel": 3181.5,
+      "rightEdgeWindowDeltaPx": 0
+    },
+    "closeCleanup": {
+      "closeButtonsAfterClose": 0,
+      "htmlOverflowYAfterClose": "visible",
+      "bodyOverflowYAfterClose": "visible"
+    }
+  }
+}

@@ -8,7 +8,7 @@ import {
 
 export const volunteeringData: VolunteeringDataType[] = [
   {
-    image: "https://i.imgur.com/SDIhsOC.png",
+    image: "/images/logos/megalan.png",
     title: "Development Team Lead",
     society: "UNSW MegaLAN",
     description:
@@ -17,7 +17,7 @@ export const volunteeringData: VolunteeringDataType[] = [
     endTime: "Jan 2024",
   },
   {
-    image: "https://i.imgur.com/saD2CLN.jpg",
+    image: "/images/logos/one-piece.jpg",
     title: "Technical Director",
     society: "UNSW One Piece Society",
     description:
@@ -26,7 +26,7 @@ export const volunteeringData: VolunteeringDataType[] = [
     endTime: "Sep 2023",
   },
   {
-    image: "https://i.imgur.com/aFJ3Djr.png",
+    image: "/images/logos/rhythm-game.png",
     title: "Secretary",
     society: "UNSW Rhythm Game Society",
     description:
@@ -35,7 +35,7 @@ export const volunteeringData: VolunteeringDataType[] = [
     endTime: "Sep 2023",
   },
   {
-    image: "https://i.imgur.com/uOYgzPC.png",
+    image: "/images/logos/ces.png",
     title: "Programming and Development Sub-committee",
     society: "UNSW Computer Enthusiasts Society",
     description:
@@ -44,7 +44,7 @@ export const volunteeringData: VolunteeringDataType[] = [
     endTime: "Sep 2023",
   },
   {
-    image: "https://i.imgur.com/Ic8u02C.png",
+    image: "/images/logos/csesoc.png",
     title: "Trainee Lead",
     society: "UNSW Computer Science and Engineering Society",
     description:
@@ -53,7 +53,7 @@ export const volunteeringData: VolunteeringDataType[] = [
     endTime: "Jun 2023",
   },
   {
-    image: "https://i.imgur.com/Ic8u02C.png",
+    image: "/images/logos/csesoc.png",
     title: "Trainee",
     society: "UNSW Computer Science and Engineering Society",
     description:
@@ -62,7 +62,7 @@ export const volunteeringData: VolunteeringDataType[] = [
     endTime: "Dec 2022",
   },
   {
-    image: "https://i.imgur.com/tc9zGkb.png",
+    image: "/images/logos/lofi.png",
     title: "Music Subcommittee",
     society: "UNSW lo-fi society",
     description:
@@ -99,7 +99,7 @@ export const experienceData: ExperienceItem[] = [
       "Guided a student team to win the Macquarie Bank Group Prize for best project and presentation.",
       "Delivered supplementary lectures on backend and frontend deployment across six cloud hosting platforms to extend course content.",
     ],
-    logo: "https://i.imgur.com/9usq5EW.png",
+    logo: "/images/logos/unsw.png",
     logoAlt: "UNSW crest",
   },
 ];
@@ -107,60 +107,60 @@ export const experienceData: ExperienceItem[] = [
 export const technologiesLangFrameworksData: { name: string; url: string }[] = [
   {
     name: "Javascript",
-    url: "https://i.imgur.com/I31PHHR.png",
+    url: "/images/tech/javascript.png",
   },
   {
     name: "Typescript",
-    url: "https://i.imgur.com/jrvq4Xa.png",
+    url: "/images/tech/typescript.png",
   },
   {
     name: "Python",
-    url: "https://i.imgur.com/3LjYzQF.png",
+    url: "/images/tech/python.png",
   },
   {
     name: "Regex",
-    url: "https://i.imgur.com/zlN3kQM.png",
+    url: "/images/tech/regex.png",
   },
   {
     name: "HTML",
-    url: "https://i.imgur.com/8toiYql.png",
+    url: "/images/tech/html.png",
   },
 
   {
     name: "CSS",
-    url: "https://i.imgur.com/HctithI.png",
+    url: "/images/tech/css.png",
   },
   {
     name: "TailwindCSS",
-    url: "https://i.imgur.com/aeJcPyk.png",
+    url: "/images/tech/tailwindcss.png",
   },
   {
     name: "React",
-    url: "https://i.imgur.com/Wz5XgWU.png",
+    url: "/images/tech/react.png",
   },
   {
     name: "Next.js",
-    url: "https://i.imgur.com/0lieJI8.png",
+    url: "/images/tech/nextjs.png",
   },
   {
     name: "Express.js",
-    url: "https://i.imgur.com/YDFvuAO.png",
+    url: "/images/tech/express.png",
   },
   {
     name: "tRPC",
-    url: "https://i.imgur.com/Q8zXteA.png",
+    url: "/images/tech/trpc.png",
   },
   {
     name: "Zod",
-    url: "https://i.imgur.com/vUBmb5z.png",
+    url: "/images/tech/zod.png",
   },
   {
     name: "NextAuth.js",
-    url: "https://i.imgur.com/SE1wuLc.png",
+    url: "/images/tech/nextauth.png",
   },
   {
     name: "Prisma",
-    url: "https://i.imgur.com/btJeW2A.png",
+    url: "/images/tech/prisma.png",
   },
 ];
 

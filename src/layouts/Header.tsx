@@ -1,36 +1,44 @@
 import { Menu, Transition } from "@headlessui/react";
 import { Bars3Icon } from "@heroicons/react/24/outline";
-import { Fragment, useEffect, useState } from "react";
+import { Fragment, useEffect, useRef, useState } from "react";
 
 const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
-
-  const scrollToSection = (sectionId: string) => {
-    const section = document.getElementById(sectionId);
-    if (!section) return;
-
-    const header = document.getElementById("header");
-    const headerHeight = header?.getBoundingClientRect().height ?? 0;
-    const targetOffset =
-      section.getBoundingClientRect().top + window.scrollY - headerHeight;
-
-    window.scrollTo({ top: targetOffset, behavior: "smooth" });
-  };
+  const activeSectionRef = useRef<string | null>(null);
 
   // highlights current section in view
   useEffect(() => {
+    let ticking = false;
+
     const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
+      if (ticking) return;
 
-      sections.forEach((section) => {
-        const { top, bottom } = section.getBoundingClientRect();
+      ticking = true;
+      window.requestAnimationFrame(() => {
+        const sections = document.querySelectorAll("section");
+        let nextActiveSection: string | null = null;
 
-        if (top <= window.innerHeight && bottom >= window.innerHeight / 2) {
-          setActiveSection(section.id);
+        sections.forEach((section) => {
+          const { top, bottom } = section.getBoundingClientRect();
+
+          if (
+            top <= window.innerHeight / 2 &&
+            bottom >= window.innerHeight / 2
+          ) {
+            nextActiveSection = section.id;
+          }
+        });
+
+        if (nextActiveSection !== activeSectionRef.current) {
+          activeSectionRef.current = nextActiveSection;
+          setActiveSection(nextActiveSection);
         }
+
+        ticking = false;
       });
     };
 
+    handleScroll();
     document.addEventListener("scroll", handleScroll);
     return () => document.removeEventListener("scroll", handleScroll);
   }, []);
@@ -44,63 +52,57 @@ const Header: React.FC = () => {
   ];
 
   return (
-    <div
+    <header
       id="header"
-      className="fixed z-50 flex h-fit w-full flex-col bg-black/80 px-4 py-2 backdrop-blur-sm md:px-16 md:py-4"
+      className="fixed inset-x-0 top-0 z-50 flex h-fit w-full flex-col bg-black/90 px-4 py-2 backdrop-blur-sm md:px-16 md:py-4"
     >
-      <div className="hidden flex-row justify-between md:flex">
-        <h1
-          className="heading1 cursor-pointer md:pl-8"
-          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+      <div className="hidden flex-row items-start justify-between md:flex">
+        <a
+          href="#main-content"
+          aria-label="Back to top"
+          className="heading1 shrink-0 md:pl-4"
         >
           HP
-        </h1>
-        <div className="flex w-full max-w-4xl flex-row justify-evenly pt-4 uppercase">
-          {links.map((link, index) => (
-            <p
-              key={index}
-              onClick={() => scrollToSection(link.href)}
+        </a>
+        <nav
+          aria-label="Primary"
+          className="ml-8 flex flex-1 flex-row justify-end gap-6 pt-4 uppercase lg:gap-8"
+        >
+          {links.map((link) => (
+            <a
+              key={link.href}
+              href={`#${link.href}`}
+              aria-current={activeSection === link.href ? "true" : undefined}
               className={`para1 group cursor-pointer transition duration-300 hover:opacity-100 ${
                 activeSection === link.href ? "opacity-100" : "opacity-60"
               }`}
             >
               {link.label}
-              <span className="mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100"></span>
-            </p>
+              <span className="mt-0.5 block h-0.5 w-full bg-gradient-to-r from-transparent via-white to-transparent opacity-0 transition-opacity duration-300 ease-in group-hover:opacity-100 group-focus-visible:opacity-100"></span>
+            </a>
           ))}
-        </div>
-        <button className="para2 hidden h-fit cursor-not-allowed bg-white px-8 py-4 uppercase text-black md:block">
-          resume
-        </button>
+        </nav>
       </div>
       <div className="uppercase md:hidden">
         <Menu>
           {({ open }) => (
             <>
-              <Transition.Child
-                as={Fragment}
-                enter="ease-out duration-300"
-                enterFrom="opacity-0"
-                enterTo="opacity-100"
-                leave="ease-in duration-200"
-                leaveFrom="opacity-100"
-                leaveTo="opacity-0"
-              >
-                <div className="fixed inset-0 bg-black/50" aria-hidden="true" />
-              </Transition.Child>
               <div className="flex flex-row justify-between focus-visible:outline-none">
-                <Menu.Item>
-                  <h1
-                    className="title z-40 cursor-pointer md:pl-8"
-                    onClick={() =>
-                      window.scrollTo({ top: 0, behavior: "smooth" })
-                    }
-                  >
-                    HP
-                  </h1>
-                </Menu.Item>
-                <Menu.Button className="focus-visible:outline-none">
+                <a
+                  href="#main-content"
+                  aria-label="Back to top"
+                  className="title z-40 md:pl-8"
+                >
+                  HP
+                </a>
+                <Menu.Button
+                  aria-label={
+                    open ? "Close navigation menu" : "Open navigation menu"
+                  }
+                  className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
+                >
                   <Bars3Icon
+                    aria-hidden="true"
                     className={`h-12 w-12 text-white transition-transform duration-300 ${
                       open ? "-rotate-90" : ""
                     }`}
@@ -109,42 +111,39 @@ const Header: React.FC = () => {
               </div>
               <Transition
                 enter="transition duration-100 ease-out"
-                enterFrom="transform scale-95 opacity-0"
-                enterTo="transform scale-100 opacity-100"
+                enterFrom="opacity-0"
+                enterTo="opacity-100"
                 leave="transition duration-75 ease-out"
-                leaveFrom="transform scale-100 opacity-100"
-                leaveTo="transform scale-95 opacity-0"
+                leaveFrom="opacity-100"
+                leaveTo="opacity-0"
               >
-                <Menu.Items className="flex w-full flex-col text-white focus-visible:outline-none">
+                <Menu.Items className="mt-2 flex w-full flex-col border-t border-white/10 py-2 text-white focus-visible:outline-none">
                   {links.map((link) => (
-                    /* Use the `active` state to conditionally style the active item. */
                     <Menu.Item key={link.href} as={Fragment}>
                       {({ active }) => (
-                        <p
+                        <a
+                          href={`#${link.href}`}
+                          aria-current={
+                            activeSection === link.href ? "true" : undefined
+                          }
                           className={`${
                             activeSection === link.href || active
                               ? "opacity-100"
                               : "opacity-60"
-                          } heading3 p-4 `}
-                          onClick={() => scrollToSection(link.href)}
+                          } heading3 p-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70`}
                         >
                           {link.label}
-                        </p>
+                        </a>
                       )}
                     </Menu.Item>
                   ))}
-                  <Menu.Item disabled>
-                    <button className="para1 h-fit w-full cursor-pointer bg-white/40 px-8 py-4 text-black">
-                      resume
-                    </button>
-                  </Menu.Item>
                 </Menu.Items>
               </Transition>
             </>
           )}
         </Menu>
       </div>
-    </div>
+    </header>
   );
 };
 export default Header;

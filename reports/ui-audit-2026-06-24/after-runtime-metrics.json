@@ -1,0 +1,49 @@
+{
+  "finalMetricsForReport": {
+    "docWidths": {
+      "clientWidth": 290,
+      "scrollWidth": 290
+    },
+    "h1s": [
+      "Hari Pramod"
+    ],
+    "imageProblemsVisible": [],
+    "viewport": [
+      302,
+      654
+    ],
+    "visibleControls": [
+      {
+        "aria": "Back to top",
+        "bottom": 56,
+        "h": 48,
+        "href": "#main-content",
+        "tag": "a",
+        "text": "HP",
+        "top": 8,
+        "w": 48
+      },
+      {
+        "aria": "Open navigation menu",
+        "bottom": 56,
+        "h": 48,
+        "href": null,
+        "tag": "button",
+        "text": "",
+        "top": 8,
+        "w": 48
+      },
+      {
+        "aria": null,
+        "bottom": 390,
+        "h": 46,
+        "href": "#projects",
+        "tag": "a",
+        "text": "View Projects",
+        "top": 344,
+        "w": 259
+      }
+    ]
+  },
+  "note": "Fresh post-fix reload. Dev server output after this reload showed no new image ratio warnings."
+}

@@ -9,8 +9,8 @@ const Footer = () => {
         <a
           href="https://github.com/HARI-PRMD"
           target="_blank"
-          rel="noreferrer"
-          className="font-semibold text-white underline-offset-4 hover:underline"
+          rel="noopener noreferrer"
+          className="font-semibold text-white underline-offset-4 hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
         >
           @HARI-PRMD (Me!)
         </a>

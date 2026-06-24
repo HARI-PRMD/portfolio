@@ -4,9 +4,7 @@ import PatternHoverMessage from "../image/PatternHoverMessage";
 import { useState } from "react";
 import ProjectModal from "./ProjectModal";
 
-type Props = ProjectCardDataType & {
-  isInView?: boolean;
-};
+type Props = ProjectCardDataType;
 
 const ProjectCard: React.FC<Props> = ({
   title,
@@ -16,7 +14,6 @@ const ProjectCard: React.FC<Props> = ({
   websiteLink,
   codeLink,
   image,
-  isInView,
 }) => {
   const [showModal, setShowModal] = useState(false);
 
@@ -33,21 +30,19 @@ const ProjectCard: React.FC<Props> = ({
         onClose={() => setShowModal(false)}
         isOpen={showModal}
       />
-      <div
-        className={`${
-          isInView ? "scale-100 grayscale-0" : "scale-90 grayscale md:scale-100"
-        } flex h-fit w-64 min-w-[16rem] transform snap-center flex-row transition-all duration-300 ease-in-out active:grayscale-0 xs:w-72 md:w-full md:min-w-full md:snap-none md:space-x-8 md:grayscale md:hover:grayscale-0`}
-      >
+      <div className="flex h-fit w-[min(18rem,calc(100vw-2rem))] min-w-[min(18rem,calc(100vw-2rem))] snap-center flex-row transition-all duration-300 ease-in-out md:w-full md:min-w-full md:snap-none md:space-x-8 md:grayscale md:focus-within:grayscale-0 md:hover:grayscale-0">
         <div className="w-full">
           {image ? (
             <ImageHoverMessage
               url={image}
               message="View Details"
+              ariaLabel={`View details for ${title}`}
               onClick={() => setShowModal(true)}
             />
           ) : (
             <PatternHoverMessage
               message="View Details"
+              ariaLabel={`View details for ${title}`}
               onClick={() => setShowModal(true)}
             />
           )}
