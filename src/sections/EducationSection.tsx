@@ -27,7 +27,7 @@ const EducationSection = () => {
                 Bachelor of Engineering (Honours) (Software)
               </h3>
               <p className="para1 opacity-60">University of New South Wales</p>
-              <p className="subtitle opacity-60">2022 - 2025</p>
+              <p className="subtitle opacity-60">2022 - 2026</p>
             </div>
           </div>
         </FadeIn>

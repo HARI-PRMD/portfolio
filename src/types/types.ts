@@ -17,11 +17,26 @@ export type VolunteeringDataType = {
   description?: string;
 };
 
+export type CompetencyGradeCode = "CM" | "CO" | "CN";
+
+export type CourseResultType =
+  | {
+      type: "mark";
+      mark: number;
+    }
+  | {
+      type: "competency";
+      code: CompetencyGradeCode;
+    };
+
+export type CourseTerm = "T1" | "T2" | "T3";
+
 export type CourseAchievementCardDataType = {
   course: string;
-  grade?: number;
+  result?: CourseResultType;
   description: string;
   year: number;
+  term?: CourseTerm;
 };
 
 export type CompetitionCardDataType = {

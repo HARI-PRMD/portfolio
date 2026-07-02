@@ -554,41 +554,82 @@ export const CourseAchievementCardData: CourseAchievementCardDataType[] = [
     description:
       "Built Teamer, an AI-powered team formation platform, as a solo developer. Selected as one of the best thesis projects of 2025 and presented at the CSE Thesis Showcase.",
     year: 2025,
+    result: {
+      type: "mark",
+      mark: 87,
+    },
+  },
+  {
+    course: "Human Computer Interaction (COMP3511)",
+    description:
+      "Applied user-centred design methods to create an AI legal help website for the common man, focusing on accessible interaction flows, prototyping, evaluation, and usability.",
+    year: 2025,
+    term: "T2",
+    result: {
+      type: "mark",
+      mark: 85,
+    },
+  },
+  {
+    course: "Professional Issues and Ethics (COMP4920)",
+    description:
+      "Researched AI ethics, focusing on moral reasoning, professional responsibility, accountability, privacy, fairness, and algorithmic bias in real-world computing contexts.",
+    year: 2025,
+    term: "T1",
+    result: {
+      type: "competency",
+      code: "CM",
+    },
   },
   {
     course: "Web Front-End Programming (COMP6080)",
     description:
       "Built multiple front-end web applications using vanilla JavaScript, React, and modern CSS, assessed through individual projects with strict quality and accessibility requirements.",
     year: 2024,
-    grade: 97,
+    result: {
+      type: "mark",
+      mark: 97,
+    },
   },
   {
     course: "Computer Graphics (COMP3421)",
     description:
       "Implemented 3D rendering pipelines, ray tracing, and shader programming using OpenGL and WebGL fundamentals.",
     year: 2024,
-    grade: 92,
+    result: {
+      type: "mark",
+      mark: 92,
+    },
   },
   {
     course: "Engineering Design and Professional Practice (DESN2000)",
     description:
       "Developed a prototype of a Educational Finance Management Mobile App called Figma Life in Figma, and maintained a Design Journal Documenting the entire design process methods used and followed.",
     year: 2023,
-    grade: 88,
+    result: {
+      type: "mark",
+      mark: 88,
+    },
   },
   {
     course: "Requirements and Design Workshop (SENG2021)",
     description:
       "Developed e-invoice management website using the T3 stack and an ExpressJS backend API for invoice validation and rendering in a team.",
     year: 2023,
-    grade: 81,
+    result: {
+      type: "mark",
+      mark: 81,
+    },
   },
   {
     course: "Backend Development (COMP1531)",
     description:
       "Developed an ExpressJS Backend written in Typescript for a Microsoft Teams clone in a team of 5.",
     year: 2022,
-    grade: 85,
+    result: {
+      type: "mark",
+      mark: 85,
+    },
   },
 ];
 
