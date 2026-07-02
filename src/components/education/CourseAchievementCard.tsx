@@ -1,21 +1,38 @@
 import FadeIn from "../animation/FadeIn";
-import { type CourseAchievementCardDataType } from "~/types/types";
+import {
+  type CompetencyGradeCode,
+  type CourseAchievementCardDataType,
+  type CourseResultType,
+} from "~/types/types";
 
 type Props = {
   data: CourseAchievementCardDataType;
 };
 
+const competencyGradeDescriptions = {
+  CM: "Received a Competent with Merit Grade",
+  CO: "Received a Competent Grade",
+  CN: "",
+} satisfies Record<CompetencyGradeCode, string>;
+
 const CourseAchievementCard: React.FC<Props> = ({ data }) => {
-  const getGradeDescription = (grade?: number) => {
-    if (!grade) return "";
-    if (grade >= 85) {
+  const getResultDescription = (result?: CourseResultType) => {
+    if (!result) return "";
+    if (result.type === "competency") {
+      return competencyGradeDescriptions[result.code];
+    }
+
+    if (result.mark >= 85) {
       return "Received a High Distinction Grade";
-    } else if (grade >= 75) {
+    } else if (result.mark >= 75) {
       return "Received a Distinction Grade";
     } else {
       return "";
     }
   };
+
+  const resultDescription = getResultDescription(data.result);
+  const yearLabel = data.term ? `${data.year} ${data.term}` : data.year;
 
   return (
     <FadeIn
@@ -24,12 +41,10 @@ const CourseAchievementCard: React.FC<Props> = ({ data }) => {
     >
       <h3 className="heading3">{data.course}</h3>
       <div className="py-4">
-        {getGradeDescription(data.grade) !== "" && (
-          <p className="subtitle font-light">
-            {getGradeDescription(data.grade)}
-          </p>
+        {resultDescription !== "" && (
+          <p className="subtitle font-light">{resultDescription}</p>
         )}
-        <p className="subtitle font-light opacity-60">{data.year}</p>
+        <p className="subtitle font-light opacity-60">{yearLabel}</p>
       </div>
       <p className="subtitle font-light">{data.description}</p>
     </FadeIn>
